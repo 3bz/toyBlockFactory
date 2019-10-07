@@ -32,4 +32,5 @@ public class TestToyBlockFactory {
 
         Assert.assertEquals(actual.getShape(), Shape.CIRCLE);
     }
+    
 }
