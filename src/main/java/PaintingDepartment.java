@@ -5,7 +5,7 @@ public class PaintingDepartment {
         workers = new BlockPainter();
     }
 
-    public void paintBlock(Block aBlock) {
-        workers.paintBlock(aBlock, Color.RED);
+    public void paintBlock(Block aBlock, Color aColor) {
+        workers.paintBlock(aBlock, aColor);
     }
 }
