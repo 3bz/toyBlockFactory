@@ -42,6 +42,8 @@ public class TestToyBlockFactory {
 
     @Test
     public void paintAllBlocksInOrder() {
-        testFactory.requestBlocksPainted(paintingOrder);
+        List<Block> paintedBlocks = testFactory.requestBlocksPainted(paintingOrder);
+
+        Assert.assertEquals(Color.RED, paintedBlocks.get(0).getColor());
     }
 }

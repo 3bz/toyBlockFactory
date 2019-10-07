@@ -18,10 +18,12 @@ public class ToyBlockFactory {
         return blocksCut;
     }
 
-    public void requestBlocksPainted(List<PaintingOrder> aOrder) {
+    public List<Block> requestBlocksPainted(List<PaintingOrder> aOrder) {
         List<Block> blocksPainted = new ArrayList<>();
         for(PaintingOrder paintingOrder : aOrder)
             blocksPainted.addAll(paintingDepartment.fullfilPaintingOrder(paintingOrder));
+
+        return blocksPainted;
     }
 
     //MUST CONVERT CUSTOMER ORDER TO Cutting Orders and Painting Orders
