@@ -4,6 +4,7 @@ public class Block {
 
     public Block(Shape blockShape){
         shape = blockShape;
+        color = Color.NATURAL;
     }
 
     public Shape getShape() {

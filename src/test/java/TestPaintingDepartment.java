@@ -7,41 +7,43 @@ import java.util.List;
 
 public class TestPaintingDepartment {
     private PaintingDepartment testPaint;
-    private List<Block> testBlocks;
+    private PaintingOrder testOrder;
 
     @Before
     public void init(){
+        List<Block> blockList = new ArrayList<>();
+        blockList.add(new Block(Shape.SQUARE));
         testPaint = new PaintingDepartment();
-        testBlocks = new ArrayList<>();
-        testBlocks.add(new Block(Shape.SQUARE));
+        testOrder = new PaintingOrder(Color.RED, blockList);
+        testOrder.getBlocksToPaint().add(new Block(Shape.SQUARE));
     }
 
     @Test
     public void paintSingleBlock() {
-        testPaint.paintBlock(testBlocks, Color.RED);
+        testPaint.fullfilPaintingOrder(testOrder);
 
-        Assert.assertEquals(testBlocks.get(0).getColor(), Color.RED);
+        Assert.assertEquals(Color.RED, testOrder.getBlocksToPaint().get(0).getColor());
     }
 
     @Test
     public void paintManyBlocks() {
         for (int i = 0; i < 5; i++)
-            testBlocks.add(new Block(Shape.SQUARE));
+            testOrder.getBlocksToPaint().add(new Block(Shape.SQUARE));
 
-        testPaint.paintBlock(testBlocks, Color.BLUE);
+        testPaint.fullfilPaintingOrder(testOrder);
 
-        for (int j = 0; j < testBlocks.size(); j++)
-            Assert.assertEquals(testBlocks.get(j).getColor(), Color.BLUE);
+        for (int j = 0; j < testOrder.getBlocksToPaint().size(); j++)
+            Assert.assertEquals(Color.RED, testOrder.getBlocksToPaint().get(j).getColor());
     }
 
     @Test
     public void paintDifferentShapesSameColor() {
-        testBlocks.add(new Block(Shape.CIRCLE));
-        testBlocks.add(new Block(Shape.TRIANGLE));
+        testOrder.getBlocksToPaint().add(new Block(Shape.CIRCLE));
+        testOrder.getBlocksToPaint().add(new Block(Shape.TRIANGLE));
 
-        testPaint.paintBlock(testBlocks, Color.YELLOW);
+        testPaint.fullfilPaintingOrder(testOrder);
 
-        for (int i = 0; i < testBlocks.size(); i++)
-            Assert.assertEquals(testBlocks.get(i).getColor(), Color.YELLOW);
+        for (int i = 0; i < testOrder.getBlocksToPaint().size(); i++)
+            Assert.assertEquals(Color.RED, testOrder.getBlocksToPaint().get(i).getColor());
     }
 }

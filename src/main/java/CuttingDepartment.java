@@ -8,8 +8,8 @@ public class CuttingDepartment {
         workers = new BlockCutter();
     }
 
-    public List<Block> fulfillOrder(CuttingOrder aOrder) {
-        List<Block> blocksMadeToOrder = new ArrayList<Block>();
+    public List<Block> fulfillCuttingOrder(CuttingOrder aOrder) {
+        List<Block> blocksMadeToOrder = new ArrayList<>();
         for (int quantity = 0; quantity < aOrder.getQuantityToCut(); quantity++)
             blocksMadeToOrder.add(cutShape(aOrder.getShapeToCut()));
 

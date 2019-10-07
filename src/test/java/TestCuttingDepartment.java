@@ -14,21 +14,21 @@ public class TestCuttingDepartment {
 
     @Test
     public void cutsSquareBlock(){
-        List<Block> testBlock = testCut.fulfillOrder(new CuttingOrder(Shape.SQUARE, 1));
+        List<Block> testBlock = testCut.fulfillCuttingOrder(new CuttingOrder(Shape.SQUARE, 1));
 
         Assert.assertTrue(testBlock.get(0).getShape().equals(Shape.SQUARE));
     }
 
     @Test
     public void cutsCircleBlock(){
-        List<Block> testBlock = testCut.fulfillOrder(new CuttingOrder(Shape.CIRCLE, 1));
+        List<Block> testBlock = testCut.fulfillCuttingOrder(new CuttingOrder(Shape.CIRCLE, 1));
 
         Assert.assertTrue(testBlock.get(0).getShape().equals(Shape.CIRCLE));
     }
 
     @Test
     public void cutsTriangleBlock(){
-        List<Block> testBlock = testCut.fulfillOrder(new CuttingOrder(Shape.TRIANGLE,1 ));
+        List<Block> testBlock = testCut.fulfillCuttingOrder(new CuttingOrder(Shape.TRIANGLE,1 ));
 
         Assert.assertTrue(testBlock.get(0).getShape().equals(Shape.TRIANGLE));
     }
@@ -37,7 +37,7 @@ public class TestCuttingDepartment {
     public void returnsManyBlocks() {
         CuttingOrder order = new CuttingOrder(Shape.SQUARE, 2);
 
-        List<Block> testList = testCut.fulfillOrder(order);
+        List<Block> testList = testCut.fulfillCuttingOrder(order);
 
         Assert.assertTrue(testList.size() == 2);
     }

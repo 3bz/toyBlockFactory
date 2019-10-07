@@ -1,3 +1,3 @@
 public interface IPaintBlocks {
-    void paintBlock(Block aBlock, Color aColor);
+    Block paintBlock(Block aBlock, Color aColor);
 }
