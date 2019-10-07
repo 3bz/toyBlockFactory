@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class PaintingDepartment {
     private IPaintBlocks workers;
 
@@ -5,7 +7,8 @@ public class PaintingDepartment {
         workers = new BlockPainter();
     }
 
-    public void paintBlock(Block aBlock, Color aColor) {
-        workers.paintBlock(aBlock, aColor);
+    public void paintBlock(List<Block> blocks, Color aColor) {
+        for (Block block : blocks)
+            workers.paintBlock(block, aColor);
     }
 }

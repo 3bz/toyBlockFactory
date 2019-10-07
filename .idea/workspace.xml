@@ -13,17 +13,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestCuttingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestCuttingDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PaintingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/PaintingDepartment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestPaintingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestPaintingDepartment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Color.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PaintingDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCuttingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCuttingDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyBlockFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestPaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPaintingDepartment.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,13 +86,53 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TestPaintingDepartment">
+  <component name="RunManager" selected="Gradle.TestPaintingDepartment.paintDifferentShapesSameColor">
     <configuration name="TestPaintingDepartment" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;TestPaintingDepartment&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestPaintingDepartment.paintDifferentShapesSameColor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TestPaintingDepartment.paintDifferentShapesSameColor&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestPaintingDepartment.paintManyBlocks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TestPaintingDepartment.paintManyBlocks&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -149,53 +187,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestToyBlockFactory.getManyDifferentBlocksCut" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestToyBlockFactory.getManyDifferentBlocksCut&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestToyBlockFactory.returnsDifferentShapesInOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestToyBlockFactory.returnsDifferentShapesInOrder&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestPaintingDepartment.paintDifferentShapesSameColor" />
+        <item itemvalue="Gradle.TestPaintingDepartment.paintManyBlocks" />
         <item itemvalue="Gradle.TestPaintingDepartment" />
         <item itemvalue="Gradle.TestPaintingDepartment.paintOneBlock" />
         <item itemvalue="Gradle.TestToyBlockFactory" />
-        <item itemvalue="Gradle.TestToyBlockFactory.returnsDifferentShapesInOrder" />
-        <item itemvalue="Gradle.TestToyBlockFactory.getManyDifferentBlocksCut" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +207,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570404743909</updated>
-      <workItem from="1570404747106" duration="10788000" />
+      <workItem from="1570404747106" duration="12187000" />
     </task>
     <servers />
   </component>
