@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52008851-0e74-4dcb-b922-f26974fb64ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/BlockPainter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IPaintBlocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PaintingDepartment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BlockCutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BlockCutter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyBlockFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestToyBlockFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPaintingDepartment.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -52,6 +55,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -64,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TestToyBlockFactory">
+  <component name="RunManager" selected="Gradle.TestPaintingDepartment.paintOneBlock">
     <configuration name="TestCuttingDepartment" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -85,12 +93,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCuttingDepartment.cutsSquareBlock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestPaintingDepartment.paintOneBlock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestCuttingDepartment.cutsSquareBlock&quot;" />
+        <option name="scriptParameters" value="--tests &quot;TestPaintingDepartment.paintOneBlock&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -167,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestPaintingDepartment.paintOneBlock" />
         <item itemvalue="Gradle.TestToyBlockFactory" />
         <item itemvalue="Gradle.TestToyBlockFactory.returnsDifferentShapesInOrder" />
         <item itemvalue="Gradle.TestToyBlockFactory.getManyDifferentBlocksCut" />
         <item itemvalue="Gradle.TestCuttingDepartment" />
-        <item itemvalue="Gradle.TestCuttingDepartment.cutsSquareBlock" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +193,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570404743909</updated>
-      <workItem from="1570404747106" duration="9552000" />
+      <workItem from="1570404747106" duration="10346000" />
     </task>
     <servers />
   </component>
