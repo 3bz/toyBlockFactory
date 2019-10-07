@@ -8,15 +8,15 @@ public class CuttingDepartment {
         workers = new BlockCutter();
     }
 
-    private Block cutShape(Shape blockShape){
-        return workers.cutBlock(blockShape);
-    }
-
     public List<Block> fulfillOrder(CuttingOrder aOrder) {
         List<Block> blocksMadeToOrder = new ArrayList<Block>();
         for (int quantity = 0; quantity < aOrder.getQuantityToCut(); quantity++)
             blocksMadeToOrder.add(cutShape(aOrder.getShapeToCut()));
 
         return blocksMadeToOrder;
+    }
+
+    private Block cutShape(Shape blockShape){
+        return workers.cutBlock(blockShape);
     }
 }
