@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class CuttingDepartment {
     private ICutShapes workers;
 
@@ -5,7 +8,15 @@ public class CuttingDepartment {
         workers = new BlockCutter();
     }
 
-    public Block cutShape(Shape blockShape){
+    private Block cutShape(Shape blockShape){
         return workers.cutBlock(blockShape);
+    }
+
+    public List<Block> fulfillOrder(CuttingOrder aOrder) {
+        List<Block> blocksMadeToOrder = new ArrayList<Block>();
+        for (int quantity = 0; quantity < aOrder.getQuantityToCut(); quantity++)
+            blocksMadeToOrder.add(cutShape(aOrder.getShapeToCut()));
+
+        return blocksMadeToOrder;
     }
 }
