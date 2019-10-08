@@ -2,7 +2,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.text.DateFormat;
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class TestToyBlockFactory {
@@ -48,5 +52,18 @@ public class TestToyBlockFactory {
         List<Block> paintedBlocks = testFactory.requestBlocksPainted(paintingOrder);
 
         Assert.assertEquals(Color.RED, paintedBlocks.get(0).getColor());
+    }
+
+    @Test
+    public void interpretCustomerOrderToCreateCuttingOrder() {
+        List<Blueprint> specification = new ArrayList<Blueprint>();
+        specification.add(new Blueprint(Color.BLUE, Shape.SQUARE, 2));
+        Customer testCustomer = new Customer("Joe", "123 Test Street");
+
+        CustomerOrder testCustomerOrder = new CustomerOrder(testCustomer, java.util.Date.from(Instant.now()), 1, specification);
+        CuttingOrder testCuttingOrder = testFactory.createCuttingOrder(testCustomerOrder);
+
+        Assert.assertEquals(2, testCuttingOrder.getQuantityToCut());
+        Assert.assertEquals(Shape.SQUARE, testCuttingOrder.getShapeToCut());
     }
 }

@@ -26,6 +26,13 @@ public class ToyBlockFactory {
         return blocksPainted;
     }
 
+    public CuttingOrder createCuttingOrder(CustomerOrder orderToProcess) {
+        Shape shapeToCut = orderToProcess.getSpecification().get(0).getShapePlanned();
+        int quantityToCut = orderToProcess.getSpecification().get(0).getQuantityOfBlock();
+        CuttingOrder newOrder = new CuttingOrder(shapeToCut, quantityToCut);
+        return newOrder;
+    }
+
     //MUST CONVERT CUSTOMER ORDER TO Cutting Orders and Painting Orders
 }
 
