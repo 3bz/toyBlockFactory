@@ -26,9 +26,18 @@ public class ToyBlockFactory {
         return blocksPainted;
     }
 
-    public CuttingOrder createCuttingOrder(CustomerOrder orderToProcess) {
-        Shape shapeToCut = orderToProcess.getSpecification().get(0).getShapePlanned();
-        int quantityToCut = orderToProcess.getSpecification().get(0).getQuantityOfBlock();
+    public List<CuttingOrder> processOrderForCutting(CustomerOrder orderToProcess) {
+        List<CuttingOrder> shapeRequests = new ArrayList<>();
+        for (Blueprint individualBlockOrder : orderToProcess.getSpecification()) {
+            Shape toBeCut = individualBlockOrder.getShapePlanned();
+            int amount = individualBlockOrder.getQuantityOfBlock();
+
+            shapeRequests.add(createCuttingOrder(toBeCut, amount));
+        }
+        return shapeRequests;
+    }
+
+    public CuttingOrder createCuttingOrder(Shape shapeToCut, int quantityToCut) {
         CuttingOrder newOrder = new CuttingOrder(shapeToCut, quantityToCut);
         return newOrder;
     }

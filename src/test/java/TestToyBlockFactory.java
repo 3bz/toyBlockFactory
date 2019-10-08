@@ -2,11 +2,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.text.DateFormat;
 import java.time.Instant;
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class TestToyBlockFactory {
@@ -61,9 +58,11 @@ public class TestToyBlockFactory {
         Customer testCustomer = new Customer("Joe", "123 Test Street");
 
         CustomerOrder testCustomerOrder = new CustomerOrder(testCustomer, java.util.Date.from(Instant.now()), 1, specification);
-        CuttingOrder testCuttingOrder = testFactory.createCuttingOrder(testCustomerOrder);
+        List<CuttingOrder> testCuttingOrder = testFactory.processOrderForCutting(testCustomerOrder);
 
-        Assert.assertEquals(2, testCuttingOrder.getQuantityToCut());
-        Assert.assertEquals(Shape.SQUARE, testCuttingOrder.getShapeToCut());
+        Assert.assertEquals(2, testCuttingOrder.get(0).getQuantityToCut());
+        Assert.assertEquals(Shape.SQUARE, testCuttingOrder.get(0).getShapeToCut());
     }
+
+
 }
