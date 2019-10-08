@@ -30,7 +30,7 @@ public class TestToyBlockFactory {
     public void getManyDifferentBlocksCut() {
         List<Block> testShapesCut = testFactory.requestShapesCut(cuttingOrder);
 
-        Assert.assertTrue(testShapesCut.size() == 6);
+        Assert.assertEquals(6, testShapesCut.size());
     }
 
     @Test

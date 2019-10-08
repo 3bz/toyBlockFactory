@@ -37,11 +37,9 @@ public class ToyBlockFactory {
         return shapeRequests;
     }
 
-    public CuttingOrder createCuttingOrder(Shape shapeToCut, int quantityToCut) {
+    private CuttingOrder createCuttingOrder(Shape shapeToCut, int quantityToCut) {
         CuttingOrder newOrder = new CuttingOrder(shapeToCut, quantityToCut);
         return newOrder;
     }
 
-    //MUST CONVERT CUSTOMER ORDER TO Cutting Orders and Painting Orders
 }
-

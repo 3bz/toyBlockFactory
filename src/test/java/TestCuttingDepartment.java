@@ -16,21 +16,21 @@ public class TestCuttingDepartment {
     public void cutsSquareBlock(){
         List<Block> testBlock = testCut.fulfillCuttingOrder(new CuttingOrder(Shape.SQUARE, 1));
 
-        Assert.assertTrue(testBlock.get(0).getShape().equals(Shape.SQUARE));
+        Assert.assertEquals(Shape.SQUARE, testBlock.get(0).getShape());
     }
 
     @Test
     public void cutsCircleBlock(){
         List<Block> testBlock = testCut.fulfillCuttingOrder(new CuttingOrder(Shape.CIRCLE, 1));
 
-        Assert.assertTrue(testBlock.get(0).getShape().equals(Shape.CIRCLE));
+        Assert.assertEquals(Shape.CIRCLE, testBlock.get(0).getShape());
     }
 
     @Test
     public void cutsTriangleBlock(){
         List<Block> testBlock = testCut.fulfillCuttingOrder(new CuttingOrder(Shape.TRIANGLE,1 ));
 
-        Assert.assertTrue(testBlock.get(0).getShape().equals(Shape.TRIANGLE));
+        Assert.assertEquals(Shape.TRIANGLE, testBlock.get(0).getShape());
     }
 
     @Test
@@ -39,6 +39,6 @@ public class TestCuttingDepartment {
 
         List<Block> testList = testCut.fulfillCuttingOrder(order);
 
-        Assert.assertTrue(testList.size() == 2);
+        Assert.assertEquals(2, testList.size());
     }
 }

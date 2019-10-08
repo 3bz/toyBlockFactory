@@ -17,4 +17,3 @@ public class PaintingOrder {
         return colorToPaintBlocks;
     }
 }
-
