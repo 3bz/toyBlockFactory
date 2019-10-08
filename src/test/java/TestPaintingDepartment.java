@@ -20,7 +20,7 @@ public class TestPaintingDepartment {
 
     @Test
     public void paintSingleBlock() {
-        testPaint.fullfilPaintingOrder(testOrder);
+        testPaint.fulfillPaintingOrder(testOrder);
 
         Assert.assertEquals(Color.RED, testOrder.getBlocksToPaint().get(0).getColor());
     }
@@ -30,7 +30,7 @@ public class TestPaintingDepartment {
         for (int i = 0; i < 5; i++)
             testOrder.getBlocksToPaint().add(new Block(Shape.SQUARE));
 
-        testPaint.fullfilPaintingOrder(testOrder);
+        testPaint.fulfillPaintingOrder(testOrder);
 
         for (int j = 0; j < testOrder.getBlocksToPaint().size(); j++)
             Assert.assertEquals(Color.RED, testOrder.getBlocksToPaint().get(j).getColor());
@@ -41,7 +41,7 @@ public class TestPaintingDepartment {
         testOrder.getBlocksToPaint().add(new Block(Shape.CIRCLE));
         testOrder.getBlocksToPaint().add(new Block(Shape.TRIANGLE));
 
-        testPaint.fullfilPaintingOrder(testOrder);
+        testPaint.fulfillPaintingOrder(testOrder);
 
         for (int i = 0; i < testOrder.getBlocksToPaint().size(); i++)
             Assert.assertEquals(Color.RED, testOrder.getBlocksToPaint().get(i).getColor());

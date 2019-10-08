@@ -12,19 +12,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PaintingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/PaintingDepartment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ToyBlockFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ToyBlockFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestPaintingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestPaintingDepartment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestToyBlockFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestToyBlockFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestCuttingDepartment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestToyBlockFactory.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestToyBlockFactory.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestCuttingDepartment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestToyBlockFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestToyBlockFactory.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PaintingDepartment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyBlockFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPaintingDepartment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestToyBlockFactory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -210,7 +211,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570404743909</updated>
-      <workItem from="1570404747106" duration="16219000" />
+      <workItem from="1570404747106" duration="16332000" />
+      <workItem from="1570492593823" duration="955000" />
     </task>
     <servers />
   </component>
@@ -222,7 +224,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

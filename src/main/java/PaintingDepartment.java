@@ -8,7 +8,7 @@ public class PaintingDepartment {
         workers = new BlockPainter();
     }
 
-    public List<Block> fullfilPaintingOrder(PaintingOrder aOrder) {
+    public List<Block> fulfillPaintingOrder(PaintingOrder aOrder) {
         List<Block> blocksPainted = new ArrayList<>();
         for (Block block : aOrder.getBlocksToPaint()) {
             blocksPainted.add(paintBlock(block, aOrder.getColorToPaintBlocks()));

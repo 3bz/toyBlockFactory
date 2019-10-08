@@ -10,18 +10,18 @@ public class ToyBlockFactory {
         paintingDepartment = new PaintingDepartment();
     }
 
-    public List<Block> requestShapesCut(List<CuttingOrder> aOrder){
+    public List<Block> requestShapesCut(List<CuttingOrder> listOfShapeOrders){
         List<Block> blocksCut = new ArrayList<>();
-        for (CuttingOrder cuttingOrder : aOrder)
-            blocksCut.addAll(cuttingDepartment.fulfillCuttingOrder(cuttingOrder));
+        for (CuttingOrder differentShapeOrder : listOfShapeOrders)
+            blocksCut.addAll(cuttingDepartment.fulfillCuttingOrder(differentShapeOrder));
 
         return blocksCut;
     }
 
-    public List<Block> requestBlocksPainted(List<PaintingOrder> aOrder) {
+    public List<Block> requestBlocksPainted(List<PaintingOrder> listOfPaintingOrders) {
         List<Block> blocksPainted = new ArrayList<>();
-        for(PaintingOrder paintingOrder : aOrder)
-            blocksPainted.addAll(paintingDepartment.fullfilPaintingOrder(paintingOrder));
+        for(PaintingOrder differentColorOrder : listOfPaintingOrders)
+            blocksPainted.addAll(paintingDepartment.fulfillPaintingOrder(differentColorOrder));
 
         return blocksPainted;
     }
