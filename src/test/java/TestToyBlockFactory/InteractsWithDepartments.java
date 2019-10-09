@@ -6,7 +6,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestToyBlockFactory {
+public class InteractsWithDepartments {
     private ToyBlockFactory testFactory;
     private List<CuttingOrder> cuttingOrder;
     private List<PaintingOrder> paintingOrder;
@@ -18,7 +18,7 @@ public class TestToyBlockFactory {
         cuttingOrder = new ArrayList<>();
         cuttingOrder.add(new CuttingOrder(Shape.SQUARE, 2));
         cuttingOrder.add(new CuttingOrder(Shape.CIRCLE, 3));
-        cuttingOrder.add(new CuttingOrder(Shape.TRIANGLE, 1));
+        cuttingOrder.add(new CuttingOrder(Shape.TRIANGLE, 2));
 
         paintingOrder = new ArrayList<>();
         List<Block> blockList = new ArrayList<>();
@@ -27,14 +27,14 @@ public class TestToyBlockFactory {
     }
 
     @Test
-    public void getManyDifferentBlocksCut() {
+    public void returnsManyDifferentShapesCut() {
         List<Block> testShapesCut = testFactory.requestShapesCut(cuttingOrder);
 
-        Assert.assertEquals(6, testShapesCut.size());
+        Assert.assertEquals(7, testShapesCut.size());
     }
 
     @Test
-    public void returnsDifferentShapesInOrder() {
+    public void returnsShapesInSpecifiedArrangement() {
         List<Block> testShapesOrder = testFactory.requestShapesCut(cuttingOrder);
         Block actual = testShapesOrder.get(2);
 
@@ -42,27 +42,14 @@ public class TestToyBlockFactory {
     }
 
     @Test
-    public void paintAllBlocksInOrder() {
-        Block blockBeforeBeingPainted = paintingOrder.get(0).getBlocksToPaint().get(0);
-        Assert.assertEquals(Color.NATURAL, blockBeforeBeingPainted.getColor());
-
+    public void paintsBlocksInOrder() {
         List<Block> paintedBlocks = testFactory.requestBlocksPainted(paintingOrder);
 
         Assert.assertEquals(Color.RED, paintedBlocks.get(0).getColor());
     }
 
-    @Test
-    public void interpretCustomerOrderToCreateCuttingOrder() {
-        List<Blueprint> specification = new ArrayList<Blueprint>();
-        specification.add(new Blueprint(Color.BLUE, Shape.SQUARE, 2));
-        Customer testCustomer = new Customer("Joe", "123 Test Street");
+    public void passesBlocksCutToPaintingDept() {
 
-        CustomerOrder testCustomerOrder = new CustomerOrder(testCustomer, java.util.Date.from(Instant.now()), 1, specification);
-        List<CuttingOrder> testCuttingOrder = testFactory.processOrderForCutting(testCustomerOrder);
-
-        Assert.assertEquals(2, testCuttingOrder.get(0).getQuantityToCut());
-        Assert.assertEquals(Shape.SQUARE, testCuttingOrder.get(0).getShapeToCut());
     }
-
 
 }

@@ -34,6 +34,13 @@ public class TestCuttingDepartment {
     }
 
     @Test
+    public void blockIsUnpainted() {
+        List<Block> testBlock = testCut.fulfillCuttingOrder(new CuttingOrder(Shape.SQUARE, 1));
+
+        Assert.assertEquals(Color.NATURAL, testBlock.get(0).getColor());
+    }
+
+    @Test
     public void returnsManyBlocks() {
         CuttingOrder order = new CuttingOrder(Shape.SQUARE, 2);
 
