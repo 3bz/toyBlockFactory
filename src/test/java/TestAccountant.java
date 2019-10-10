@@ -2,12 +2,17 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestAccountant {
     private Accountant acc;
+    private List<Blueprint> customerOrder;
 
     @Before
     public void init() {
         acc = new Accountant();
+        customerOrder = new ArrayList<>();
     }
 
     @Test
@@ -46,6 +51,52 @@ public class TestAccountant {
 
         int expectedCost = 2;
         int actualCost = acc.calculateCost(testPrint);
+
+        Assert.assertEquals(expectedCost, actualCost);
+    }
+
+    @Test
+    public void eachShape() {
+        customerOrder.add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
+        customerOrder.add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
+        customerOrder.add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
+
+        int expectedCost = 6;
+        int actualCost = acc.calculateOrder(customerOrder);
+
+        Assert.assertEquals(expectedCost, actualCost);
+    }
+
+    @Test
+    public void multipleBlocks() {
+        Blueprint testPrint = new Blueprint(Color.BLUE, Shape.SQUARE, 5);
+
+        int expectedCost = 5;
+        int actualCost = acc.calculateCost(testPrint);
+
+        Assert.assertEquals(expectedCost, actualCost);
+    }
+
+    @Test
+    public void assortedBlockOrder() {
+        customerOrder.add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
+        customerOrder.add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 5));
+        customerOrder.add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
+
+        int expectedCost = 30;
+        int actualCost = acc.calculateOrder(customerOrder);
+
+        Assert.assertEquals(expectedCost, actualCost);
+    }
+
+    @Test
+    public void assortedOrderWithRedBlocks() {
+        customerOrder.add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
+        customerOrder.add(new Blueprint(Color.RED, Shape.SQUARE, 5));
+        customerOrder.add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
+
+        int expectedCost = 30;
+        int actualCost = acc.calculateOrder(customerOrder);
 
         Assert.assertEquals(expectedCost, actualCost);
     }

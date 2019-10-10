@@ -14,11 +14,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Accountant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Accountant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/InteractsWithDepartments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/InterpretsIncomingOrders.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ManufacturingProcess.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestAccountant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestAccountant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestAccountant.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestAccountant.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
@@ -26,8 +21,6 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestAccountant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestAccountant.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Accountant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accountant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestAccountant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAccountant.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,13 +89,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TestAccountant.redPaintSurcharge">
-    <configuration name="TestAccountant.calculateCircleCost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TestAccountant.assortedOrderWithRedBlocks">
+    <configuration name="TestAccountant" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestAccountant.calculateCircleCost&quot;" />
+        <option name="scriptParameters" value="--tests &quot;TestAccountant&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -117,12 +110,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestAccountant.calculateSquareCost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestAccountant.assortedBlockOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestAccountant.calculateSquareCost&quot;" />
+        <option name="scriptParameters" value="--tests &quot;TestAccountant.assortedBlockOrder&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -137,12 +130,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestAccountant.calculateTriangleCost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestAccountant.assortedOrderWithRedBlocks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestAccountant.calculateTriangleCost&quot;" />
+        <option name="scriptParameters" value="--tests &quot;TestAccountant.assortedOrderWithRedBlocks&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestAccountant.multipleBlocks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TestAccountant.multipleBlocks&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -177,33 +190,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'toyBlockFactory.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests *" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestAccountant.assortedOrderWithRedBlocks" />
+        <item itemvalue="Gradle.TestAccountant.assortedBlockOrder" />
+        <item itemvalue="Gradle.TestAccountant.multipleBlocks" />
+        <item itemvalue="Gradle.TestAccountant" />
         <item itemvalue="Gradle.TestAccountant.redPaintSurcharge" />
-        <item itemvalue="Gradle.TestAccountant.calculateCircleCost" />
-        <item itemvalue="Gradle.TestAccountant.calculateTriangleCost" />
-        <item itemvalue="Gradle.Tests in 'toyBlockFactory.test'" />
-        <item itemvalue="Gradle.TestAccountant.calculateSquareCost" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +214,7 @@
       <workItem from="1570492593823" duration="11309000" />
       <workItem from="1570573579159" duration="9103000" />
       <workItem from="1570658762560" duration="1128000" />
-      <workItem from="1570663107345" duration="12348000" />
+      <workItem from="1570663107345" duration="13292000" />
     </task>
     <servers />
   </component>
