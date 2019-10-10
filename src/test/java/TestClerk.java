@@ -9,22 +9,22 @@ import java.util.List;
 
 public class TestClerk {
     private Clerk clerk;
-    private CustomerOrder customerOrder;
+    private List<Blueprint> testSpec;
 
     @Before
     public void init() {
-    clerk = new Clerk();
-        List<Blueprint> testSpec = new ArrayList<>();
-        testSpec.add(new Blueprint(Color.RED, Shape.SQUARE, 3));
-        customerOrder = new CustomerOrder(new Customer("test", "test"),
-                Date.from(Instant.now()), 1, testSpec);
+        clerk = new Clerk();
+        testSpec = new ArrayList<>();
+        testSpec.add(new Blueprint(Color.RED, Shape.SQUARE, 1));
     }
 
     @Test
     public void sendsCustomerOrderToShop_ReceivesBlocks() {
+        CustomerOrder customerOrder = new CustomerOrder(new Customer("test", "test"),
+        Date.from(Instant.now()), 1, testSpec);
         List<Block> blockShipment = clerk.sendOrderToFactory(customerOrder);
 
-        Assert.assertEquals(3, blockShipment.size());
+        Assert.assertEquals(1, blockShipment.size());
     }
 
     @Test
@@ -37,8 +37,17 @@ public class TestClerk {
 
     @Test
     public void createsOrder() {
-        CustomerOrder testOrder = clerk.createCustomerOrder();
+        List<Blueprint> testSpec = new ArrayList<>();
+        testSpec.add(new Blueprint(Color.RED, Shape.SQUARE, 1));
+        CustomerOrder testOrder = clerk.createCustomerOrder(testSpec);
 
         Assert.assertEquals(1, testOrder.getSpecification().size());
+    }
+
+    @Test
+    public void testDrawingBlueprints() {
+        List<Blueprint> testPrints = clerk.drawBlueprints(1);
+
+        Assert.assertEquals(9, testPrints.size());
     }
 }

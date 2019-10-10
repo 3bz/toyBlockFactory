@@ -13,20 +13,23 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Clerk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Block.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Clerk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Color.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestClerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestClerk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestClerk.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestClerk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestCuttingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestCuttingDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestClerk.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestClerk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestClerk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestClerk.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Block.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Color.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCuttingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCuttingDepartment.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,53 +97,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TestClerk">
-    <configuration name="ManufacturingProcess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ManufacturingProcess&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.Tests in 'toyBlockFactory.test'">
     <configuration name="TestClerk" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;TestClerk&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestClerk.createsCustomer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestClerk.createsCustomer&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -175,12 +138,52 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestShop.sendsCustomerOrder_ReceivesBlocks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestClerk.sendsCustomerOrderToShop_ReceivesBlocks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestShop.sendsCustomerOrder_ReceivesBlocks&quot;" />
+        <option name="scriptParameters" value="--tests &quot;TestClerk.sendsCustomerOrderToShop_ReceivesBlocks&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestClerk.testDrawingBlueprints" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TestClerk.testDrawingBlueprints&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'toyBlockFactory.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -197,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestClerk" />
+        <item itemvalue="Gradle.Tests in 'toyBlockFactory.test'" />
+        <item itemvalue="Gradle.TestClerk.testDrawingBlueprints" />
+        <item itemvalue="Gradle.TestClerk.sendsCustomerOrderToShop_ReceivesBlocks" />
         <item itemvalue="Gradle.TestClerk.createsOrder" />
-        <item itemvalue="Gradle.TestClerk.createsCustomer" />
-        <item itemvalue="Gradle.TestShop.sendsCustomerOrder_ReceivesBlocks" />
-        <item itemvalue="Gradle.ManufacturingProcess" />
+        <item itemvalue="Gradle.TestClerk" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +222,7 @@
       <workItem from="1570492593823" duration="11309000" />
       <workItem from="1570573579159" duration="9103000" />
       <workItem from="1570658762560" duration="1128000" />
-      <workItem from="1570663107345" duration="7167000" />
+      <workItem from="1570663107345" duration="10769000" />
     </task>
     <servers />
   </component>
