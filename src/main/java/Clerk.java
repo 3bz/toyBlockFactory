@@ -25,7 +25,7 @@ public class Clerk {
         CustomerOrder customerOrder = createCustomerOrder(designOrder);
     }
 
-    public void greetCustomer() {
+    private void greetCustomer() {
         //some output
         //require input, set input variables
         customerServing = createNewCustomer("input", "123");
