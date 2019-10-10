@@ -26,4 +26,19 @@ public class TestClerk {
 
         Assert.assertEquals(3, blockShipment.size());
     }
+
+    @Test
+    public void createsCustomer() {
+        Customer testCustomer = clerk.createNewCustomer("Joe", "TestAddress");
+
+        Assert.assertEquals("Joe", testCustomer.getName());
+        Assert.assertEquals("TestAddress", testCustomer.getAddress());
+    }
+
+    @Test
+    public void createsOrder() {
+        CustomerOrder testOrder = clerk.createCustomerOrder();
+
+        Assert.assertEquals(1, testOrder.getSpecification().size());
+    }
 }
