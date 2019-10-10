@@ -5,6 +5,10 @@ public class Accountant {
     }
 
     public int calculateCost(Blueprint order) {
-        return 1;
+        int result = 0;
+        result += order.getShapePlanned().getPrice();
+        if (order.getColorPlanned().equals(Color.RED))
+            result++;
+        return result;
     }
 }
