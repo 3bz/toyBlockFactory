@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52008851-0e74-4dcb-b922-f26974fb64ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ManufacturingProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestToyBlockFactory/InterpretsIncomingOrders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,24 +13,25 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/BlockCutter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/BlockCutter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/BlockPainter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/BlockPainter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/IPaintBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/IPaintBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PaintingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/PaintingDepartment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ToyBlockFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ToyBlockFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestCuttingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestCuttingDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/InteractsWithDepartments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/InterpretsIncomingOrders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ManufacturingProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ManufacturingProcess.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestPaintingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestPaintingDepartment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestToyBlockFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestCuttingDepartment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestToyBlockFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestCuttingDepartment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestToyBlockFactory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BlockPainter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BlockPainter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IPaintBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IPaintBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PaintingDepartment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToyBlockFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCuttingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCuttingDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPaintingDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestToyBlockFactory/InteractsWithDepartments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ManufacturingProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ManufacturingProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestToyBlockFactory/InteractsWithDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestToyBlockFactory/InteractsWithDepartments.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,13 +99,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TestPaintingDepartment">
-    <configuration name="InteractsWithDepartments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ManufacturingProcess">
+    <configuration name="ManufacturingProcess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;InteractsWithDepartments&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ManufacturingProcess&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -121,12 +120,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="InterpretsIncomingOrders.createPaintingOrderFromCustomerOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ManufacturingProcess.usesCutBlocksToSatisfyPaintingOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;InterpretsIncomingOrders.createPaintingOrderFromCustomerOrder&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ManufacturingProcess.usesCutBlocksToSatisfyPaintingOrder&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -203,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ManufacturingProcess" />
+        <item itemvalue="Gradle.Tests in 'toyBlockFactory.test'" />
+        <item itemvalue="Gradle.ManufacturingProcess.usesCutBlocksToSatisfyPaintingOrder" />
         <item itemvalue="Gradle.TestPaintingDepartment" />
         <item itemvalue="Gradle.TestPaintingDepartment.paintDifferentShapesSameColor" />
-        <item itemvalue="Gradle.Tests in 'toyBlockFactory.test'" />
-        <item itemvalue="Gradle.InterpretsIncomingOrders.createPaintingOrderFromCustomerOrder" />
-        <item itemvalue="Gradle.InteractsWithDepartments" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +224,7 @@
       <workItem from="1570492593823" duration="11309000" />
       <workItem from="1570573579159" duration="9103000" />
       <workItem from="1570658762560" duration="1128000" />
-      <workItem from="1570663107345" duration="461000" />
+      <workItem from="1570663107345" duration="4339000" />
     </task>
     <servers />
   </component>

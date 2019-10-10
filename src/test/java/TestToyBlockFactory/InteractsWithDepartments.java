@@ -2,7 +2,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,13 +42,8 @@ public class InteractsWithDepartments {
 
     @Test
     public void paintsBlocksInOrder() {
-        List<Block> paintedBlocks = testFactory.requestBlocksPainted(paintingOrder);
+        testFactory.requestBlocksPainted(paintingOrder);
 
-        Assert.assertEquals(Color.RED, paintedBlocks.get(0).getColor());
+        Assert.assertEquals(Color.RED, paintingOrder.get(0).getBlocksToPaint().get(0).getColor());
     }
-
-    public void passesBlocksCutToPaintingDept() {
-
-    }
-
 }
