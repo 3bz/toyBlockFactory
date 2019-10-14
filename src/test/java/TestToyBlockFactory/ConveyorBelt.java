@@ -7,7 +7,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ManufacturingProcess {
+public class PaintingDepartmentReturns {
     private ToyBlockFactory factory;
     private CustomerOrder customerOrder;
 
@@ -41,5 +41,4 @@ public class ManufacturingProcess {
         Assert.assertEquals(Shape.SQUARE, completedOrder.get(0).getShape());
         Assert.assertEquals(3, completedOrder.size());
     }
-
 }

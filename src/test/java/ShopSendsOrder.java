@@ -7,7 +7,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestShop {
+public class ShopTransactions {
     private Shop shop;
     private CustomerOrder customerOrder;
 
@@ -21,9 +21,16 @@ public class TestShop {
     }
 
     @Test
-    public void sendsCustomerOrder_ReceivesBlocks() {
+    public void sendsOrderToFactory_ReceivesBlocks() {
         List<Block> blockShipment = shop.sendOrderToFactory(customerOrder);
 
         Assert.assertEquals(3, blockShipment.size());
+    }
+
+    @Test
+    public void sendsOrderToAccountant_ReceivesTotalCost() {
+        int actual = shop.receiveOrder(customerOrder);
+
+        Assert.assertEquals(6, actual);
     }
 }

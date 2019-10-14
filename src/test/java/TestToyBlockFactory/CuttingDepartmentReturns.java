@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InteractsWithDepartments {
+public class DepartmentsReturn {
     private ToyBlockFactory testFactory;
     private List<CuttingOrder> cuttingOrder;
     private List<PaintingOrder> paintingOrder;
@@ -26,14 +26,14 @@ public class InteractsWithDepartments {
     }
 
     @Test
-    public void returnsManyDifferentShapesCut() {
+    public void manyDifferentShapesCut() {
         List<Block> testShapesCut = testFactory.requestShapesCut(cuttingOrder);
 
         Assert.assertEquals(7, testShapesCut.size());
     }
 
     @Test
-    public void returnsShapesInSpecifiedArrangement() {
+    public void shapesInSpecifiedArrangement() {
         List<Block> testShapesOrder = testFactory.requestShapesCut(cuttingOrder);
         Block actual = testShapesOrder.get(2);
 
@@ -41,7 +41,7 @@ public class InteractsWithDepartments {
     }
 
     @Test
-    public void paintsBlocksInOrder() {
+    public void paintedBlocks() {
         testFactory.requestBlocksPainted(paintingOrder);
 
         Assert.assertEquals(Color.RED, paintingOrder.get(0).getBlocksToPaint().get(0).getColor());

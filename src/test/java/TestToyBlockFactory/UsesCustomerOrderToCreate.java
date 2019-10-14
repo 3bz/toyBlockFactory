@@ -6,7 +6,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InterpretsIncomingOrders {
+public class InterpretsOrderToCreate {
     private ToyBlockFactory testFactory;
     private CustomerOrder testCustomerOrder;
 
@@ -21,7 +21,7 @@ public class InterpretsIncomingOrders {
     }
 
     @Test
-    public void createCuttingOrderFromCustomerOrder() {
+    public void cuttingOrder() {
         List<CuttingOrder> testCuttingOrder = testFactory.cuttingOrdersFromCustomerOrder(testCustomerOrder);
 
         Assert.assertEquals(2, testCuttingOrder.get(0).getQuantityToCut());
@@ -29,7 +29,7 @@ public class InterpretsIncomingOrders {
     }
 
     @Test
-    public void createPaintingOrderFromCustomerOrder() {
+    public void paintingOrder() {
         List<Block> blockBatch = new ArrayList<>();
         blockBatch.add(new Block(Shape.SQUARE));
         blockBatch.add(new Block(Shape.SQUARE));

@@ -16,10 +16,9 @@ public class Acceptance {
     }
 
     @Test
-    public void testAll() {
+    public void programReturnsTotalCostOfOrder() {
         int actual = clerk.doTransaction();
 
         Assert.assertEquals(21, actual);
     }
-
 }
