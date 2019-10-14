@@ -1,16 +1,11 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class Accountant {
 
     public Accountant(){}
 
-    public void analyseOrderForCalculating(CustomerOrder customerOrder) {
-        List<Blueprint> expenses = new ArrayList<>();
-        for (Blueprint itemOrder : customerOrder.getSpecification())
-            expenses.add(itemOrder);
-        int totalCost = calculateOrder(expenses);
-        //processInvoice(customerOrder);
+    public int analyseOrderForCalculating(CustomerOrder customerOrder) {
+        return calculateOrder(customerOrder.getSpecification());
     }
 
     public int calculateOrder(List<Blueprint> expenses) {

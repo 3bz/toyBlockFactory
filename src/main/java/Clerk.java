@@ -21,7 +21,7 @@ public class Clerk {
         currentDate = Date.from(Instant.now());
     }
 
-    public int run(){
+    public int doTransaction(){
         customerServing = greetCustomer();
         List<Blueprint> designOrder = drawBlueprints();
         CustomerOrder customerOrder = createCustomerOrder(designOrder);

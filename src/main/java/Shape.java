@@ -1,7 +1,7 @@
 public enum Shape {
     SQUARE(1, 1),
     TRIANGLE(2, 2),
-    CIRCLE(3, 2);
+    CIRCLE(3, 3);
 
     private int price;
     private final int index;

@@ -15,6 +15,6 @@ public class Shop {
     }
 
     public int processOrderCosts(CustomerOrder customerOrder) {
-        return accountant.calculateOrder(customerOrder.getSpecification());
+        return accountant.analyseOrderForCalculating(customerOrder);
     }
 }

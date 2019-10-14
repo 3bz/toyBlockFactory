@@ -2,8 +2,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.HashSet;
-
 public class Acceptance {
     private Clerk clerk;
     private IInput input;
@@ -19,7 +17,7 @@ public class Acceptance {
 
     @Test
     public void testAll() {
-        int actual = clerk.run();
+        int actual = clerk.doTransaction();
 
         Assert.assertEquals(21, actual);
     }

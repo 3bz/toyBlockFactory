@@ -5,6 +5,6 @@ public class Main {
         IOutput output = new ConsoleOutput();
         Clerk clerk = new Clerk(input, output);
 
-        clerk.run();
+        clerk.doTransaction();
     }
 }
