@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestInvoice" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-14T04:33:10" hostname="C02Y309QJG5J" time="0.002">
+<testsuite name="TestInvoice" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-14T04:44:55" hostname="C02Y309QJG5J" time="0.002">
   <properties/>
   <testcase name="invoiceColumnContainsAllShapes" classname="TestInvoice" time="0.001"/>
   <testcase name="triangleRowIsPopulated" classname="TestInvoice" time="0.0"/>

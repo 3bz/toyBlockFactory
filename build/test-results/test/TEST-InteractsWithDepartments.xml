@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InteractsWithDepartments" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-14T04:33:10" hostname="C02Y309QJG5J" time="0.001">
+<testsuite name="InteractsWithDepartments" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-14T04:44:55" hostname="C02Y309QJG5J" time="0.001">
   <properties/>
   <testcase name="returnsManyDifferentShapesCut" classname="InteractsWithDepartments" time="0.0"/>
-  <testcase name="paintsBlocksInOrder" classname="InteractsWithDepartments" time="0.0"/>
+  <testcase name="paintsBlocksInOrder" classname="InteractsWithDepartments" time="0.001"/>
   <testcase name="returnsShapesInSpecifiedArrangement" classname="InteractsWithDepartments" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

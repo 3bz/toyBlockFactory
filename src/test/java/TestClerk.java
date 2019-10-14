@@ -13,7 +13,7 @@ public class TestClerk {
 
     @Before
     public void init() {
-        IInput input = new ConsoleInput();
+        IInput input = new StubInput();
         IOutput output = new ConsoleOutput();
         clerk = new Clerk(input, output);
         testSpec = new ArrayList<>();
@@ -48,7 +48,7 @@ public class TestClerk {
 
     @Test
     public void testDrawingBlueprints() {
-        List<Blueprint> testPrints = clerk.drawBlueprints(1);
+        List<Blueprint> testPrints = clerk.drawBlueprints();
 
         Assert.assertEquals(9, testPrints.size());
     }

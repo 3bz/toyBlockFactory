@@ -23,7 +23,7 @@ public class Clerk {
 
     public void run(){
         greetCustomer();
-        List<Blueprint> designOrder = drawBlueprints(1);
+        List<Blueprint> designOrder = drawBlueprints();
         CustomerOrder customerOrder = createCustomerOrder(designOrder);
     }
 
@@ -41,13 +41,13 @@ public class Clerk {
         return new Customer(name, address);
     }
 
-    public List<Blueprint> drawBlueprints(int quantity) {
-        //int quantity = 0;
+    public List<Blueprint> drawBlueprints() {
+        int quantity = 0;
         List<Blueprint> totalOrder = new ArrayList<>();
         for (Shape aShape : Shape.values()) {
             for (Color aColor : Color.values()) {
-                System.out.println(aColor.name() + " " + aShape.name() + ": ");
-                //quantity = scn.nextInt();
+                output.giveOutput(aColor.name() + " " + aShape.name() + ": ");
+                quantity = input.takeInput();
                 if(quantity > 0)
                     totalOrder.add(new Blueprint(aColor, aShape, quantity));
             }
