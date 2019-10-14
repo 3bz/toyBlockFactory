@@ -8,7 +8,12 @@ public class ConsoleInput implements IInput {
     }
 
     @Override
-    public int takeInput() {
+    public int takeInteger() {
         return scn.nextInt();
+    }
+
+    @Override
+    public String takeString() {
+        return scn.nextLine();
     }
 }

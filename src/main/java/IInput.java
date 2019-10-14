@@ -1,3 +1,4 @@
 public interface IInput {
-    int takeInput();
+    int takeInteger();
+    String takeString();
 }

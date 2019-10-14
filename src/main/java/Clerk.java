@@ -22,32 +22,36 @@ public class Clerk {
     }
 
     public void run(){
-        greetCustomer();
+        customerServing = greetCustomer();
         List<Blueprint> designOrder = drawBlueprints();
         CustomerOrder customerOrder = createCustomerOrder(designOrder);
     }
 
-    private void greetCustomer() {
+    public Customer greetCustomer() {
         output.giveOutput(Constants.WELCOME_MESSAGE);
-        //require input, set input variables
-        customerServing = createNewCustomer("input", "123");
+        output.giveOutput(Constants.NAME_REQUEST);
+        String customerName = input.takeString();
+        output.giveOutput(Constants.ADDRESS_REQUEST);
+        String customerAddress = input.takeString();
+
+        return createNewCustomer(customerName, customerAddress);
+    }
+
+    private Customer createNewCustomer(String name, String address) {
+        return new Customer(name, address);
     }
 
     public List<Block> sendOrderToFactory(CustomerOrder customerOrder) {
         return shop.sendOrderToFactory(customerOrder);
     }
 
-    public Customer createNewCustomer(String name, String address) {
-        return new Customer(name, address);
-    }
-
     public List<Blueprint> drawBlueprints() {
-        int quantity = 0;
+        int quantity;
         List<Blueprint> totalOrder = new ArrayList<>();
         for (Shape aShape : Shape.values()) {
             for (Color aColor : Color.values()) {
                 output.giveOutput(aColor.name() + " " + aShape.name() + ": ");
-                quantity = input.takeInput();
+                quantity = input.takeInteger();
                 if(quantity > 0)
                     totalOrder.add(new Blueprint(aColor, aShape, quantity));
             }

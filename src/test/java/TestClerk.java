@@ -31,10 +31,10 @@ public class TestClerk {
 
     @Test
     public void createsCustomer() {
-        Customer testCustomer = clerk.createNewCustomer("Joe", "TestAddress");
+        Customer testCustomer = clerk.greetCustomer();
 
-        Assert.assertEquals("Joe", testCustomer.getName());
-        Assert.assertEquals("TestAddress", testCustomer.getAddress());
+        Assert.assertEquals("test", testCustomer.getName());
+        Assert.assertEquals("test", testCustomer.getAddress());
     }
 
     @Test
