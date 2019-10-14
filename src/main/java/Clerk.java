@@ -21,10 +21,12 @@ public class Clerk {
         currentDate = Date.from(Instant.now());
     }
 
-    public void run(){
+    public int run(){
         customerServing = greetCustomer();
         List<Blueprint> designOrder = drawBlueprints();
         CustomerOrder customerOrder = createCustomerOrder(designOrder);
+        List<Block> blocksMadeToOrder = sendOrderToFactory(customerOrder);
+        return sendOrderToShop(customerOrder);
     }
 
     public Customer greetCustomer() {
@@ -45,6 +47,10 @@ public class Clerk {
         return shop.sendOrderToFactory(customerOrder);
     }
 
+    public int sendOrderToShop(CustomerOrder customerOrder) {
+        return shop.processOrderCosts(customerOrder);
+    }
+
     public List<Blueprint> drawBlueprints() {
         int quantity;
         List<Blueprint> totalOrder = new ArrayList<>();
@@ -61,6 +67,6 @@ public class Clerk {
 
     public CustomerOrder createCustomerOrder(List<Blueprint> customerRequests) {
         currentOrderNo++;
-        return new CustomerOrder(customerServing, currentDate, currentOrderNo, customerRequests);
+        return new CustomerOrder(customerServing, currentDate, currentOrderNo, customerRequests); //change date
     }
 }

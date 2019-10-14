@@ -13,4 +13,8 @@ public class Shop {
     public List<Block> sendOrderToFactory(CustomerOrder customerOrder) {
         return factory.processCustomerOrder(customerOrder);
     }
+
+    public int processOrderCosts(CustomerOrder customerOrder) {
+        return accountant.calculateOrder(customerOrder.getSpecification());
+    }
 }

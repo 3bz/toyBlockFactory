@@ -9,9 +9,7 @@ public class Blueprint {
         quantityOfBlock = aQuantity;
     }
 
-    public Color getColorPlanned() {
-        return colorPlanned;
-    }
+    public Color getColorPlanned() { return colorPlanned; }
 
     public Shape getShapePlanned() {
         return shapePlanned;

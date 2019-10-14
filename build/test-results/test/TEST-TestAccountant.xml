@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestAccountant" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-14T05:17:09" hostname="C02Y309QJG5J" time="0.002">
+<testsuite name="TestAccountant" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-14T05:38:18" hostname="C02Y309QJG5J" time="0.003">
   <properties/>
   <testcase name="redPaintSurcharge" classname="TestAccountant" time="0.0"/>
   <testcase name="assortedBlockOrder" classname="TestAccountant" time="0.0"/>
   <testcase name="calculateTriangleCost" classname="TestAccountant" time="0.0"/>
   <testcase name="eachShape" classname="TestAccountant" time="0.0"/>
-  <testcase name="assortedOrderWithRedBlocks" classname="TestAccountant" time="0.0"/>
+  <testcase name="assortedOrderWithRedBlocks" classname="TestAccountant" time="0.001"/>
   <testcase name="multipleBlocks" classname="TestAccountant" time="0.0"/>
   <testcase name="calculateSquareCost" classname="TestAccountant" time="0.0"/>
   <testcase name="calculateCircleCost" classname="TestAccountant" time="0.0"/>
