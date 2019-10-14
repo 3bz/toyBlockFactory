@@ -5,10 +5,9 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DepartmentsReturn {
+public class CuttingDepartmentReturns {
     private ToyBlockFactory testFactory;
     private List<CuttingOrder> cuttingOrder;
-    private List<PaintingOrder> paintingOrder;
 
     @Before
     public void init(){
@@ -18,11 +17,6 @@ public class DepartmentsReturn {
         cuttingOrder.add(new CuttingOrder(Shape.SQUARE, 2));
         cuttingOrder.add(new CuttingOrder(Shape.CIRCLE, 3));
         cuttingOrder.add(new CuttingOrder(Shape.TRIANGLE, 2));
-
-        paintingOrder = new ArrayList<>();
-        List<Block> blockList = new ArrayList<>();
-        blockList.add(new Block(Shape.SQUARE));
-        paintingOrder.add(new PaintingOrder(Color.RED, blockList));
     }
 
     @Test
@@ -38,12 +32,5 @@ public class DepartmentsReturn {
         Block actual = testShapesOrder.get(2);
 
         Assert.assertEquals(actual.getShape(), Shape.CIRCLE);
-    }
-
-    @Test
-    public void paintedBlocks() {
-        testFactory.requestBlocksPainted(paintingOrder);
-
-        Assert.assertEquals(Color.RED, paintingOrder.get(0).getBlocksToPaint().get(0).getColor());
     }
 }

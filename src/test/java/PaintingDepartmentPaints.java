@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestPaintingDepartment {
+public class PaintingDepartmentPaints {
     private PaintingDepartment testPaintDept;
     private PaintingOrder testOrder;
     private List<Block> blockList;
@@ -18,7 +18,7 @@ public class TestPaintingDepartment {
     }
 
     @Test
-    public void paintsRedBlock() {
+    public void aRedBlock() {
         testOrder = new PaintingOrder(Color.RED, blockList);
         testPaintDept.fulfillPaintingOrder(testOrder);
 
@@ -26,7 +26,7 @@ public class TestPaintingDepartment {
     }
 
     @Test
-    public void paintsBlueBlock() {
+    public void aBlueBlock() {
         testOrder = new PaintingOrder(Color.BLUE, blockList);
         testPaintDept.fulfillPaintingOrder(testOrder);
 
@@ -34,7 +34,7 @@ public class TestPaintingDepartment {
     }
 
     @Test
-    public void paintsYellowBlock() {
+    public void aYellowBlock() {
         testOrder = new PaintingOrder(Color.YELLOW, blockList);
         testPaintDept.fulfillPaintingOrder(testOrder);
 
@@ -42,7 +42,7 @@ public class TestPaintingDepartment {
     }
 
     @Test
-    public void paintManyBlocks() {
+    public void manyBlocks() {
         testOrder = new PaintingOrder(Color.RED, blockList);
         for (int i = 0; i < 5; i++)
             testOrder.getBlocksToPaint().add(new Block(Shape.CIRCLE));
@@ -53,7 +53,7 @@ public class TestPaintingDepartment {
     }
 
     @Test
-    public void paintDifferentShapesSameColor() {
+    public void differentShapesSameColor() {
         testOrder = new PaintingOrder(Color.RED, blockList);
         testOrder.getBlocksToPaint().add(new Block(Shape.CIRCLE));
         testOrder.getBlocksToPaint().add(new Block(Shape.TRIANGLE));

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InterpretsIncomingOrders" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-14T06:09:39" hostname="C02Y309QJG5J" time="0.001">
-  <properties/>
-  <testcase name="createPaintingOrderFromCustomerOrder" classname="InterpretsIncomingOrders" time="0.001"/>
-  <testcase name="createCuttingOrderFromCustomerOrder" classname="InterpretsIncomingOrders" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

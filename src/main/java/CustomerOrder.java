@@ -17,4 +17,16 @@ public class CustomerOrder {
     public List<Blueprint> getSpecification() {
         return specification;
     }
+
+    public Customer getCustomerDetails() {
+        return customerDetails;
+    }
+
+    public Date getDueDate() {
+        return dueDate;
+    }
+
+    public int getOrderNo() {
+        return orderNo;
+    }
 }

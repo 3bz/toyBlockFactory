@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestAccountant {
+public class AccountantCanCalculate {
     private Accountant acc;
     private List<Blueprint> customerOrder;
 
@@ -16,7 +16,7 @@ public class TestAccountant {
     }
 
     @Test
-    public void calculateSquareCost() {
+    public void squareCost() {
         Blueprint testPrint = new Blueprint(Color.BLUE, Shape.SQUARE, 1);
 
         int expectedCost = 1;
@@ -26,7 +26,7 @@ public class TestAccountant {
     }
 
     @Test
-    public void calculateTriangleCost() {
+    public void triangleCost() {
         Blueprint testPrint = new Blueprint(Color.BLUE, Shape.TRIANGLE, 1);
 
         int expectedCost = 2;
@@ -36,7 +36,7 @@ public class TestAccountant {
     }
 
     @Test
-    public void calculateCircleCost() {
+    public void circleCost() {
         Blueprint testPrint = new Blueprint(Color.BLUE, Shape.CIRCLE, 1);
 
         int expectedCost = 3;
@@ -56,7 +56,7 @@ public class TestAccountant {
     }
 
     @Test
-    public void eachShape() {
+    public void eachShapeInSingleOrder() {
         customerOrder.add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
         customerOrder.add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
         customerOrder.add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
@@ -68,7 +68,7 @@ public class TestAccountant {
     }
 
     @Test
-    public void multipleBlocks() {
+    public void multipleOfTheSameBlock() {
         Blueprint testPrint = new Blueprint(Color.BLUE, Shape.SQUARE, 5);
 
         int expectedCost = 5;

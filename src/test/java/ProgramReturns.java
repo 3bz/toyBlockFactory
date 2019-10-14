@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Acceptance {
+public class ProgramReturns {
     private Clerk clerk;
     private IInput input;
     private IOutput output;
@@ -16,7 +16,7 @@ public class Acceptance {
     }
 
     @Test
-    public void programReturnsTotalCostOfOrder() {
+    public void totalCostOfOrder() {
         int actual = clerk.doTransaction();
 
         Assert.assertEquals(21, actual);

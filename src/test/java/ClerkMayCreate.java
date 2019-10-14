@@ -2,12 +2,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.sql.Date;
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestClerk {
+public class ClerkMayCreate {
     private Clerk clerk;
     private List<Blueprint> testSpec;
 
@@ -21,7 +19,7 @@ public class TestClerk {
     }
 
     @Test
-    public void createsCustomer() {
+    public void aNewCustomer() {
         Customer testCustomer = clerk.greetCustomer();
 
         Assert.assertEquals("test", testCustomer.getName());
@@ -29,7 +27,7 @@ public class TestClerk {
     }
 
     @Test
-    public void createsOrder() {
+    public void anOrder() {
         List<Blueprint> testSpec = new ArrayList<>();
         testSpec.add(new Blueprint(Color.RED, Shape.SQUARE, 1));
         CustomerOrder testOrder = clerk.createCustomerOrder(testSpec);
@@ -38,7 +36,7 @@ public class TestClerk {
     }
 
     @Test
-    public void testDrawingBlueprints() {
+    public void someBlueprints() {
         List<Blueprint> testPrints = clerk.drawBlueprints();
 
         Assert.assertEquals(9, testPrints.size());

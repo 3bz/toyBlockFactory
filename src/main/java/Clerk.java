@@ -58,7 +58,7 @@ public class Clerk {
 
     public CustomerOrder createCustomerOrder(List<Blueprint> customerRequests) {
         currentOrderNo++;
-        return new CustomerOrder(customerServing, currentDate, currentOrderNo, customerRequests); //change date
+        return new CustomerOrder(customerServing, currentDate, currentOrderNo, customerRequests);          //change date
     }
 
     private int sendOrderToShop(CustomerOrder customerOrder) {

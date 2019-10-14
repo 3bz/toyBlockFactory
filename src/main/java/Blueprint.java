@@ -1,12 +1,12 @@
 public class Blueprint {
     private final Color colorPlanned;
     private final Shape shapePlanned;
-    private final int quantityOfBlock;
+    private final int quantity;
 
     public Blueprint(Color aColor, Shape aShape, int aQuantity) {
         colorPlanned = aColor;
         shapePlanned = aShape;
-        quantityOfBlock = aQuantity;
+        quantity = aQuantity;
     }
 
     public Color getColorPlanned() {
@@ -16,7 +16,7 @@ public class Blueprint {
         return shapePlanned;
     }
 
-    public int getQuantityOfBlock() {
-        return quantityOfBlock;
+    public int getQuantity() {
+        return quantity;
     }
 }

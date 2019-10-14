@@ -22,7 +22,13 @@ public class Accountant {
         if (order.getColorPlanned().equals(Color.RED))
             result+= Color.RED.getPrice();
 
-        result *= order.getQuantityOfBlock();
+        result *= order.getQuantity();
         return result;
+    }
+
+    public Invoice writeInvoice(CustomerOrder customerOrder) {
+        Invoice invoice = new Invoice(customerOrder);
+        invoice.applyExpenses();
+
     }
 }

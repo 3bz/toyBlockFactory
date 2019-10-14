@@ -7,7 +7,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PaintingDepartmentReturns {
+public class ConveyorBelt {
     private ToyBlockFactory factory;
     private CustomerOrder customerOrder;
 

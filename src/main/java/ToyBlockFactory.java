@@ -29,7 +29,7 @@ public class ToyBlockFactory {
         List<CuttingOrder> shapeRequests = new ArrayList<>();
         for (Blueprint individualBlockOrder : orderToProcess.getSpecification()) {
             Shape toBeCut = individualBlockOrder.getShapePlanned();
-            int amount = individualBlockOrder.getQuantityOfBlock();
+            int amount = individualBlockOrder.getQuantity();
 
             shapeRequests.add(new CuttingOrder(toBeCut, amount));
         }
@@ -59,7 +59,7 @@ public class ToyBlockFactory {
 
     private List<Block> extractBlocks(Blueprint specificOrder, List<Block> blocksProvided) {
         List<Block> blocksForOrder = new ArrayList<>();
-        for (int i = 0; i < specificOrder.getQuantityOfBlock();) {
+        for (int i = 0; i < specificOrder.getQuantity();) {
             for (Block singleBlock : blocksProvided) {
                 if (singleBlock.getShape().equals(specificOrder.getShapePlanned())) {
                     blocksForOrder.add(singleBlock);

@@ -6,7 +6,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InterpretsOrderToCreate {
+public class UsesCustomerOrderToCreate {
     private ToyBlockFactory testFactory;
     private CustomerOrder testCustomerOrder;
 
