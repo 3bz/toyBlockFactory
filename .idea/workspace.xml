@@ -2,23 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52008851-0e74-4dcb-b922-f26974fb64ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/StockInvoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ConsoleOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CuttingReportTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestInvoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Accountant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Accountant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/StockInvoice.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestAccountant.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestAccountant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestClerk.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestClerk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestCuttingDepartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestCuttingDepartment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestShop.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestShop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestAccountant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestAccountant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestClerk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestClerk.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestCuttingDepartment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestCuttingDepartment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestShop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestShop.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Accountant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accountant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StockInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InvoiceTemplate.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +63,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -87,19 +106,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.Tests in 'toyBlockFactory.test'">
-    <configuration name="StockInvoice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StockInvoice" />
-      <module name="toyBlockFactory.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAccountant.assortedBlockOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestInvoice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestAccountant.assortedBlockOrder&quot;" />
+        <option name="scriptParameters" value="--tests &quot;TestInvoice&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -114,12 +126,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestAccountant.assortedOrderWithRedBlocks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestInvoice.circleRowIsPopulated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestAccountant.assortedOrderWithRedBlocks&quot;" />
+        <option name="scriptParameters" value="--tests &quot;TestInvoice.circleRowIsPopulated&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -134,12 +146,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestAccountant.multipleBlocks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestInvoice.triangleRowIsPopulated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestAccountant.multipleBlocks&quot;" />
+        <option name="scriptParameters" value="--tests &quot;TestInvoice.triangleRowIsPopulated&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestOutput.squareRowIsPopulated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TestOutput.squareRowIsPopulated&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -177,10 +209,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'toyBlockFactory.test'" />
-        <item itemvalue="Application.StockInvoice" />
-        <item itemvalue="Gradle.TestAccountant.assortedOrderWithRedBlocks" />
-        <item itemvalue="Gradle.TestAccountant.assortedBlockOrder" />
-        <item itemvalue="Gradle.TestAccountant.multipleBlocks" />
+        <item itemvalue="Gradle.TestInvoice.circleRowIsPopulated" />
+        <item itemvalue="Gradle.TestInvoice.triangleRowIsPopulated" />
+        <item itemvalue="Gradle.TestInvoice" />
+        <item itemvalue="Gradle.TestOutput.squareRowIsPopulated" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +231,7 @@
       <workItem from="1570573579159" duration="9103000" />
       <workItem from="1570658762560" duration="1128000" />
       <workItem from="1570663107345" duration="15775000" />
-      <workItem from="1571005390446" duration="2412000" />
+      <workItem from="1571005390446" duration="14402000" />
     </task>
     <servers />
   </component>

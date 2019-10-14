@@ -1,9 +1,12 @@
 import java.util.List;
 
 public class Shop {
+    private IOutput output;
     private ToyBlockFactory factory;
 
-    public Shop() {
+    public Shop(IOutput aOutput)
+    {
+        output = aOutput;
         factory = new ToyBlockFactory();
     }
 

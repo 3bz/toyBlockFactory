@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestInvoice" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-14T03:52:19" hostname="C02Y309QJG5J" time="0.002">
+  <properties/>
+  <testcase name="invoiceColumnContainsAllShapes" classname="TestInvoice" time="0.001"/>
+  <testcase name="triangleRowIsPopulated" classname="TestInvoice" time="0.0"/>
+  <testcase name="squareRowIsPopulated" classname="TestInvoice" time="0.0"/>
+  <testcase name="invoiceRowContainsAllColors" classname="TestInvoice" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

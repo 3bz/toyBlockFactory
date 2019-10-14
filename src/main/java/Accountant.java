@@ -30,4 +30,22 @@ public class Accountant {
         result *= order.getQuantityOfBlock();
         return result;
     }
+
+    public int[] findShapeOrders(Shape shape, CustomerOrder order) {
+        int[] shapeOrders = new int[Color.values().length];
+
+        for(Blueprint bp : order.getSpecification()) {
+            if(bp.getShapePlanned().equals(shape)) {
+                for(int i = 0; i < Color.values().length; i++) {
+                    if (bp.getColorPlanned().equals(Color.values()[i]))
+                        shapeOrders[i] = bp.getQuantityOfBlock();
+                }
+            }
+        }
+        return shapeOrders;
+    }
+
+//    public static String fixedLengthString(String string, int length) {
+//        return String.format("%-" + length + "s", string);
+//    }
 }
