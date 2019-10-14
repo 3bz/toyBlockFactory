@@ -20,10 +20,10 @@ public class Invoice {
             message[i+1][3] = String.valueOf(circles[i]);
     }
 
-    public void populateShapeRow(int[] valuesOfShape, Shape shape) {
-        for (int i = 1; i < Color.values().length + 1; i++)
-            message[i][shape.getIndex()] = String.valueOf(valuesOfShape[i]);
-    }
+//    public void populateShapeRow(int[] valuesOfShape, Shape shape) {
+//        for (int i = 1; i < Color.values().length + 1; i++)
+//            message[i][shape.getIndex()] = String.valueOf(valuesOfShape[i]);
+//    }
 
     public String[][] getMessage() {
         return message;

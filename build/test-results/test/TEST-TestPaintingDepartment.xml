@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestPaintingDepartment" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-14T03:52:19" hostname="C02Y309QJG5J" time="0.003">
+<testsuite name="TestPaintingDepartment" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-14T04:33:10" hostname="C02Y309QJG5J" time="0.004">
   <properties/>
   <testcase name="paintDifferentShapesSameColor" classname="TestPaintingDepartment" time="0.002"/>
   <testcase name="paintsBlueBlock" classname="TestPaintingDepartment" time="0.0"/>

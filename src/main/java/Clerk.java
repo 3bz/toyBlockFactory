@@ -2,21 +2,23 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Scanner;
 
 public class Clerk {
+    private IInput input;
+    private IOutput output;
+
     private Shop shop;
     private int currentOrderNo;
     private Date currentDate;
     private Customer customerServing;
-    private Scanner scn;
 
-    public Clerk() {
-        scn = new Scanner(System.in);
+    public Clerk(IInput aInput, IOutput aOutput) {
+        input = aInput;
+        output = aOutput;
+
         shop = new Shop();
         currentOrderNo = 0;
         currentDate = Date.from(Instant.now());
-        //run()
     }
 
     public void run(){
@@ -26,7 +28,7 @@ public class Clerk {
     }
 
     private void greetCustomer() {
-        //some output
+        output.giveOutput(Constants.WELCOME_MESSAGE);
         //require input, set input variables
         customerServing = createNewCustomer("input", "123");
     }

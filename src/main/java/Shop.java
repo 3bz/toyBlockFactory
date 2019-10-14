@@ -1,13 +1,13 @@
 import java.util.List;
 
 public class Shop {
-    private IOutput output;
     private ToyBlockFactory factory;
+    private Accountant accountant;
 
-    public Shop(IOutput aOutput)
+    public Shop()
     {
-        output = aOutput;
         factory = new ToyBlockFactory();
+        accountant = new Accountant();
     }
 
     public List<Block> sendOrderToFactory(CustomerOrder customerOrder) {

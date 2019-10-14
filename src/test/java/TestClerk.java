@@ -13,7 +13,9 @@ public class TestClerk {
 
     @Before
     public void init() {
-        clerk = new Clerk();
+        IInput input = new ConsoleInput();
+        IOutput output = new ConsoleOutput();
+        clerk = new Clerk(input, output);
         testSpec = new ArrayList<>();
         testSpec.add(new Blueprint(Color.RED, Shape.SQUARE, 1));
     }
