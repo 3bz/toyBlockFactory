@@ -6,8 +6,7 @@ public class PaintingDepartment {
     }
 
     public void fulfillPaintingOrder(PaintingOrder aOrder) {
-        for (Block block : aOrder.getBlocksToPaint()) {
+        for (Block block : aOrder.getBlocksToPaint())
             workers.paintBlock(block, aOrder.getColorToPaintBlocks());
-        }
     }
 }

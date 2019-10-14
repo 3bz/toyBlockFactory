@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestClerk" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-14T06:00:21" hostname="C02Y309QJG5J" time="0.002">
+<testsuite name="TestClerk" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-14T06:09:39" hostname="C02Y309QJG5J" time="0.003">
   <properties/>
-  <testcase name="createsOrder" classname="TestClerk" time="0.0"/>
+  <testcase name="createsOrder" classname="TestClerk" time="0.001"/>
   <testcase name="createsCustomer" classname="TestClerk" time="0.0"/>
   <testcase name="testDrawingBlueprints" classname="TestClerk" time="0.001"/>
-  <testcase name="sendsCustomerOrderToShop_ReceivesBlocks" classname="TestClerk" time="0.0"/>
   <system-out><![CDATA[Welcome to the Toy Block Factory!
 Please input your Name: 
 Please input your Name: 

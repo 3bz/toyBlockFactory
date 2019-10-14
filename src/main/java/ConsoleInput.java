@@ -13,7 +13,5 @@ public class ConsoleInput implements IInput {
     }
 
     @Override
-    public String takeString() {
-        return scn.nextLine();
-    }
+    public String takeString() { return scn.nextLine(); }
 }

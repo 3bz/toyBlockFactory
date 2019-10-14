@@ -21,15 +21,6 @@ public class TestClerk {
     }
 
     @Test
-    public void sendsCustomerOrderToShop_ReceivesBlocks() {
-        CustomerOrder customerOrder = new CustomerOrder(new Customer("test", "test"),
-        Date.from(Instant.now()), 1, testSpec);
-        List<Block> blockShipment = clerk.sendOrderToFactory(customerOrder);
-
-        Assert.assertEquals(1, blockShipment.size());
-    }
-
-    @Test
     public void createsCustomer() {
         Customer testCustomer = clerk.greetCustomer();
 

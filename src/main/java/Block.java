@@ -1,5 +1,5 @@
 public class Block {
-    private Shape shape;
+    private final Shape shape;
     private Color color;
 
     public Block(Shape blockShape){
@@ -11,8 +11,7 @@ public class Block {
     }
 
     public Color getColor() {
-        return color;
-    }
+        return color; }
 
     public void setColor(Color aColor) {
         color = aColor;

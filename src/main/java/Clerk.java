@@ -4,10 +4,10 @@ import java.util.Date;
 import java.util.List;
 
 public class Clerk {
-    private IInput input;
-    private IOutput output;
+    private final IInput input;
+    private final IOutput output;
 
-    private Shop shop;
+    private final Shop shop;
     private int currentOrderNo;
     private Date currentDate;
     private Customer customerServing;
@@ -25,7 +25,6 @@ public class Clerk {
         customerServing = greetCustomer();
         List<Blueprint> designOrder = drawBlueprints();
         CustomerOrder customerOrder = createCustomerOrder(designOrder);
-        List<Block> blocksMadeToOrder = sendOrderToFactory(customerOrder);
         return sendOrderToShop(customerOrder);
     }
 
@@ -41,14 +40,6 @@ public class Clerk {
 
     private Customer createNewCustomer(String name, String address) {
         return new Customer(name, address);
-    }
-
-    public List<Block> sendOrderToFactory(CustomerOrder customerOrder) {
-        return shop.sendOrderToFactory(customerOrder);
-    }
-
-    public int sendOrderToShop(CustomerOrder customerOrder) {
-        return shop.processOrderCosts(customerOrder);
     }
 
     public List<Blueprint> drawBlueprints() {
@@ -68,5 +59,9 @@ public class Clerk {
     public CustomerOrder createCustomerOrder(List<Blueprint> customerRequests) {
         currentOrderNo++;
         return new CustomerOrder(customerServing, currentDate, currentOrderNo, customerRequests); //change date
+    }
+
+    private int sendOrderToShop(CustomerOrder customerOrder) {
+        return shop.receiveOrder(customerOrder);
     }
 }

@@ -3,13 +3,13 @@ public enum Color {
     BLUE(0),
     YELLOW(0);
 
-    private int price;
+    private int surcharge;
 
-    Color(int i) {
-        this.price = i;
+    Color(int surcharge) {
+        this.surcharge = surcharge;
     }
 
     public int getPrice() {
-        return price;
+        return surcharge;
     }
 }

@@ -1,21 +1,15 @@
 public enum Shape {
-    SQUARE(1, 1),
-    TRIANGLE(2, 2),
-    CIRCLE(3, 3);
+    SQUARE(1),
+    TRIANGLE(2),
+    CIRCLE(3);
 
-    private int price;
-    private final int index;
+    private final int price;
 
-    Shape(int price, int index) {
+    Shape(int price) {
         this.price = price;
-        this.index = index;
     }
 
     public int getPrice() {
         return price;
-    }
-
-    public int getIndex() {
-        return index;
     }
 }

@@ -14,36 +14,49 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Accountant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Accountant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Block.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/BlockPainter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/BlockPainter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Blueprint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Blueprint.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Clerk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Invoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Shape.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Shop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Acceptance.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Acceptance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestClerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestClerk.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Acceptance.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/Acceptance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/InteractsWithDepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/InteractsWithDepartments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/InterpretsIncomingOrders.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/InterpretsIncomingOrders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ManufacturingProcess.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ManufacturingProcess.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestAccountant.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestAccountant.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestClerk.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestClerk.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestCuttingDepartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestCuttingDepartment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestInvoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestInvoice.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestPaintingDepartment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestShop.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestShop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Acceptance.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-Acceptance.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-InteractsWithDepartments.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-InteractsWithDepartments.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-InterpretsIncomingOrders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-InterpretsIncomingOrders.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ManufacturingProcess.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ManufacturingProcess.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestAccountant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestAccountant.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestClerk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestClerk.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestCuttingDepartment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestCuttingDepartment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestInvoice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestInvoice.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestPaintingDepartment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestShop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestShop.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Accountant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accountant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BlockPainter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BlockPainter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Blueprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blueprint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsoleInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CuttingReportTemplate.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PaintingDepartment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Acceptance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Acceptance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestShop.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -237,7 +250,7 @@
       <workItem from="1570573579159" duration="9103000" />
       <workItem from="1570658762560" duration="1128000" />
       <workItem from="1570663107345" duration="15775000" />
-      <workItem from="1571005390446" duration="20372000" />
+      <workItem from="1571005390446" duration="21392000" />
     </task>
     <servers />
   </component>
