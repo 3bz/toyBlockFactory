@@ -17,15 +17,16 @@ public class Clerk {
         output = aOutput;
 
         shop = new Shop();
-        currentOrderNo = 0;
+        currentOrderNo = 0000;
         currentDate = Date.from(Instant.now());
     }
 
-    public int doTransaction(){
+    public void doTransaction(){
         customerServing = greetCustomer();
         List<Blueprint> designOrder = drawBlueprints();
         CustomerOrder customerOrder = createCustomerOrder(designOrder);
-        return sendOrderToShop(customerOrder);
+        Invoice customerInvoice = sendOrderToShop(customerOrder);
+        output.giveOutput(customerInvoice.getMessage());
     }
 
     public Customer greetCustomer() {
@@ -61,7 +62,7 @@ public class Clerk {
         return new CustomerOrder(customerServing, currentDate, currentOrderNo, customerRequests);          //change date
     }
 
-    private int sendOrderToShop(CustomerOrder customerOrder) {
+    private Invoice sendOrderToShop(CustomerOrder customerOrder) {
         return shop.receiveOrder(customerOrder);
     }
 }

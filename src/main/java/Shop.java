@@ -10,7 +10,7 @@ public class Shop {
         accountant = new Accountant();
     }
 
-    public int receiveOrder(CustomerOrder customerOrder) {
+    public Invoice receiveOrder(CustomerOrder customerOrder) {
         sendOrderToFactory(customerOrder);
         return processOrderCosts(customerOrder);
     }
@@ -19,7 +19,7 @@ public class Shop {
         return factory.processCustomerOrder(customerOrder);
     }
 
-    private int processOrderCosts(CustomerOrder customerOrder) {
+    private Invoice processOrderCosts(CustomerOrder customerOrder) {
         return accountant.analyseOrderForCalculating(customerOrder);
     }
 }

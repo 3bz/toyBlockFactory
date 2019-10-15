@@ -15,10 +15,11 @@ public class ProgramReturns {
         clerk = new Clerk(input, output);
     }
 
-    @Test
-    public void totalCostOfOrder() {
-        int actual = clerk.doTransaction();
-
-        Assert.assertEquals(21, actual);
-    }
+//    @Test
+//    public void totalCostOfOrder() {
+//        clerk.doTransaction();
+//        int actual = testInvoice.getTotal();
+//
+//        Assert.assertEquals(21, actual);
+//    }
 }

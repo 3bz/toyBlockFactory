@@ -6,6 +6,7 @@ public class Invoice {
     private String address;
     private Date dueDate;
     private int orderNo;
+    private int total;
 
     public Invoice(CustomerOrder customerOrder){
         name = customerOrder.getCustomerDetails().getName();
@@ -17,10 +18,27 @@ public class Invoice {
                 "Name: " + name + "\n" +
                 "Address: " + address + "\n" +
                 "Due Date: " + dueDate + "\n" +
-                "Order #: " + orderNo + "\n+";
+                "Order #: " + orderNo + "\n";
     }
 
     public void applyExpenses(int quantity, int total, Shape shape) {
         message+= shape.name() + ": " + quantity + " @ " + "$" + shape.getPrice() + " ppi = $" + total + "\n";
+    }
+
+    public void applyPremiumPaintSurcharge(int quantity, int total, Color color) {
+        message+= color.name() + " Color Surcharge: " + quantity + " @ " + "$" + Color.RED.getPrice() + " ppi = $" + total + "\n";
+    }
+
+    public void applyOrderTotal(int total) {
+        this.total = total;
+        message += "Order Total: " + total + "\n";
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public String getMessage() {
+        return message;
     }
 }

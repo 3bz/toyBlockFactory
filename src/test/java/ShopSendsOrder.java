@@ -29,7 +29,9 @@ public class ShopSendsOrder {
 
     @Test
     public void toAccountant_ReceivesTotalCost() {
-        int actual = shop.receiveOrder(customerOrder);
+        Invoice testInvoice = shop.receiveOrder(customerOrder);
+        int actual = testInvoice.getTotal();
+
 
         Assert.assertEquals(6, actual);
     }

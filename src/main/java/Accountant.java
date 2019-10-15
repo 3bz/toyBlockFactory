@@ -4,8 +4,56 @@ public class Accountant {
 
     public Accountant(){}
 
-    public int analyseOrderForCalculating(CustomerOrder customerOrder) {
-        return calculateOrder(customerOrder.getSpecification());
+    public Invoice analyseOrderForCalculating(CustomerOrder customerOrder) {
+        return writeInvoice(customerOrder);
+    }
+
+    private Invoice writeInvoice(CustomerOrder orders) {
+        Invoice invoice = new Invoice(orders);
+        int cost = 0;
+        int quantity = 0;
+
+        for (Shape shape: Shape.values()) {
+            quantity = findShapeOrders(shape, orders);
+            cost = (shape.getPrice() * quantity);
+            invoice.applyExpenses(quantity, cost, shape);
+        }
+        for (Color color: Color.values()) {
+            if (color.getPrice() > 0)
+                calculatePremiumPaintConsiderations(orders, invoice, color);
+        }
+        invoice.applyOrderTotal(calculateOrder(orders.getSpecification()));
+
+        return invoice;
+    }
+
+    private int findShapeOrders(Shape shape, CustomerOrder order) {
+        int shapeOrders = 0;
+
+        for (Blueprint bp : order.getSpecification()) {
+            if (bp.getShapePlanned().equals(shape)) {
+                shapeOrders++;
+            }
+        }
+        return shapeOrders;
+    }
+
+    private Invoice calculatePremiumPaintConsiderations(CustomerOrder orders, Invoice invoice, Color color) {
+        int blockCount = findSpecifiedColorBlocks(orders.getSpecification(), color);
+        int total = (blockCount * color.getPrice());
+        invoice.applyPremiumPaintSurcharge(blockCount, total, color);
+
+        return invoice;
+    }
+
+    private int findSpecifiedColorBlocks(List<Blueprint> orders, Color color) {
+        int coloredBlockFound = 0;
+        for (Blueprint bp : orders) {
+            if (bp.getColorPlanned().equals(color)) {
+                coloredBlockFound++;
+            }
+        }
+        return coloredBlockFound;
     }
 
     public int calculateOrder(List<Blueprint> expenses) {
@@ -24,11 +72,5 @@ public class Accountant {
 
         result *= order.getQuantity();
         return result;
-    }
-
-    public Invoice writeInvoice(CustomerOrder customerOrder) {
-        Invoice invoice = new Invoice(customerOrder);
-        invoice.applyExpenses();
-
     }
 }
