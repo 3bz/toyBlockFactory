@@ -1,3 +1,5 @@
 public interface IOutput {
-     void giveOutput(String s);
+     void giveString(String s);
+     void giveOutput(Invoice i);
+     void generateItemOption(String color, String shape);
 }

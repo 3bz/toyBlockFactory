@@ -14,11 +14,11 @@ public class Invoice {
         dueDate = customerOrder.getDueDate();
         orderNo = customerOrder.getOrderNo();
 
-        message = "Your invoice report has been generated:\n" +
+        message = "Your invoice report has been generated:\n\n" +
                 "Name: " + name + "\n" +
                 "Address: " + address + "\n" +
                 "Due Date: " + dueDate + "\n" +
-                "Order #: " + orderNo + "\n";
+                "Order #: " + orderNo + "\n\n";
     }
 
     public void applyExpenses(int quantity, int total, Shape shape) {

@@ -10,8 +10,8 @@ public class Accountant {
 
     private Invoice writeInvoice(CustomerOrder orders) {
         Invoice invoice = new Invoice(orders);
-        int cost = 0;
-        int quantity = 0;
+        int cost;
+        int quantity;
 
         for (Shape shape: Shape.values()) {
             quantity = findShapeOrders(shape, orders);
@@ -32,7 +32,7 @@ public class Accountant {
 
         for (Blueprint bp : order.getSpecification()) {
             if (bp.getShapePlanned().equals(shape)) {
-                shapeOrders++;
+                shapeOrders += bp.getQuantity();
             }
         }
         return shapeOrders;
@@ -50,7 +50,7 @@ public class Accountant {
         int coloredBlockFound = 0;
         for (Blueprint bp : orders) {
             if (bp.getColorPlanned().equals(color)) {
-                coloredBlockFound++;
+                coloredBlockFound += bp.getQuantity();
             }
         }
         return coloredBlockFound;

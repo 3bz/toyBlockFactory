@@ -5,21 +5,20 @@ import org.junit.Test;
 public class ProgramReturns {
     private Clerk clerk;
     private IInput input;
-    private IOutput output;
+    private FakeOutput output;
 
 
     @Before
     public void init() {
         input = new StubInput();
-        output = new ConsoleOutput();
+        output = new FakeOutput();
         clerk = new Clerk(input, output);
     }
 
     @Test
     public void totalCostOfOrder() {
-        Invoice testInvoice = clerk.startTransaction();
-        int actual = testInvoice.getTotal();
+        clerk.startTransaction();
 
-        Assert.assertEquals(21, actual);
+        Assert.assertEquals(21, output.getOrderTotal());
     }
 }

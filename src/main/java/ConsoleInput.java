@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ConsoleInput implements IInput {
@@ -9,7 +10,15 @@ public class ConsoleInput implements IInput {
 
     @Override
     public int takeInteger() {
-        return scn.nextInt();
+        int result;
+        try {
+            result = scn.nextInt();
+            return result;
+        } catch (InputMismatchException ex) {
+            System.out.println("Invalid input");
+            scn.nextLine();
+        }
+        return takeInteger();
     }
 
     @Override

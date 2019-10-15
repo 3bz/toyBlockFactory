@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PaintingDepartmentPaints" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-15T21:43:08" hostname="C02Y309QJG5J" time="0.001">
+  <properties/>
+  <testcase name="differentShapesSameColor" classname="PaintingDepartmentPaints" time="0.0"/>
+  <testcase name="aRedBlock" classname="PaintingDepartmentPaints" time="0.0"/>
+  <testcase name="aYellowBlock" classname="PaintingDepartmentPaints" time="0.0"/>
+  <testcase name="manyBlocks" classname="PaintingDepartmentPaints" time="0.001"/>
+  <testcase name="aBlueBlock" classname="PaintingDepartmentPaints" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

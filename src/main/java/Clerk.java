@@ -21,20 +21,19 @@ public class Clerk {
         currentDate = Date.from(Instant.now());
     }
 
-    public Invoice startTransaction() {
+    public void startTransaction(){
         customerServing = greetCustomer();
         List<Blueprint> designOrder = drawBlueprints();
         CustomerOrder customerOrder = createCustomerOrder(designOrder);
         Invoice customerInvoice = sendOrderToShop(customerOrder);
-        output.giveOutput(customerInvoice.getMessage());
-        return customerInvoice;
+        output.giveOutput(customerInvoice);
     }
 
     public Customer greetCustomer() {
-        output.giveOutput(Constants.WELCOME_MESSAGE);
-        output.giveOutput(Constants.NAME_REQUEST);
+        output.giveString(Constants.WELCOME_MESSAGE);
+        output.giveString(Constants.NAME_REQUEST);
         String customerName = input.takeString();
-        output.giveOutput(Constants.ADDRESS_REQUEST);
+        output.giveString(Constants.ADDRESS_REQUEST);
         String customerAddress = input.takeString();
 
         return createNewCustomer(customerName, customerAddress);
@@ -49,7 +48,7 @@ public class Clerk {
         List<Blueprint> totalOrder = new ArrayList<>();
         for (Shape aShape : Shape.values()) {
             for (Color aColor : Color.values()) {
-                output.giveOutput(aColor.name() + " " + aShape.name() + ": ");
+                output.generateItemOption(aColor.name().toLowerCase(), aShape.name().toLowerCase());
                 quantity = input.takeInteger();
                 if(quantity > 0)
                     totalOrder.add(new Blueprint(aColor, aShape, quantity));
