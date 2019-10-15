@@ -21,12 +21,13 @@ public class Clerk {
         currentDate = Date.from(Instant.now());
     }
 
-    public void doTransaction(){
+    public Invoice startTransaction() {
         customerServing = greetCustomer();
         List<Blueprint> designOrder = drawBlueprints();
         CustomerOrder customerOrder = createCustomerOrder(designOrder);
         Invoice customerInvoice = sendOrderToShop(customerOrder);
         output.giveOutput(customerInvoice.getMessage());
+        return customerInvoice;
     }
 
     public Customer greetCustomer() {

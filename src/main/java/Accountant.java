@@ -2,7 +2,7 @@ import java.util.List;
 
 public class Accountant {
 
-    public Accountant(){}
+    public Accountant() {}
 
     public Invoice analyseOrderForCalculating(CustomerOrder customerOrder) {
         return writeInvoice(customerOrder);

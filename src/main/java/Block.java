@@ -2,7 +2,7 @@ public class Block {
     private final Shape shape;
     private Color color;
 
-    public Block(Shape blockShape){
+    public Block(Shape blockShape) {
         shape = blockShape;
     }
 
@@ -11,7 +11,8 @@ public class Block {
     }
 
     public Color getColor() {
-        return color; }
+        return color;
+    }
 
     public void setColor(Color aColor) {
         color = aColor;

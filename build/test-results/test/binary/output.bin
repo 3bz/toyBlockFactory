@@ -1,24 +1,23 @@
-
-	RED SQUARE: 
-
-	BLUE SQUARE: 
-
-	YELLOW SQUARE: 
-
-	RED TRIANGLE: 
-
-	BLUE TRIANGLE: 
-
-	YELLOW TRIANGLE: 
-
-	RED CIRCLE: 
-
-	BLUE CIRCLE: 
-
-	YELLOW CIRCLE: 
-
-"Welcome to the Toy Block Factory!
-
-Please input your Name: 
-
-Please input your Address: 
+"Welcome to the Toy Block Factory!
+Please input your Name: 
+Please input your Address: 
+RED SQUARE: 
+BLUE SQUARE: 
+YELLOW SQUARE: 
+RED TRIANGLE: 
+BLUE TRIANGLE: 
+YELLOW TRIANGLE: 
+RED CIRCLE: 
+BLUE CIRCLE: 
+YELLOW CIRCLE: 
+(Your invoice report has been generated:
+Name: test
+Address: test
+(Due Date: Tue Oct 15 13:02:13 AEDT 2019
+Order #: 1
+SQUARE: 3 @ $1 ppi = $3
+TRIANGLE: 3 @ $2 ppi = $6
+CIRCLE: 3 @ $3 ppi = $9
+%RED Color Surcharge: 3 @ $1 ppi = $3
+Order Total: 21
+

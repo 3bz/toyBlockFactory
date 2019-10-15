@@ -1,17 +1,17 @@
 public class CuttingOrder {
-    private int quantityToCut;
     private Shape shapeToCut;
+    private int quantityToCut;
 
-    public CuttingOrder(Shape aShape, int aQuantity){
+    public CuttingOrder(Shape aShape, int aQuantity) {
         quantityToCut = aQuantity;
         shapeToCut = aShape;
     }
 
-    public int getQuantityToCut() {
-        return quantityToCut;
-    }
-
     public Shape getShapeToCut() {
         return shapeToCut;
+    }
+
+    public int getQuantityToCut() {
+        return quantityToCut;
     }
 }

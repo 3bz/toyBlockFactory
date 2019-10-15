@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ProgramReturns" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-15T02:02:13" hostname="C02Y309QJG5J" time="0.024">
+  <properties/>
+  <testcase name="totalCostOfOrder" classname="ProgramReturns" time="0.024"/>
+  <system-out><![CDATA[Welcome to the Toy Block Factory!
+Please input your Name: 
+Please input your Address: 
+RED SQUARE: 
+BLUE SQUARE: 
+YELLOW SQUARE: 
+RED TRIANGLE: 
+BLUE TRIANGLE: 
+YELLOW TRIANGLE: 
+RED CIRCLE: 
+BLUE CIRCLE: 
+YELLOW CIRCLE: 
+Your invoice report has been generated:
+Name: test
+Address: test
+Due Date: Tue Oct 15 13:02:13 AEDT 2019
+Order #: 1
+SQUARE: 3 @ $1 ppi = $3
+TRIANGLE: 3 @ $2 ppi = $6
+CIRCLE: 3 @ $3 ppi = $9
+RED Color Surcharge: 3 @ $1 ppi = $3
+Order Total: 21
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

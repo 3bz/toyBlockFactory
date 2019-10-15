@@ -4,8 +4,7 @@ public class Shop {
     private ToyBlockFactory factory;
     private Accountant accountant;
 
-    public Shop()
-    {
+    public Shop() {
         factory = new ToyBlockFactory();
         accountant = new Accountant();
     }

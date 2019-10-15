@@ -7,7 +7,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConveyorBelt {
+public class OrderOfOperations {
     private ToyBlockFactory factory;
     private CustomerOrder customerOrder;
 
@@ -21,7 +21,7 @@ public class ConveyorBelt {
     }
 
     @Test
-    public void usesCutBlocksToSatisfyPaintingOrder() {
+    public void cutsBlocksToSatisfyPaintingOrder() {
         List<CuttingOrder> cuttingOrders = factory.cuttingOrdersFromCustomerOrder(customerOrder);
         List<Block> newlyCutBlocks = factory.requestShapesCut(cuttingOrders);
         List<PaintingOrder> paintingOrders = factory.paintingOrdersFromCustomerOrder(customerOrder, newlyCutBlocks);

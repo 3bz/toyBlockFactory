@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ShopSendsOrder" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-15T01:29:26" hostname="C02Y309QJG5J" time="0.02">
-  <properties/>
-  <testcase name="toFactory_ReceivesBlocks" classname="ShopSendsOrder" time="0.006"/>
-  <testcase name="toAccountant_ReceivesTotalCost" classname="ShopSendsOrder" time="0.014"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

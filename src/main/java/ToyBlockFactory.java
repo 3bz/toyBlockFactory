@@ -18,13 +18,6 @@ public class ToyBlockFactory {
         return bundleOrder(paintingOrders);
     }
 
-    private List<Block> bundleOrder(List<PaintingOrder> paintedBlocks) {
-        List<Block> completedOrder = new ArrayList<>();
-        for (PaintingOrder singleOrder : paintedBlocks)
-            completedOrder.addAll(singleOrder.getBlocksToPaint());
-        return completedOrder;
-    }
-
     public List<CuttingOrder> cuttingOrdersFromCustomerOrder(CustomerOrder orderToProcess) {
         List<CuttingOrder> shapeRequests = new ArrayList<>();
         for (Blueprint individualBlockOrder : orderToProcess.getSpecification()) {
@@ -74,5 +67,12 @@ public class ToyBlockFactory {
         for (PaintingOrder differentColorRequested : listOfPaintingOrders)
             paintingDepartment.fulfillPaintingOrder(differentColorRequested);
 
+    }
+
+    private List<Block> bundleOrder(List<PaintingOrder> paintedBlocks) {
+        List<Block> completedOrder = new ArrayList<>();
+        for (PaintingOrder singleOrder : paintedBlocks)
+            completedOrder.addAll(singleOrder.getBlocksToPaint());
+        return completedOrder;
     }
 }

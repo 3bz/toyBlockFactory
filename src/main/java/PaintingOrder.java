@@ -9,11 +9,11 @@ public class PaintingOrder {
         blocksToPaint = blocks;
     }
 
-    public List<Block> getBlocksToPaint() {
-        return blocksToPaint;
-    }
-
     public Color getColorToPaintBlocks() {
         return colorToPaintBlocks;
+    }
+
+    public List<Block> getBlocksToPaint() {
+        return blocksToPaint;
     }
 }

@@ -10,7 +10,8 @@ public class Blueprint {
     }
 
     public Color getColorPlanned() {
-        return colorPlanned; }
+        return colorPlanned;
+    }
 
     public Shape getShapePlanned() {
         return shapePlanned;

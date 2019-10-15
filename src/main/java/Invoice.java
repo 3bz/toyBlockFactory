@@ -8,7 +8,7 @@ public class Invoice {
     private int orderNo;
     private int total;
 
-    public Invoice(CustomerOrder customerOrder){
+    public Invoice(CustomerOrder customerOrder) {
         name = customerOrder.getCustomerDetails().getName();
         address = customerOrder.getCustomerDetails().getAddress();
         dueDate = customerOrder.getDueDate();
