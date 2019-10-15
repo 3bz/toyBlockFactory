@@ -5,8 +5,8 @@ public class ConsoleOutput implements IOutput {
     }
 
     @Override
-    public void giveOutput(Invoice i) {
-        System.out.println(i.getMessage());
+    public void giveOutput(Invoice invoice) {
+        System.out.println(invoice.getMessage());
     }
 
     @Override
