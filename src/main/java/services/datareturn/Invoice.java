@@ -6,7 +6,7 @@ import services.userdata.CustomerOrder;
 
 import java.util.Date;
 
-public class    Invoice {
+public class Invoice {
     private String message;
     private String name;
     private String address;
@@ -32,7 +32,7 @@ public class    Invoice {
     }
 
     public void applyPremiumPaintSurcharge(int quantity, int total, Color color) {
-        message+= color.name() + " services.factory.model.Color Surcharge: " + quantity + " @ " + "$" + Color.RED.getPrice() + " ppi = $" + total + "\n";
+        message+= color.name() + " Color Surcharge: " + quantity + " @ " + "$" + Color.RED.getPrice() + " ppi = $" + total + "\n";
     }
 
     public void applyOrderTotal(int total) {
