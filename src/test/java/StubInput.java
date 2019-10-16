@@ -1,3 +1,5 @@
+import io.IInput;
+
 public class StubInput implements IInput {
     @Override
     public int takeInteger() {

@@ -1,6 +1,15 @@
+import services.factory.Block;
+import services.factory.ToyBlockFactory;
+import services.factory.model.Color;
+import services.factory.model.CuttingOrder;
+import services.factory.model.PaintingOrder;
+import services.factory.model.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import services.userdata.Blueprint;
+import services.userdata.Customer;
+import services.userdata.CustomerOrder;
 
 import java.sql.Date;
 import java.time.Instant;

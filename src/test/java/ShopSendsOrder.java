@@ -1,6 +1,14 @@
+import services.datareturn.Invoice;
+import services.factory.Block;
+import services.factory.model.Color;
+import services.factory.model.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import services.Shop;
+import services.userdata.Blueprint;
+import services.userdata.Customer;
+import services.userdata.CustomerOrder;
 
 import java.sql.Date;
 import java.time.Instant;

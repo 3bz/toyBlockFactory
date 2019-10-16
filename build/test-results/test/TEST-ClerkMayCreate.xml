@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ClerkMayCreate" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-15T21:43:08" hostname="C02Y309QJG5J" time="0.006">
+<testsuite name="ClerkMayCreate" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-15T23:54:11" hostname="C02Y309QJG5J" time="0.006">
   <properties/>
   <testcase name="someBlueprints" classname="ClerkMayCreate" time="0.005"/>
   <testcase name="aNewCustomer" classname="ClerkMayCreate" time="0.001"/>
   <testcase name="anOrder" classname="ClerkMayCreate" time="0.0"/>
-  <system-out><![CDATA[RED SQUARE: 
-BLUE SQUARE: 
-YELLOW SQUARE: 
-RED TRIANGLE: 
-BLUE TRIANGLE: 
-YELLOW TRIANGLE: 
-RED CIRCLE: 
-BLUE CIRCLE: 
-YELLOW CIRCLE: 
-Welcome to the Toy Block Factory!
+  <system-out><![CDATA[Please input the number of red squares: 
+Please input the number of blue squares: 
+Please input the number of yellow squares: 
+Please input the number of red triangles: 
+Please input the number of blue triangles: 
+Please input the number of yellow triangles: 
+Please input the number of red circles: 
+Please input the number of blue circles: 
+Please input the number of yellow circles: 
+Welcome to the Toy services.factory.Block Factory!
 Please input your name: 
 Please input your address: 
 ]]></system-out>

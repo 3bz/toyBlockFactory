@@ -1,3 +1,8 @@
+import services.factory.mutation.PaintingDepartment;
+import services.factory.Block;
+import services.factory.model.Color;
+import services.factory.model.PaintingOrder;
+import services.factory.model.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

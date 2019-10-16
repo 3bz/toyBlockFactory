@@ -1,6 +1,15 @@
+import io.ConsoleOutput;
+import io.IInput;
+import io.IOutput;
+import services.factory.model.Color;
+import services.factory.model.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import services.userdata.Blueprint;
+import services.userdata.Clerk;
+import services.userdata.Customer;
+import services.userdata.CustomerOrder;
 
 import java.util.ArrayList;
 import java.util.List;
