@@ -26,7 +26,7 @@ public class Clerk {
         output = aOutput;
 
         shop = new Shop();
-        currentOrderNo = 0000;
+        currentOrderNo = 0;
         currentDate = Date.from(Instant.now());
     }
 
@@ -68,7 +68,7 @@ public class Clerk {
 
     public CustomerOrder createCustomerOrder(List<Blueprint> customerRequests) {
         currentOrderNo++;
-        return new CustomerOrder(customerServing, currentDate, currentOrderNo, customerRequests);          //change date
+        return new CustomerOrder(customerServing, currentDate, currentOrderNo, customerRequests);
     }
 
     private Invoice sendOrderToShop(CustomerOrder customerOrder) {

@@ -32,7 +32,7 @@ public class Invoice {
     }
 
     public void applyPremiumPaintSurcharge(int quantity, int total, Color color) {
-        message+= color.name() + " Color Surcharge: " + quantity + " @ " + "$" + Color.RED.getPrice() + " ppi = $" + total + "\n";
+        message+= color.name() + " Color Surcharge: " + quantity + " @ " + "$" + color.getPrice() + " ppi = $" + total + "\n";
     }
 
     public void applyOrderTotal(int total) {
