@@ -45,12 +45,11 @@ public class Accountant {
         return shapeOrders;
     }
 
-    private Invoice calculatePremiumPaintConsiderations(CustomerOrder orders, Invoice invoice, Color color) {
+    private void calculatePremiumPaintConsiderations(CustomerOrder orders, Invoice invoice, Color color) {
         int blockCount = findSpecifiedColorBlocks(orders.getSpecification(), color);
         int total = (blockCount * color.getPrice());
         invoice.applyPremiumPaintSurcharge(blockCount, total, color);
 
-        return invoice;
     }
 
     private int findSpecifiedColorBlocks(List<Blueprint> orders, Color color) {
@@ -74,8 +73,8 @@ public class Accountant {
     public int calculateCost(Blueprint order) {
         int result = 0;
         result += order.getShapePlanned().getPrice();
-        if (order.getColorPlanned().equals(Color.RED))
-            result+= Color.RED.getPrice();
+        if (order.getColorPlanned().getPrice() > 0)
+            result += order.getColorPlanned().getPrice();
 
         result *= order.getQuantity();
         return result;
