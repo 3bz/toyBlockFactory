@@ -1,7 +1,7 @@
 import services.factory.Block;
 import services.factory.ToyBlockFactory;
-import services.factory.model.CuttingOrder;
-import services.factory.model.Shape;
+import services.factory.shaping.CuttingOrder;
+import services.factory.shaping.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

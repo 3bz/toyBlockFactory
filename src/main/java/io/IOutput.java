@@ -1,6 +1,6 @@
 package io;
 
-import services.datareturn.Invoice;
+import services.reporting.Invoice;
 
 public interface IOutput {
      void giveString(String s);

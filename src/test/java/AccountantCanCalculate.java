@@ -1,10 +1,10 @@
-import services.datareturn.Accountant;
-import services.factory.model.Color;
-import services.factory.model.Shape;
+import services.reporting.Accountant;
+import services.factory.painting.Color;
+import services.factory.shaping.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import services.userdata.Blueprint;
+import services.ordering.Blueprint;
 
 import java.util.ArrayList;
 import java.util.List;

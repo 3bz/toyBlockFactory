@@ -1,6 +1,6 @@
 package io;
 
-import services.datareturn.Invoice;
+import services.reporting.Invoice;
 
 public class ConsoleOutput implements IOutput {
 

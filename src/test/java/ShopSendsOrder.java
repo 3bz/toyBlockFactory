@@ -1,14 +1,17 @@
-import services.datareturn.Invoice;
+import io.ConsoleInput;
+import io.ConsoleOutput;
+import services.ordering.Clerk;
+import services.reporting.Invoice;
 import services.factory.Block;
-import services.factory.model.Color;
-import services.factory.model.Shape;
+import services.factory.painting.Color;
+import services.factory.shaping.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import services.ordering.Blueprint;
+import services.ordering.Customer;
+import services.ordering.CustomerOrder;
 import services.Shop;
-import services.userdata.Blueprint;
-import services.userdata.Customer;
-import services.userdata.CustomerOrder;
 
 import java.sql.Date;
 import java.time.Instant;
@@ -21,7 +24,9 @@ public class ShopSendsOrder {
 
     @Before
     public void init() {
-        shop = new Shop();
+        Clerk clerk = new Clerk(new ConsoleInput(), new ConsoleOutput());
+        shop = new Shop(clerk);
+
         List<Blueprint> testSpec = new ArrayList<>();
         testSpec.add(new Blueprint(Color.RED, Shape.SQUARE, 3));
         customerOrder = new CustomerOrder(new Customer("test", "test"),
@@ -30,14 +35,14 @@ public class ShopSendsOrder {
 
     @Test
     public void toFactory_ReceivesBlocks() {
-        List<Block> blockShipment = shop.sendOrderToFactory(customerOrder);
+        List<Block> blockShipment = shop.getBlocks(customerOrder);
 
         Assert.assertEquals(3, blockShipment.size());
     }
 
     @Test
     public void toAccountant_ReceivesTotalCost() {
-        Invoice testInvoice = shop.receiveOrder(customerOrder);
+        Invoice testInvoice = shop.getInvoice(customerOrder);
         int actual = testInvoice.getTotal();
 
 

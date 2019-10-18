@@ -1,26 +1,25 @@
 import io.ConsoleOutput;
-import io.IInput;
 import io.IOutput;
-import services.factory.model.Color;
-import services.factory.model.Shape;
+import services.factory.painting.Color;
+import services.factory.shaping.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import services.userdata.Blueprint;
-import services.userdata.Clerk;
-import services.userdata.Customer;
-import services.userdata.CustomerOrder;
+import services.ordering.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ClerkMayCreate {
+    private final String USERNAME = "test";
+    private final int ORDER_QUANTITY = 1;
+
     private Clerk clerk;
     private List<Blueprint> testSpec;
 
     @Before
     public void init() {
-        IInput input = new StubInput();
+        StubInput input = new StubInput(USERNAME, ORDER_QUANTITY);
         IOutput output = new ConsoleOutput();
         clerk = new Clerk(input, output);
         testSpec = new ArrayList<>();
@@ -29,19 +28,16 @@ public class ClerkMayCreate {
 
     @Test
     public void aNewCustomer() {
-        Customer testCustomer = clerk.greetCustomer();
+        CustomerOrder testOrder = clerk.getCustomerOrder();
 
-        Assert.assertEquals("test", testCustomer.getName());
-        Assert.assertEquals("test", testCustomer.getAddress());
+        Assert.assertEquals(USERNAME, testOrder.getCustomerDetails().getName());
     }
 
     @Test
     public void anOrder() {
-        List<Blueprint> testSpec = new ArrayList<>();
-        testSpec.add(new Blueprint(Color.RED, Shape.SQUARE, 1));
-        CustomerOrder testOrder = clerk.createCustomerOrder(testSpec);
+        CustomerOrder testOrder = clerk.getCustomerOrder();
 
-        Assert.assertEquals(1, testOrder.getSpecification().size());
+        Assert.assertEquals(9, testOrder.getSpecification().size());
     }
 
     @Test

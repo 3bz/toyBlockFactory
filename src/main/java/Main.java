@@ -2,7 +2,8 @@ import io.ConsoleInput;
 import io.ConsoleOutput;
 import io.IInput;
 import io.IOutput;
-import services.userdata.Clerk;
+import services.Shop;
+import services.ordering.Clerk;
 
 /**
  * The Toy Block Factory simulates the beginnings of an Order Management System.
@@ -29,6 +30,7 @@ public class Main {
         IOutput output = new ConsoleOutput();
         Clerk clerk = new Clerk(input, output);
 
-        clerk.startTransaction();
+        Shop shop = new Shop(clerk);
+        shop.startTransaction();
     }
 }

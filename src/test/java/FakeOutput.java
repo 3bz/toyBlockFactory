@@ -1,4 +1,4 @@
-import services.datareturn.Invoice;
+import services.reporting.Invoice;
 import io.IOutput;
 
 public class FakeOutput implements IOutput {
