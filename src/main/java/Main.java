@@ -1,7 +1,4 @@
-import io.ConsoleInput;
-import io.ConsoleOutput;
-import io.IInput;
-import io.IOutput;
+import io.*;
 import services.Shop;
 import services.ordering.Clerk;
 

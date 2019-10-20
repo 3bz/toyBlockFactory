@@ -6,10 +6,10 @@ import services.Shop;
 import services.ordering.Clerk;
 
 public class ProgramReturns {
-    private Clerk clerk;
-    private Shop shop;
     private IInput input;
     private FakeOutput output;
+    private Clerk clerk;
+    private Shop shop;
 
     private final String USERNAME = "test";
     private final int ORDER_QUANTITY = 1;

@@ -1,9 +1,5 @@
 package services;
 
-import io.ConsoleInput;
-import io.ConsoleOutput;
-import io.IInput;
-import io.IOutput;
 import services.reporting.Accountant;
 import services.reporting.Invoice;
 import services.factory.Block;

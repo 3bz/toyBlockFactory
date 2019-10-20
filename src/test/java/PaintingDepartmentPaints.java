@@ -48,10 +48,10 @@ public class PaintingDepartmentPaints {
 
     @Test
     public void manyBlocks() {
-        testOrder = new PaintingOrder(Color.RED, blockList);
         for (int i = 0; i < 5; i++)
-            testOrder.getBlocksToPaint().add(new Block(Shape.CIRCLE));
+            blockList.add(new Block(Shape.SQUARE));
 
+        testOrder = new PaintingOrder(Color.RED, blockList);
         testPaintDept.fulfillPaintingOrder(testOrder);
 
         Assert.assertTrue(isCollectionPainted(Color.RED, testOrder.getBlocksToPaint()));
@@ -59,9 +59,9 @@ public class PaintingDepartmentPaints {
 
     @Test
     public void differentShapesSameColor() {
+        blockList.add(new Block(Shape.CIRCLE));
+        blockList.add(new Block(Shape.TRIANGLE));
         testOrder = new PaintingOrder(Color.RED, blockList);
-        testOrder.getBlocksToPaint().add(new Block(Shape.CIRCLE));
-        testOrder.getBlocksToPaint().add(new Block(Shape.TRIANGLE));
 
         testPaintDept.fulfillPaintingOrder(testOrder);
 

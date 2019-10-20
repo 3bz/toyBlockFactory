@@ -1,7 +1,5 @@
 package services.factory.shaping;
 
-import services.factory.shaping.Shape;
-
 public class CuttingOrder {
     private Shape shapeToCut;
     private int quantityToCut;

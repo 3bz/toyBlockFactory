@@ -1,29 +1,25 @@
 import io.ConsoleOutput;
 import io.IOutput;
-import services.factory.painting.Color;
-import services.factory.shaping.Shape;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import services.ordering.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ClerkMayCreate {
     private final String USERNAME = "test";
     private final int ORDER_QUANTITY = 1;
+    private final int ONE_OF_EACH_OPTION = 9;
 
     private Clerk clerk;
-    private List<Blueprint> testSpec;
 
     @Before
     public void init() {
         StubInput input = new StubInput(USERNAME, ORDER_QUANTITY);
         IOutput output = new ConsoleOutput();
         clerk = new Clerk(input, output);
-        testSpec = new ArrayList<>();
-        testSpec.add(new Blueprint(Color.RED, Shape.SQUARE, 1));
     }
 
     @Test
@@ -34,16 +30,16 @@ public class ClerkMayCreate {
     }
 
     @Test
-    public void anOrder() {
-        CustomerOrder testOrder = clerk.getCustomerOrder();
+    public void someBlueprints() {
+        List<Blueprint> testPrints = clerk.getCustomerOrder().getSpecification();
 
-        Assert.assertEquals(9, testOrder.getSpecification().size());
+        Assert.assertEquals(ONE_OF_EACH_OPTION, testPrints.size());
     }
 
     @Test
-    public void someBlueprints() {
-        List<Blueprint> testPrints = clerk.drawBlueprints();
+    public void anOrder() {
+        CustomerOrder testOrder = clerk.getCustomerOrder();
 
-        Assert.assertEquals(9, testPrints.size());
+        Assert.assertEquals(ONE_OF_EACH_OPTION, testOrder.getSpecification().size());
     }
 }

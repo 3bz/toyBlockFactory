@@ -27,8 +27,10 @@ public class ShopSendsOrder {
         Clerk clerk = new Clerk(new ConsoleInput(), new ConsoleOutput());
         shop = new Shop(clerk);
 
+        Blueprint testDesign = new Blueprint(Color.RED, Shape.SQUARE, 3);
         List<Blueprint> testSpec = new ArrayList<>();
-        testSpec.add(new Blueprint(Color.RED, Shape.SQUARE, 3));
+        testSpec.add(testDesign);
+
         customerOrder = new CustomerOrder(new Customer("test", "test"),
                 Date.from(Instant.now()), 1, testSpec);
     }
@@ -41,11 +43,11 @@ public class ShopSendsOrder {
     }
 
     @Test
-    public void toAccountant_ReceivesTotalCost() {
+    public void toAccountant_ReceivesInvoice() {
         Invoice testInvoice = shop.getInvoice(customerOrder);
-        int actual = testInvoice.getTotal();
+        int invoiceTotal = testInvoice.getTotal();
 
 
-        Assert.assertEquals(6, actual);
+        Assert.assertEquals(6, invoiceTotal);
     }
 }

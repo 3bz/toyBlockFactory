@@ -43,7 +43,7 @@ public class Clerk {
         return new Customer(customerName, customerAddress);
     }
 
-    public List<Blueprint> drawBlueprints() {
+    private List<Blueprint> drawBlueprints() {
         int quantity;
         List<Blueprint> totalOrder = new ArrayList<>();
         for (Shape aShape : Shape.values()) {
@@ -57,7 +57,7 @@ public class Clerk {
         return totalOrder;
     }
 
-    public CustomerOrder createCustomerOrder(Customer aCustomer, List<Blueprint> designs) {
+    private CustomerOrder createCustomerOrder(Customer aCustomer, List<Blueprint> designs) {
         currentDate = Date.from(Instant.now());
         currentOrderNo++;
         return new CustomerOrder(aCustomer, currentDate, currentOrderNo, designs);
