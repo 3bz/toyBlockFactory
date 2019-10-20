@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CuttingDepartment {
-    private ICutShapes workers;
+    private BlockCutter workers;
 
     public CuttingDepartment() {
         workers = new BlockCutter();

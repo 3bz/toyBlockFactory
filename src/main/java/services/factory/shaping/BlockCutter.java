@@ -2,9 +2,8 @@ package services.factory.shaping;
 
 import services.factory.Block;
 
-public class BlockCutter implements ICutShapes {
+public class BlockCutter {
 
-    @Override
     public Block cutBlock(Shape blockShape) {
         return new Block(blockShape);
     }

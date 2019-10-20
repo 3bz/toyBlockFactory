@@ -3,7 +3,7 @@ package services.factory.painting;
 import services.factory.Block;
 
 public class PaintingDepartment {
-    private IPaintBlocks workers;
+    private BlockPainter workers;
 
     public PaintingDepartment(){
         workers = new BlockPainter();

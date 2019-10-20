@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CuttingDepartmentCuts" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-20T23:41:11" hostname="C02Y309QJG5J" time="0.002">
+  <properties/>
+  <testcase name="andReturnsManyBlocks" classname="CuttingDepartmentCuts" time="0.001"/>
+  <testcase name="aCircleBlock" classname="CuttingDepartmentCuts" time="0.0"/>
+  <testcase name="aSquareBlock" classname="CuttingDepartmentCuts" time="0.0"/>
+  <testcase name="aTriangleBlock" classname="CuttingDepartmentCuts" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
