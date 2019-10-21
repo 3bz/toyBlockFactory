@@ -1,9 +1,9 @@
 import services.factory.Block;
 import services.factory.ToyBlockFactory;
 import services.factory.painting.Color;
-import services.factory.shaping.CuttingOrder;
+import services.factory.cutting.CuttingOrder;
 import services.factory.painting.PaintingOrder;
-import services.factory.shaping.Shape;
+import services.factory.cutting.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,7 +1,7 @@
 package services.reporting;
 
 import services.factory.painting.Color;
-import services.factory.shaping.Shape;
+import services.factory.cutting.Shape;
 import services.ordering.CustomerOrder;
 
 import java.util.Date;

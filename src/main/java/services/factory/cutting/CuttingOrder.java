@@ -1,4 +1,4 @@
-package services.factory.shaping;
+package services.factory.cutting;
 
 public class CuttingOrder {
     private Shape shapeToCut;

@@ -1,4 +1,4 @@
-package services.factory.shaping;
+package services.factory.cutting;
 
 import services.factory.Block;
 
@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CuttingDepartment {
-    private BlockCutter workers;
+    private Cutter workers;
 
     public CuttingDepartment() {
-        workers = new BlockCutter();
+        workers = new Cutter();
     }
 
     public List<Block> fulfillCuttingOrder(CuttingOrder aOrder) {

@@ -1,4 +1,4 @@
-package services.factory.shaping;
+package services.factory.cutting;
 
 public enum Shape {
     SQUARE(1),

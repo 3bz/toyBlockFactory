@@ -4,7 +4,7 @@ import services.ordering.Clerk;
 import services.reporting.Invoice;
 import services.factory.Block;
 import services.factory.painting.Color;
-import services.factory.shaping.Shape;
+import services.factory.cutting.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,8 +24,7 @@ public class ShopSendsOrder {
 
     @Before
     public void init() {
-        Clerk clerk = new Clerk(new ConsoleInput(), new ConsoleOutput());
-        shop = new Shop(clerk);
+        shop = new Shop(new ConsoleInput(), new ConsoleOutput());
 
         Blueprint testDesign = new Blueprint(Color.RED, Shape.SQUARE, 3);
         List<Blueprint> testSpec = new ArrayList<>();

@@ -4,7 +4,7 @@ import io.IInput;
 import io.IOutput;
 import services.reporting.Invoice;
 import services.factory.painting.Color;
-import services.factory.shaping.Shape;
+import services.factory.cutting.Shape;
 
 import java.time.Instant;
 import java.util.ArrayList;

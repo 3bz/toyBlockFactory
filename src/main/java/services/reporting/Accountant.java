@@ -1,15 +1,13 @@
 package services.reporting;
 
 import services.factory.painting.Color;
-import services.factory.shaping.Shape;
+import services.factory.cutting.Shape;
 import services.ordering.Blueprint;
 import services.ordering.CustomerOrder;
 
 import java.util.List;
 
 public class Accountant {
-
-    public Accountant() {}
 
     public Invoice analyseOrderForCalculating(CustomerOrder customerOrder) {
         return writeInvoice(customerOrder);
@@ -62,7 +60,7 @@ public class Accountant {
         return coloredBlockFound;
     }
 
-    public int calculateOrder(List<Blueprint> expenses) {
+    private int calculateOrder(List<Blueprint> expenses) {
         int result = 0;
         for (Blueprint cost : expenses)
             result += calculateCost(cost);
@@ -70,7 +68,7 @@ public class Accountant {
         return result;
     }
 
-    public int calculateCost(Blueprint order) {
+    private int calculateCost(Blueprint order) {
         int result = 0;
         result += order.getShapePlanned().getPrice();
         if (order.getColorPlanned().getPrice() > 0)

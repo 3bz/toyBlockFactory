@@ -1,11 +1,11 @@
 package services.factory;
 
-import services.factory.shaping.CuttingDepartment;
+import services.factory.cutting.CuttingDepartment;
 import services.factory.painting.PaintingDepartment;
 import services.factory.painting.Color;
-import services.factory.shaping.CuttingOrder;
+import services.factory.cutting.CuttingOrder;
 import services.factory.painting.PaintingOrder;
-import services.factory.shaping.Shape;
+import services.factory.cutting.Shape;
 import services.ordering.Blueprint;
 import services.ordering.CustomerOrder;
 

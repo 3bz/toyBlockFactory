@@ -1,106 +1,123 @@
+
+import services.ordering.Customer;
+import services.ordering.CustomerOrder;
 import services.reporting.Accountant;
 import services.factory.painting.Color;
-import services.factory.shaping.Shape;
+import services.factory.cutting.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import services.ordering.Blueprint;
+import services.reporting.Invoice;
 
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class AccountantCanCalculate {
     private Accountant acc;
-    private List<Blueprint> customerOrder;
+    private CustomerOrder customerOrder;
 
     @Before
     public void init() {
         acc = new Accountant();
-        customerOrder = new ArrayList<>();
+
+        Customer customer = new Customer("test", "test");
+        List<Blueprint> designs = new ArrayList<>();
+        customerOrder = new CustomerOrder(customer, Date.from(Instant.now()), 1, designs);
     }
 
     @Test
     public void squareCost() {
-        Blueprint testPrint = new Blueprint(Color.BLUE, Shape.SQUARE, 1);
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
 
+        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        int actualCost = invoice.getTotal();
         int expectedCost = 1;
-        int actualCost = acc.calculateCost(testPrint);
 
         Assert.assertEquals(expectedCost, actualCost);
     }
 
     @Test
     public void triangleCost() {
-        Blueprint testPrint = new Blueprint(Color.BLUE, Shape.TRIANGLE, 1);
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
 
+        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        int actualCost = invoice.getTotal();
         int expectedCost = 2;
-        int actualCost = acc.calculateCost(testPrint);
 
         Assert.assertEquals(expectedCost, actualCost);
     }
 
     @Test
     public void circleCost() {
-        Blueprint testPrint = new Blueprint(Color.BLUE, Shape.CIRCLE, 1);
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
 
+        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        int actualCost = invoice.getTotal();
         int expectedCost = 3;
-        int actualCost = acc.calculateCost(testPrint);
 
         Assert.assertEquals(expectedCost, actualCost);
     }
 
     @Test
     public void redPaintSurcharge() {
-        Blueprint testPrint = new Blueprint(Color.RED, Shape.SQUARE, 1);
+        customerOrder.getSpecification().add(new Blueprint(Color.RED, Shape.SQUARE, 1));
 
+        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        int actualCost = invoice.getTotal();
         int expectedCost = 2;
-        int actualCost = acc.calculateCost(testPrint);
-
-        Assert.assertEquals(expectedCost, actualCost);
-    }
-
-    @Test
-    public void eachShapeInSingleOrder() {
-        customerOrder.add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
-        customerOrder.add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
-        customerOrder.add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
-
-        int expectedCost = 6;
-        int actualCost = acc.calculateOrder(customerOrder);
 
         Assert.assertEquals(expectedCost, actualCost);
     }
 
     @Test
     public void multipleOfTheSameBlock() {
-        Blueprint testPrint = new Blueprint(Color.BLUE, Shape.SQUARE, 5);
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
 
+        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        int actualCost = invoice.getTotal();
         int expectedCost = 5;
-        int actualCost = acc.calculateCost(testPrint);
+
+        Assert.assertEquals(expectedCost, actualCost);
+    }
+
+    @Test
+    public void eachShapeInSingleOrder() {
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
+
+        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        int actualCost = invoice.getTotal();
+        int expectedCost = 6;
 
         Assert.assertEquals(expectedCost, actualCost);
     }
 
     @Test
     public void assortedBlockOrder() {
-        customerOrder.add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
-        customerOrder.add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 5));
-        customerOrder.add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 5));
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
 
+        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        int actualCost = invoice.getTotal();
         int expectedCost = 30;
-        int actualCost = acc.calculateOrder(customerOrder);
 
         Assert.assertEquals(expectedCost, actualCost);
     }
 
     @Test
     public void assortedOrderWithRedBlocks() {
-        customerOrder.add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
-        customerOrder.add(new Blueprint(Color.RED, Shape.SQUARE, 5));
-        customerOrder.add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
+        customerOrder.getSpecification().add(new Blueprint(Color.RED, Shape.SQUARE, 5));
+        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
 
+        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        int actualCost = invoice.getTotal();
         int expectedCost = 30;
-        int actualCost = acc.calculateOrder(customerOrder);
 
         Assert.assertEquals(expectedCost, actualCost);
     }

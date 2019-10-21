@@ -3,10 +3,10 @@ package services.factory.painting;
 import services.factory.Block;
 
 public class PaintingDepartment {
-    private BlockPainter workers;
+    private Painter workers;
 
     public PaintingDepartment(){
-        workers = new BlockPainter();
+        workers = new Painter();
     }
 
     public void fulfillPaintingOrder(PaintingOrder aOrder) {

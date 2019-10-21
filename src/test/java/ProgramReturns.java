@@ -3,12 +3,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import services.Shop;
-import services.ordering.Clerk;
 
 public class ProgramReturns {
     private IInput input;
     private FakeOutput output;
-    private Clerk clerk;
     private Shop shop;
 
     private final String USERNAME = "test";
@@ -18,8 +16,7 @@ public class ProgramReturns {
     public void init() {
         input = new StubInput(USERNAME, ORDER_QUANTITY);
         output = new FakeOutput();
-        clerk = new Clerk(input, output);
-        shop = new Shop(clerk);
+        shop = new Shop(input, output);
     }
 
     @Test

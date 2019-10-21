@@ -1,7 +1,7 @@
 package services.ordering;
 
 import services.factory.painting.Color;
-import services.factory.shaping.Shape;
+import services.factory.cutting.Shape;
 
 public class Blueprint {
     private final Color colorPlanned;
