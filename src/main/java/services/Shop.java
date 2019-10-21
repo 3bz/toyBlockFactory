@@ -32,7 +32,7 @@ public class Shop {
         return factory.processOrder(customerOrder);
     }
 
-    public Invoice getInvoice(CustomerOrder customerOrder) { //print invoice
-        return accountant.analyseOrderForCalculating(customerOrder);
+    public Invoice getInvoice(CustomerOrder customerOrder) {
+        return accountant.writeInvoice(customerOrder);
     }
 }

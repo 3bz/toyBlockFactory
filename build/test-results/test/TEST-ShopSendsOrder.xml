@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ShopSendsOrder" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-21T05:01:54" hostname="C02Y309QJG5J" time="0.022">
+<testsuite name="ShopSendsOrder" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-21T05:12:01" hostname="C02Y309QJG5J" time="0.036">
   <properties/>
-  <testcase name="toAccountant_ReceivesInvoice" classname="ShopSendsOrder" time="0.021"/>
+  <testcase name="toAccountant_ReceivesInvoice" classname="ShopSendsOrder" time="0.035"/>
   <testcase name="toFactory_ReceivesBlocks" classname="ShopSendsOrder" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

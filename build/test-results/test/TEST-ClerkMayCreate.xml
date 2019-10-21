@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ClerkMayCreate" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-21T05:01:54" hostname="C02Y309QJG5J" time="0.005">
+<testsuite name="ClerkMayCreate" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-21T05:12:01" hostname="C02Y309QJG5J" time="0.009">
   <properties/>
-  <testcase name="someBlueprints" classname="ClerkMayCreate" time="0.003"/>
+  <testcase name="someBlueprints" classname="ClerkMayCreate" time="0.005"/>
   <testcase name="aNewCustomer" classname="ClerkMayCreate" time="0.001"/>
   <testcase name="anOrder" classname="ClerkMayCreate" time="0.001"/>
   <system-out><![CDATA[Welcome to the Toy Block Factory!

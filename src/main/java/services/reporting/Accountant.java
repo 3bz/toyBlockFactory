@@ -9,17 +9,13 @@ import java.util.List;
 
 public class Accountant {
 
-    public Invoice analyseOrderForCalculating(CustomerOrder customerOrder) {
-        return writeInvoice(customerOrder);
-    }
-
-    private Invoice writeInvoice(CustomerOrder orders) {
+    public Invoice writeInvoice(CustomerOrder orders) {
         Invoice invoice = new Invoice(orders);
         int cost;
         int quantity;
 
         for (Shape shape: Shape.values()) {
-            quantity = findShapeOrders(shape, orders);
+            quantity = howManyShapeOrders(shape, orders);
             cost = (shape.getPrice() * quantity);
             invoice.applyExpenses(quantity, cost, shape);
         }
@@ -32,7 +28,7 @@ public class Accountant {
         return invoice;
     }
 
-    private int findShapeOrders(Shape shape, CustomerOrder order) {
+    private int howManyShapeOrders(Shape shape, CustomerOrder order) {
         int shapeOrders = 0;
 
         for (Blueprint bp : order.getSpecification()) {
@@ -44,13 +40,13 @@ public class Accountant {
     }
 
     private void calculatePremiumPaintConsiderations(CustomerOrder orders, Invoice invoice, Color color) {
-        int blockCount = findSpecifiedColorBlocks(orders.getSpecification(), color);
+        int blockCount = howManySpecifiedColorBlocks(orders.getSpecification(), color);
         int total = (blockCount * color.getPrice());
         invoice.applyPremiumPaintSurcharge(blockCount, total, color);
 
     }
 
-    private int findSpecifiedColorBlocks(List<Blueprint> orders, Color color) {
+    private int howManySpecifiedColorBlocks(List<Blueprint> orders, Color color) {
         int coloredBlockFound = 0;
         for (Blueprint bp : orders) {
             if (bp.getColorPlanned().equals(color)) {

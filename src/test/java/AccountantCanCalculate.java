@@ -32,7 +32,7 @@ public class AccountantCanCalculate {
     public void squareCost() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
 
-        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
         int expectedCost = 1;
 
@@ -43,7 +43,7 @@ public class AccountantCanCalculate {
     public void triangleCost() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
 
-        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
         int expectedCost = 2;
 
@@ -54,7 +54,7 @@ public class AccountantCanCalculate {
     public void circleCost() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
 
-        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
         int expectedCost = 3;
 
@@ -65,7 +65,7 @@ public class AccountantCanCalculate {
     public void redPaintSurcharge() {
         customerOrder.getSpecification().add(new Blueprint(Color.RED, Shape.SQUARE, 1));
 
-        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
         int expectedCost = 2;
 
@@ -76,7 +76,7 @@ public class AccountantCanCalculate {
     public void multipleOfTheSameBlock() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
 
-        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
         int expectedCost = 5;
 
@@ -89,7 +89,7 @@ public class AccountantCanCalculate {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
 
-        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
         int expectedCost = 6;
 
@@ -102,7 +102,7 @@ public class AccountantCanCalculate {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 5));
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
 
-        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
         int expectedCost = 30;
 
@@ -115,7 +115,7 @@ public class AccountantCanCalculate {
         customerOrder.getSpecification().add(new Blueprint(Color.RED, Shape.SQUARE, 5));
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
 
-        Invoice invoice = acc.analyseOrderForCalculating(customerOrder);
+        Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
         int expectedCost = 30;
 
