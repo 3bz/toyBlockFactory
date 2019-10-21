@@ -5,7 +5,6 @@ import org.junit.Test;
 import services.Shop;
 
 public class ProgramReturns {
-    private IInput input;
     private FakeOutput output;
     private Shop shop;
 
@@ -14,7 +13,7 @@ public class ProgramReturns {
 
     @Before
     public void init() {
-        input = new StubInput(USERNAME, ORDER_QUANTITY);
+        IInput input = new StubInput(USERNAME, ORDER_QUANTITY);
         output = new FakeOutput();
         shop = new Shop(input, output);
     }

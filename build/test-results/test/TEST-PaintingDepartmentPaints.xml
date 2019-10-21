@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PaintingDepartmentPaints" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-21T03:30:45" hostname="C02Y309QJG5J" time="0.002">
+<testsuite name="PaintingDepartmentPaints" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-21T04:51:45" hostname="C02Y309QJG5J" time="0.001">
   <properties/>
-  <testcase name="differentShapesSameColor" classname="PaintingDepartmentPaints" time="0.0"/>
+  <testcase name="differentShapesSameColor" classname="PaintingDepartmentPaints" time="0.001"/>
   <testcase name="aRedBlock" classname="PaintingDepartmentPaints" time="0.0"/>
   <testcase name="aYellowBlock" classname="PaintingDepartmentPaints" time="0.0"/>
   <testcase name="manyBlocks" classname="PaintingDepartmentPaints" time="0.0"/>

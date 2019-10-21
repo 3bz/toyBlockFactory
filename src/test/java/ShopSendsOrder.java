@@ -1,6 +1,5 @@
 import io.ConsoleInput;
 import io.ConsoleOutput;
-import services.ordering.Clerk;
 import services.reporting.Invoice;
 import services.factory.Block;
 import services.factory.painting.Color;

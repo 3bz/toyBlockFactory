@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ProgramReturns" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-21T03:30:45" hostname="C02Y309QJG5J" time="0.0">
+<testsuite name="ProgramReturns" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-21T04:51:45" hostname="C02Y309QJG5J" time="0.001">
   <properties/>
-  <testcase name="totalCostOfOrder" classname="ProgramReturns" time="0.0"/>
+  <testcase name="totalCostOfOrder" classname="ProgramReturns" time="0.001"/>
   <system-out><![CDATA[Welcome to the Toy Block Factory!
 Please input your name: 
 Please input your address: 

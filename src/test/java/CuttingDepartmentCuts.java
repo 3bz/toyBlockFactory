@@ -9,18 +9,18 @@ import org.junit.Test;
 import java.util.List;
 
 public class CuttingDepartmentCuts {
-    private CuttingDepartment testCut;
+    private CuttingDepartment cuttingDept;
     private CuttingOrder testOrder;
 
     @Before
     public void init() {
-        testCut = new CuttingDepartment();
+        cuttingDept = new CuttingDepartment();
     }
 
     @Test
     public void aSquareBlock(){
         testOrder = new CuttingOrder(Shape.SQUARE, 1);
-        List<Block> testBlock = testCut.fulfillCuttingOrder(testOrder);
+        List<Block> testBlock = cuttingDept.fulfillCuttingOrder(testOrder);
 
         Assert.assertEquals(Shape.SQUARE, testBlock.get(0).getShape());
     }
@@ -28,7 +28,7 @@ public class CuttingDepartmentCuts {
     @Test
     public void aCircleBlock(){
         testOrder = new CuttingOrder(Shape.CIRCLE, 1);
-        List<Block> testBlock = testCut.fulfillCuttingOrder(testOrder);
+        List<Block> testBlock = cuttingDept.fulfillCuttingOrder(testOrder);
 
         Assert.assertEquals(Shape.CIRCLE, testBlock.get(0).getShape());
     }
@@ -36,7 +36,7 @@ public class CuttingDepartmentCuts {
     @Test
     public void aTriangleBlock(){
         testOrder = new CuttingOrder(Shape.TRIANGLE, 1);
-        List<Block> testBlock = testCut.fulfillCuttingOrder(testOrder);
+        List<Block> testBlock = cuttingDept.fulfillCuttingOrder(testOrder);
 
         Assert.assertEquals(Shape.TRIANGLE, testBlock.get(0).getShape());
     }
@@ -44,7 +44,7 @@ public class CuttingDepartmentCuts {
     @Test
     public void andReturnsManyBlocks() {
         testOrder = new CuttingOrder(Shape.SQUARE, 2);
-        List<Block> testList = testCut.fulfillCuttingOrder(testOrder);
+        List<Block> testList = cuttingDept.fulfillCuttingOrder(testOrder);
 
         Assert.assertEquals(2, testList.size());
     }

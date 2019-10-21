@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CuttingDepartmentReturns" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-21T03:30:45" hostname="C02Y309QJG5J" time="0.0">
+<testsuite name="CuttingDepartmentReturns" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-21T04:51:45" hostname="C02Y309QJG5J" time="0.001">
   <properties/>
   <testcase name="shapesInSpecifiedArrangement" classname="CuttingDepartmentReturns" time="0.0"/>
   <testcase name="manyDifferentShapesCut" classname="CuttingDepartmentReturns" time="0.0"/>
+  <testcase name="analysesAndReturnsCompletedOrder" classname="CuttingDepartmentReturns" time="0.0"/>
+  <testcase name="cutsBlocksToSatisfyPaintingOrder" classname="CuttingDepartmentReturns" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

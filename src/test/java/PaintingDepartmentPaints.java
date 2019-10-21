@@ -68,11 +68,13 @@ public class PaintingDepartmentPaints {
         Assert.assertTrue(isCollectionPainted(Color.RED, testOrder.getBlocksToPaint()));
     }
 
-    public boolean isCollectionPainted(Color desiredColor, List<Block> collectionOfBlocks) {
+    private boolean isCollectionPainted(Color desiredColor, List<Block> collectionOfBlocks) {
         boolean allPainted = true;
         for (Block aBlock : collectionOfBlocks) {
-            if (!(aBlock.getColor().equals(desiredColor)))
+            if (!(aBlock.getColor().equals(desiredColor))) {
                 allPainted = false;
+                break;
+            }
         }
         return allPainted;
     }
