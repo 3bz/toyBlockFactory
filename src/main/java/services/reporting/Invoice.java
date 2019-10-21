@@ -37,7 +37,7 @@ public class Invoice {
 
     public void applyOrderTotal(int total) {
         this.total = total;
-        message += "Order Total: " + total + "\n";
+        message += "Order Total: $" + total + "\n";
     }
 
     public int getTotal() {

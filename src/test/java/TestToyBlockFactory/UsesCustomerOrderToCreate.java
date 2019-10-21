@@ -31,7 +31,7 @@ public class UsesCustomerOrderToCreate {
 
     @Test
     public void cuttingOrder() {
-        List<CuttingOrder> testCuttingOrder = testFactory.cuttingOrdersFromCustomerOrder(testCustomerOrder);
+        List<CuttingOrder> testCuttingOrder = testFactory.createCuttingOrders(testCustomerOrder);
 
         Assert.assertEquals(2, testCuttingOrder.get(0).getQuantityToCut());
         Assert.assertEquals(Shape.SQUARE, testCuttingOrder.get(0).getShapeToCut());
@@ -42,7 +42,7 @@ public class UsesCustomerOrderToCreate {
         List<Block> blockBatch = new ArrayList<>();
         blockBatch.add(new Block(Shape.SQUARE));
         blockBatch.add(new Block(Shape.SQUARE));
-        List<PaintingOrder> testPaintingOrder = testFactory.paintingOrdersFromCustomerOrder(testCustomerOrder, blockBatch);
+        List<PaintingOrder> testPaintingOrder = testFactory.createPaintingOrders(testCustomerOrder, blockBatch);
 
         Assert.assertEquals(Color.BLUE, testPaintingOrder.get(0).getColorToPaintBlocks());
         Assert.assertEquals(2, testPaintingOrder.get(0).getBlocksToPaint().size());

@@ -31,10 +31,10 @@ public class OrderOfOperations {
 
     @Test
     public void cutsBlocksToSatisfyPaintingOrder() {
-        List<CuttingOrder> cuttingOrders = factory.cuttingOrdersFromCustomerOrder(customerOrder);
-        List<Block> newlyCutBlocks = factory.requestShapesCut(cuttingOrders);
-        List<PaintingOrder> paintingOrders = factory.paintingOrdersFromCustomerOrder(customerOrder, newlyCutBlocks);
-        factory.requestBlocksPainted(paintingOrders);
+        List<CuttingOrder> cuttingOrders = factory.createCuttingOrders(customerOrder);
+        List<Block> newlyCutBlocks = factory.getCutBlocks(cuttingOrders);
+        List<PaintingOrder> paintingOrders = factory.createPaintingOrders(customerOrder, newlyCutBlocks);
+        factory.getBlocksPainted(paintingOrders);
         List<Block> paintedBlocks = paintingOrders.get(0).getBlocksToPaint();
 
         Assert.assertEquals(Color.RED, paintedBlocks.get(0).getColor());
@@ -44,7 +44,7 @@ public class OrderOfOperations {
 
     @Test
     public void analysesAndReturnsCompletedOrder() {
-        List<Block> completedOrder = factory.processCustomerOrder(customerOrder);
+        List<Block> completedOrder = factory.processOrder(customerOrder);
 
         Assert.assertEquals(Color.RED, completedOrder.get(0).getColor());
         Assert.assertEquals(Shape.SQUARE, completedOrder.get(0).getShape());

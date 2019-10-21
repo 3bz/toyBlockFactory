@@ -21,39 +21,39 @@ public class ToyBlockFactory {
         paintingDepartment = new PaintingDepartment();
     }
 
-    public List<Block> processCustomerOrder(CustomerOrder customerOrder) {
-        List<CuttingOrder> cuttingOrders = cuttingOrdersFromCustomerOrder(customerOrder);
-        List<Block> blocksMadeToOrder = requestShapesCut(cuttingOrders);
-        List<PaintingOrder> paintingOrders = paintingOrdersFromCustomerOrder(customerOrder, blocksMadeToOrder);
-        requestBlocksPainted(paintingOrders);
-        return bundleOrder(paintingOrders);
+    public List<Block> processOrder(CustomerOrder customerOrder) {
+        List<CuttingOrder> cuttingInstructions = createCuttingOrders(customerOrder);
+        List<Block> blocksMadeToOrder = getCutBlocks(cuttingInstructions);
+        List<PaintingOrder> paintingInstructions = createPaintingOrders(customerOrder, blocksMadeToOrder);
+        getBlocksPainted(paintingInstructions);
+        return bundleOrder(paintingInstructions);
     }
 
-    public List<CuttingOrder> cuttingOrdersFromCustomerOrder(CustomerOrder orderToProcess) {
-        List<CuttingOrder> shapeRequests = new ArrayList<>();
+    public List<CuttingOrder> createCuttingOrders(CustomerOrder orderToProcess) {
+        List<CuttingOrder> shapeRequirements = new ArrayList<>();
         for (Blueprint individualBlockOrder : orderToProcess.getSpecification()) {
-            Shape toBeCut = individualBlockOrder.getShapePlanned();
+            Shape shapeToCut = individualBlockOrder.getShapePlanned();
             int amount = individualBlockOrder.getQuantity();
 
-            shapeRequests.add(new CuttingOrder(toBeCut, amount));
+            shapeRequirements.add(new CuttingOrder(shapeToCut, amount));
         }
-        return shapeRequests;
+        return shapeRequirements;
     }
 
-    public List<Block> requestShapesCut(List<CuttingOrder> listOfShapeOrders) {
+    public List<Block> getCutBlocks(List<CuttingOrder> shapeOrders) {
         List<Block> blocksCut = new ArrayList<>();
-        for (CuttingOrder differentShapeOrder : listOfShapeOrders)
-            blocksCut.addAll(cuttingDepartment.fulfillCuttingOrder(differentShapeOrder));
+        for (CuttingOrder singleShapeOrder : shapeOrders)
+            blocksCut.addAll(cuttingDepartment.fulfillCuttingOrder(singleShapeOrder));
 
         return blocksCut;
     }
 
-    public List<PaintingOrder> paintingOrdersFromCustomerOrder(CustomerOrder orderToProcess, List<Block> availableBlocks) {
+    public List<PaintingOrder> createPaintingOrders(CustomerOrder orderToProcess, List<Block> availableBlocks) {
         List<PaintingOrder> paintingRequests = new ArrayList<>();
         for (Color singleColor : Color.values()) {
-            for (Blueprint singleSpecification : orderToProcess.getSpecification()) {
-                if (singleColor.equals(singleSpecification.getColorPlanned())) {
-                    List<Block> blockNeeded = extractBlocks(singleSpecification, availableBlocks);
+            for (Blueprint singleOrder : orderToProcess.getSpecification()) {
+                if (singleColor.equals(singleOrder.getColorPlanned())) {
+                    List<Block> blockNeeded = extractBlocks(singleOrder, availableBlocks);
                     paintingRequests.add(new PaintingOrder(singleColor, blockNeeded));
                 }
             }
@@ -74,8 +74,8 @@ public class ToyBlockFactory {
         return blocksForOrder;
     }
 
-    public void requestBlocksPainted(List<PaintingOrder> listOfPaintingOrders) {
-        for (PaintingOrder differentColorRequested : listOfPaintingOrders)
+    public void getBlocksPainted(List<PaintingOrder> paintOrders) {
+        for (PaintingOrder differentColorRequested : paintOrders)
             paintingDepartment.fulfillPaintingOrder(differentColorRequested);
 
     }

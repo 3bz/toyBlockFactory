@@ -29,7 +29,7 @@ public class Shop {
     }
 
     public List<Block> getBlocks(CustomerOrder customerOrder) {
-        return factory.processCustomerOrder(customerOrder);
+        return factory.processOrder(customerOrder);
     }
 
     public Invoice getInvoice(CustomerOrder customerOrder) { //print invoice

@@ -25,14 +25,14 @@ public class CuttingDepartmentReturns {
 
     @Test
     public void manyDifferentShapesCut() {
-        List<Block> testShapesCut = testFactory.requestShapesCut(cuttingOrder);
+        List<Block> testShapesCut = testFactory.getCutBlocks(cuttingOrder);
 
         Assert.assertEquals(7, testShapesCut.size());
     }
 
     @Test
     public void shapesInSpecifiedArrangement() {
-        List<Block> testShapesOrder = testFactory.requestShapesCut(cuttingOrder);
+        List<Block> testShapesOrder = testFactory.getCutBlocks(cuttingOrder);
         Block actual = testShapesOrder.get(2);
 
         Assert.assertEquals(actual.getShape(), Shape.CIRCLE);
