@@ -15,7 +15,6 @@ public class Clerk {
     private final IInput input;
     private final IOutput output;
     private int currentOrderNo;
-    private Date currentDate;
 
     public Clerk(IInput aInput, IOutput aOutput) {
         input = aInput;
@@ -58,7 +57,7 @@ public class Clerk {
     }
 
     private CustomerOrder createCustomerOrder(Customer aCustomer, List<Blueprint> designs) {
-        currentDate = Date.from(Instant.now());
+        Date currentDate = Date.from(Instant.now());
         currentOrderNo++;
         return new CustomerOrder(aCustomer, currentDate, currentOrderNo, designs);
     }

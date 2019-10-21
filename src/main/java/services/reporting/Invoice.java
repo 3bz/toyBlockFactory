@@ -8,17 +8,13 @@ import java.util.Date;
 
 public class Invoice {
     private String message;
-    private String name;
-    private String address;
-    private Date dueDate;
-    private int orderNo;
     private int total;
 
     public Invoice(CustomerOrder customerOrder) {
-        name = customerOrder.getCustomerDetails().getName();
-        address = customerOrder.getCustomerDetails().getAddress();
-        dueDate = customerOrder.getDueDate();
-        orderNo = customerOrder.getOrderNo();
+        String name = customerOrder.getCustomerDetails().getName();
+        String address = customerOrder.getCustomerDetails().getAddress();
+        Date dueDate = customerOrder.getDueDate();
+        int orderNo = customerOrder.getOrderNo();
 
         message = "Your invoice report has been generated:\n\n" +
                 "Name: " + name + "\n" +
