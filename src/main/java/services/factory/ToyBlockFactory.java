@@ -67,8 +67,10 @@ public class ToyBlockFactory {
         for (Block singleBlock : blocksProvided) {
             if (quantityMet < specificOrder.getQuantity()) {
                 if (singleBlock.getShape().equals(specificOrder.getShapePlanned())) {
-                    blocksForOrder.add(singleBlock);
-                    quantityMet++;
+                    if (!blocksForOrder.contains(singleBlock)) {
+                        blocksForOrder.add(singleBlock);
+                        quantityMet++;
+                    }
                 }
             }
         }

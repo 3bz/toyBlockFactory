@@ -12,32 +12,28 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/ToyBlockFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/services/factory/ToyBlockFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/cutting/CuttingOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/services/factory/cutting/CuttingOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/AccountantCanCalculate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ClerkMayCreate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CuttingDepartmentCuts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CuttingDepartmentReturns.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/OrderOfOperations.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/PaintingDepartmentPaints.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/AccountantCanCalculate.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/AccountantCanCalculate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ClerkMayCreate.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ClerkMayCreate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CuttingDepartmentCuts.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CuttingDepartmentCuts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CuttingDepartmentReturns.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CuttingDepartmentReturns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/OrderOfOperations.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/OrderOfOperations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/PaintingDepartmentPaints.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/PaintingDepartmentPaints.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ProgramReturns.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ProgramReturns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ShopSendsOrder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/UsesCustomerOrderToCreate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ShopSendsOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ShopSendsOrder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/UsesCustomerOrderToCreate.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/UsesCustomerOrderToCreate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-AccountantCanCalculate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ClerkMayCreate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CuttingDepartmentCuts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CuttingDepartmentReturns.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-OrderOfOperations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-PaintingDepartmentPaints.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-AccountantCanCalculate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-AccountantCanCalculate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ClerkMayCreate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ClerkMayCreate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CuttingDepartmentCuts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CuttingDepartmentCuts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CuttingDepartmentReturns.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CuttingDepartmentReturns.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-OrderOfOperations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-OrderOfOperations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-PaintingDepartmentPaints.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-PaintingDepartmentPaints.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ProgramReturns.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ProgramReturns.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ShopSendsOrder.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-UsesCustomerOrderToCreate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ShopSendsOrder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ShopSendsOrder.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-UsesCustomerOrderToCreate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-UsesCustomerOrderToCreate.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/ToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/ToyBlockFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/cutting/CuttingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/cutting/CuttingOrder.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,26 +102,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'toyBlockFactory.test'">
-    <configuration name="AccountantCanCalculate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AccountantCanCalculate&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="toyBlockFactory.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ClerkMayCreate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -209,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Tests in 'toyBlockFactory.test'" />
         <item itemvalue="Gradle.ProgramReturns" />
         <item itemvalue="Gradle.ProgramReturns.totalCostOfOrder" />
         <item itemvalue="Gradle.ClerkMayCreate" />
-        <item itemvalue="Gradle.AccountantCanCalculate" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +220,7 @@
       <workItem from="1571175750424" duration="6902000" />
       <workItem from="1571257730326" duration="10364000" />
       <workItem from="1571336368836" duration="9933000" />
-      <workItem from="1571593643083" duration="11326000" />
+      <workItem from="1571593643083" duration="12443000" />
     </task>
     <servers />
   </component>
