@@ -63,11 +63,12 @@ public class ToyBlockFactory {
 
     private List<Block> extractBlocks(Blueprint specificOrder, List<Block> blocksProvided) {
         List<Block> blocksForOrder = new ArrayList<>();
-        for (int i = 0; i < specificOrder.getQuantity();) {
-            for (Block singleBlock : blocksProvided) {
+        int quantityMet = 0;
+        for (Block singleBlock : blocksProvided) {
+            if (quantityMet < specificOrder.getQuantity()) {
                 if (singleBlock.getShape().equals(specificOrder.getShapePlanned())) {
                     blocksForOrder.add(singleBlock);
-                    i++;
+                    quantityMet++;
                 }
             }
         }

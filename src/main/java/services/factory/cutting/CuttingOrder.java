@@ -5,8 +5,8 @@ public class CuttingOrder {
     private int quantityToCut;
 
     public CuttingOrder(Shape aShape, int aQuantity) {
-        quantityToCut = aQuantity;
         shapeToCut = aShape;
+        quantityToCut = aQuantity;
     }
 
     public Shape getShapeToCut() {
