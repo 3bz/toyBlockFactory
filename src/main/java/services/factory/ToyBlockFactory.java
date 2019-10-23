@@ -9,6 +9,7 @@ import services.factory.cutting.Shape;
 import services.ordering.Blueprint;
 import services.ordering.CustomerOrder;
 
+import javax.naming.InsufficientResourcesException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,9 +34,16 @@ public class ToyBlockFactory {
     }
 
     public List<Block> paintingProcedure(CustomerOrder customerOrder, List<Block> blocksProvided) {
-        List<PaintingOrder> paintingInstructions = createPaintingOrders(customerOrder, blocksProvided);
-        paintBlocks(paintingInstructions);
-        return bundleOrder(paintingInstructions);
+        List<Block> customerBlocks = new ArrayList<>();
+        try {
+            List<PaintingOrder> paintingInstructions = createPaintingOrders(customerOrder, blocksProvided);
+            paintBlocks(paintingInstructions);
+            customerBlocks = bundleOrder(paintingInstructions);
+        } catch (IllegalStateException ex) {
+            System.out.println(ex.getMessage());
+            ex.printStackTrace();
+        }
+        return customerBlocks;
     }
 
     private List<CuttingOrder> createCuttingOrders(CustomerOrder orderToProcess) {
@@ -57,13 +65,17 @@ public class ToyBlockFactory {
         return blocksCut;
     }
 
-    private List<PaintingOrder> createPaintingOrders(CustomerOrder orderToProcess, List<Block> blocksProvided) {
+    private List<PaintingOrder> createPaintingOrders(CustomerOrder orderToProcess, List<Block> blocksProvided) throws IllegalStateException {
         List<PaintingOrder> paintingRequests = new ArrayList<>();
         for (Color singleColor : Color.values()) {
             for (Blueprint singleOrder : orderToProcess.getSpecification()) {
                 if (singleColor.equals(singleOrder.getColorPlanned())) {
-                    List<Block> blockNeeded = extractBlocks(singleOrder, blocksProvided);
-                    paintingRequests.add(new PaintingOrder(singleColor, blockNeeded));
+                    if (isEnoughBlocksToSatisfyRequirement(singleOrder, blocksProvided)) {
+                        List<Block> blockNeeded = extractBlocks(singleOrder, blocksProvided);
+                        paintingRequests.add(new PaintingOrder(singleColor, blockNeeded));
+                    }
+                    else
+                        throw new IllegalStateException("Not enough blocks cut to satisfy order requirement");
                 }
             }
         }
@@ -73,6 +85,15 @@ public class ToyBlockFactory {
     private void paintBlocks(List<PaintingOrder> paintOrders) {
         for (PaintingOrder differentColorRequested : paintOrders)
             paintingDepartment.fulfillPaintingOrder(differentColorRequested);
+    }
+
+    private boolean isEnoughBlocksToSatisfyRequirement(Blueprint requirement, List<Block> blocks) {
+        int quantityMet = 0;
+        for (Block block: blocks) {
+            if (requirement.getShapePlanned().equals(block.getShape()))
+                quantityMet++;
+        }
+        return (quantityMet >= requirement.getQuantity());
     }
 
     private List<Block> extractBlocks(Blueprint specificOrder, List<Block> blocksProvided) {
