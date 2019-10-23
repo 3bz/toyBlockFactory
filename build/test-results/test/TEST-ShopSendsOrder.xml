@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ShopSendsOrder" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-23T00:54:42" hostname="C02Y309QJG5J" time="0.022">
+<testsuite name="ShopSendsOrder" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-23T02:52:16" hostname="C02Y309QJG5J" time="0.022">
   <properties/>
   <testcase name="toAccountant_ReceivesInvoice" classname="ShopSendsOrder" time="0.021"/>
   <testcase name="toFactory_ReceivesBlocks" classname="ShopSendsOrder" time="0.001"/>

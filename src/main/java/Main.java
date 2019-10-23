@@ -8,12 +8,17 @@ import services.Shop;
  *
  * This program uses the Console Input and Output.
  *
- * This class initializes our input, output and top level Clerk class.
+ * This class initializes our input, output and top level Shop class.
+ * Shop is responsible for initialising our IO Class clerk, and co-ordinating data between sub-level classes.
  * Clerk constructs the order based on user input and passes this to the Shop.
- * Shop relays the order to the Factory for construction
- * and co-ordinates the return of the cost of the order,
- * which the Accountant class calculates.
- * Factory oversees the Cutting and Painting of the Blocks,
+ * Shop relays the order to the Factory for construction,
+ * relays the order to Accountant for cost calculation
+ * and co-ordinates the return to the user.
+ *
+ * Factory oversees the Cutting and Painting of the Blocks
+ * by first creating separate Cutting orders for block creation,
+ * then Painting orders for block mutation.
+ * These jobs are carried out by the corresponding sub-departments,
  * though these objects are not required for output.
  *
  * @author ryan.ebsworth
