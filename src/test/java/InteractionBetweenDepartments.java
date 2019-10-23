@@ -1,13 +1,13 @@
-import services.factory.Block;
-import services.factory.ToyBlockFactory;
-import services.factory.cut.Shape;
+import components.factory.Block;
+import components.factory.ToyBlockFactory;
+import components.factory.cut.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import services.factory.paint.Color;
-import services.order.Blueprint;
-import services.order.Customer;
-import services.order.CustomerOrder;
+import components.factory.paint.Color;
+import components.order.Blueprint;
+import components.order.Customer;
+import components.order.CustomerOrder;
 
 import java.time.Instant;
 import java.util.ArrayList;

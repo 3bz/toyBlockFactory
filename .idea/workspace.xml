@@ -2,33 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52008851-0e74-4dcb-b922-f26974fb64ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/ConsoleOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/io/ConsoleOutput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/Output.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/io/Output.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/Shop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/ordering/Clerk.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ConsoleOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ConsoleOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/Output.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/ToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/ToyBlockFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/cutting/Cutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/cut/Cutter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/cutting/CuttingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/cut/CuttingDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/cutting/CuttingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/cut/CuttingOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/cutting/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/cut/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/painting/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/paint/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/painting/Painter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/paint/Painter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/painting/PaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/paint/PaintingDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/painting/PaintingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/factory/paint/PaintingOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/ordering/Blueprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/order/Blueprint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/ordering/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/order/Clerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/ordering/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/order/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/ordering/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/order/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/ordering/CustomerOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/order/CustomerOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/reporting/Accountant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/report/Accountant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/reporting/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/report/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/ToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/ToyBlockFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/cut/Cutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/cut/Cutter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/cut/CuttingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/cut/CuttingDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/cut/CuttingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/cut/CuttingOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/cut/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/cut/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/paint/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/paint/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/paint/Painter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/paint/Painter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/paint/PaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/paint/PaintingDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/factory/paint/PaintingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/paint/PaintingOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/order/Blueprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/Blueprint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/order/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/Clerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/order/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/order/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/order/CustomerOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/CustomerOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/report/Accountant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/report/Accountant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/report/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/report/Invoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AccountantCanCalculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountantCanCalculate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ClerkMayCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClerkMayCreate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CuttingDepartmentCuts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CuttingDepartmentCuts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FakeOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FakeOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/InteractionBetweenDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InteractionBetweenDepartments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PaintingDepartmentPaints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PaintingDepartmentPaints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProgramReturns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProgramReturns.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ShopSendsOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShopSendsOrder.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'toyBlockFactory.test'">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="toyBlockFactory.main" />
@@ -217,7 +230,7 @@
       <workItem from="1571257730326" duration="10364000" />
       <workItem from="1571336368836" duration="9933000" />
       <workItem from="1571593643083" duration="19129000" />
-      <workItem from="1571781501702" duration="8818000" />
+      <workItem from="1571781501702" duration="11567000" />
     </task>
     <servers />
   </component>

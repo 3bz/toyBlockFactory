@@ -1,14 +1,14 @@
 
-import services.order.Customer;
-import services.order.CustomerOrder;
-import services.report.Accountant;
-import services.factory.paint.Color;
-import services.factory.cut.Shape;
+import components.order.Customer;
+import components.order.CustomerOrder;
+import components.report.Accountant;
+import components.factory.paint.Color;
+import components.factory.cut.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import services.order.Blueprint;
-import services.report.Invoice;
+import components.order.Blueprint;
+import components.report.Invoice;
 
 import java.time.Instant;
 import java.util.ArrayList;

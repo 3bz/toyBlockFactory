@@ -1,5 +1,5 @@
 import io.*;
-import services.Shop;
+import components.Shop;
 
 /**
  * The Toy Block Factory simulates the beginnings of an Order Management System.

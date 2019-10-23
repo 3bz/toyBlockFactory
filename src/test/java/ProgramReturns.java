@@ -2,7 +2,7 @@ import io.Input;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import services.Shop;
+import components.Shop;
 
 public class ProgramReturns {
     private FakeOutput output;

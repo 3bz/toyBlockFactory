@@ -1,16 +1,16 @@
 import io.ConsoleInput;
 import io.ConsoleOutput;
-import services.report.Invoice;
-import services.factory.Block;
-import services.factory.paint.Color;
-import services.factory.cut.Shape;
+import components.report.Invoice;
+import components.factory.Block;
+import components.factory.paint.Color;
+import components.factory.cut.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import services.order.Blueprint;
-import services.order.Customer;
-import services.order.CustomerOrder;
-import services.Shop;
+import components.order.Blueprint;
+import components.order.Customer;
+import components.order.CustomerOrder;
+import components.Shop;
 
 import java.sql.Date;
 import java.time.Instant;

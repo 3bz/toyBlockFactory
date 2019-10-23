@@ -1,4 +1,4 @@
-import services.report.Invoice;
+import components.report.Invoice;
 import io.Output;
 
 public class FakeOutput implements Output {
