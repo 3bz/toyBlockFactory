@@ -1,4 +1,4 @@
-package services.factory.painting;
+package services.factory.paint;
 
 import services.factory.Block;
 

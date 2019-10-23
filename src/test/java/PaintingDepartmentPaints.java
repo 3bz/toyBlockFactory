@@ -1,8 +1,8 @@
-import services.factory.painting.PaintingDepartment;
+import services.factory.paint.PaintingDepartment;
 import services.factory.Block;
-import services.factory.painting.Color;
-import services.factory.painting.PaintingOrder;
-import services.factory.cutting.Shape;
+import services.factory.paint.Color;
+import services.factory.paint.PaintingOrder;
+import services.factory.cut.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

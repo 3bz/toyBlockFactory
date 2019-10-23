@@ -1,13 +1,13 @@
 package services.factory;
 
-import services.factory.cutting.CuttingDepartment;
-import services.factory.painting.PaintingDepartment;
-import services.factory.painting.Color;
-import services.factory.cutting.CuttingOrder;
-import services.factory.painting.PaintingOrder;
-import services.factory.cutting.Shape;
-import services.ordering.Blueprint;
-import services.ordering.CustomerOrder;
+import services.factory.cut.CuttingDepartment;
+import services.factory.paint.PaintingDepartment;
+import services.factory.paint.Color;
+import services.factory.cut.CuttingOrder;
+import services.factory.paint.PaintingOrder;
+import services.factory.cut.Shape;
+import services.order.Blueprint;
+import services.order.CustomerOrder;
 
 import java.util.ArrayList;
 import java.util.List;

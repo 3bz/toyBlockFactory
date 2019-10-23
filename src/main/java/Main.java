@@ -9,7 +9,7 @@ import services.Shop;
  * This program uses the Console Input and Output.
  *
  * This class initializes our input, output and top level Shop class.
- * Shop is responsible for initialising our IO Class clerk, and co-ordinating data between sub-level classes.
+ * Shop is responsible for initialising our I/O class Clerk, and co-ordinating data between sub-level classes.
  * Clerk constructs the order based on user input and passes this to the Shop.
  * Shop relays the order to the Factory for construction,
  * relays the order to Accountant for cost calculation

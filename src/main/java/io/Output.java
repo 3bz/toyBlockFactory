@@ -1,6 +1,6 @@
 package io;
 
-import services.reporting.Invoice;
+import services.report.Invoice;
 
 public interface Output {
      void giveString(String s);

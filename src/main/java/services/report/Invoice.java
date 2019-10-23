@@ -1,8 +1,8 @@
-package services.reporting;
+package services.report;
 
-import services.factory.painting.Color;
-import services.factory.cutting.Shape;
-import services.ordering.CustomerOrder;
+import services.factory.paint.Color;
+import services.factory.cut.Shape;
+import services.order.CustomerOrder;
 
 import java.util.Date;
 

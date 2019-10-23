@@ -1,4 +1,4 @@
-package services.ordering;
+package services.order;
 
 class Constants {
     static final String WELCOME_MESSAGE = "Welcome to the Toy Block Factory!";

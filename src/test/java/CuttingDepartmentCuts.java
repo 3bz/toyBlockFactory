@@ -1,7 +1,7 @@
-import services.factory.cutting.CuttingDepartment;
+import services.factory.cut.CuttingDepartment;
 import services.factory.Block;
-import services.factory.cutting.CuttingOrder;
-import services.factory.cutting.Shape;
+import services.factory.cut.CuttingOrder;
+import services.factory.cut.Shape;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

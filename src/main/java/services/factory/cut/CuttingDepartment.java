@@ -1,4 +1,4 @@
-package services.factory.cutting;
+package services.factory.cut;
 
 import services.factory.Block;
 

@@ -1,7 +1,7 @@
 package services.factory;
 
-import services.factory.painting.Color;
-import services.factory.cutting.Shape;
+import services.factory.paint.Color;
+import services.factory.cut.Shape;
 
 public class Block {
     private final Shape shape;

@@ -1,10 +1,10 @@
-package services.ordering;
+package services.order;
 
 import io.Input;
 import io.Output;
-import services.reporting.Invoice;
-import services.factory.painting.Color;
-import services.factory.cutting.Shape;
+import services.report.Invoice;
+import services.factory.paint.Color;
+import services.factory.cut.Shape;
 
 import java.time.Instant;
 import java.util.ArrayList;

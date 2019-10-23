@@ -2,12 +2,12 @@ package services;
 
 import io.Input;
 import io.Output;
-import services.reporting.Accountant;
-import services.reporting.Invoice;
+import services.report.Accountant;
+import services.report.Invoice;
 import services.factory.Block;
 import services.factory.ToyBlockFactory;
-import services.ordering.Clerk;
-import services.ordering.CustomerOrder;
+import services.order.Clerk;
+import services.order.CustomerOrder;
 
 import java.util.List;
 

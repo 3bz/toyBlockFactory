@@ -1,4 +1,4 @@
-package services.ordering;
+package services.order;
 
 public class Customer {
     private String name;
