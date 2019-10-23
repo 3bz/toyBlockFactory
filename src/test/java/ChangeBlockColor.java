@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PaintingDepartmentPaints {
+public class ChangeBlockColor {
     private PaintingDepartment testPaintDept;
     private PaintingOrder testOrder;
     private List<Block> blockList;
@@ -47,7 +47,7 @@ public class PaintingDepartmentPaints {
     }
 
     @Test
-    public void manyBlocks() {
+    public void manyRedBlocks() {
         for (int i = 0; i < 5; i++)
             blockList.add(new Block(Shape.SQUARE));
 
@@ -58,7 +58,7 @@ public class PaintingDepartmentPaints {
     }
 
     @Test
-    public void differentShapesSameColor() {
+    public void differentShapedBlocksAllSameColor() {
         blockList.add(new Block(Shape.CIRCLE));
         blockList.add(new Block(Shape.TRIANGLE));
         testOrder = new PaintingOrder(Color.RED, blockList);

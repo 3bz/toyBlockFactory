@@ -22,12 +22,12 @@ public class ToyBlockFactory {
     }
 
     public List<Block> processOrder(CustomerOrder customerOrder) {
-        List <Block> blocksCutForOrder = cuttingProcedure(customerOrder);
+        List <Block> blocksCutForOrder = startCuttingProcedure(customerOrder);
 
-        return paintingProcedure(customerOrder, blocksCutForOrder);
+        return startPaintingProcedure(customerOrder, blocksCutForOrder);
     }
 
-    public List<Block> cuttingProcedure(CustomerOrder customerOrder) {
+    public List<Block> startCuttingProcedure(CustomerOrder customerOrder) {
         List<CuttingOrder> cuttingInstructions = createCuttingOrders(customerOrder);
         return getCutBlocks(cuttingInstructions);
     }
@@ -51,7 +51,7 @@ public class ToyBlockFactory {
         return blocksCut;
     }
 
-    public List<Block> paintingProcedure(CustomerOrder customerOrder, List<Block> blocksProvided) {
+    public List<Block> startPaintingProcedure(CustomerOrder customerOrder, List<Block> blocksProvided) {
         List<Block> customerBlocks = new ArrayList<>();
         try {
             List<PaintingOrder> paintingInstructions = createPaintingOrders(customerOrder, blocksProvided);

@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import components.Shop;
 
-public class ProgramReturns {
+public class GiveUserResults {
     private FakeOutput output;
     private Shop shop;
 

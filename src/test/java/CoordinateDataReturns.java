@@ -17,7 +17,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShopSendsOrder {
+public class CoordinateDataReturns {
     private Shop shop;
     private CustomerOrder customerOrder;
 
@@ -34,14 +34,14 @@ public class ShopSendsOrder {
     }
 
     @Test
-    public void toFactory_ReceivesBlocks() {
+    public void factoryReturnsBlocks() {
         List<Block> blockShipment = shop.getBlocks(customerOrder);
 
         Assert.assertEquals(3, blockShipment.size());
     }
 
     @Test
-    public void toAccountant_ReceivesInvoice() {
+    public void accountantReturnsInvoice() {
         Invoice testInvoice = shop.getInvoice(customerOrder);
         int actualTotal = testInvoice.getTotal();
 

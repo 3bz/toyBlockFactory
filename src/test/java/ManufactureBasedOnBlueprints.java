@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class InteractionBetweenDepartments {
+public class ManufactureBasedOnBlueprints {
     private ToyBlockFactory testFactory;
     private CustomerOrder testOrder;
 
@@ -34,31 +34,29 @@ public class InteractionBetweenDepartments {
     }
 
     @Test
-    public void manyDifferentShapesCut() {
-        List<Block> shapesCut = testFactory.cuttingProcedure(testOrder);
+    public void differentShapesCutInSingleOrder() {
+        List<Block> shapesCut = testFactory.startCuttingProcedure(testOrder);
 
         Assert.assertEquals(7, shapesCut.size());
     }
 
     @Test
-    public void shapesInSpecifiedArrangement() {
-        List<Block> testShapesOrder = testFactory.cuttingProcedure(testOrder);
-        Block actual = testShapesOrder.get(2);
-
-        Assert.assertEquals(Shape.CIRCLE, actual.getShape());
-    }
-
-    @Test
-    public void cutsBlocksToSatisfyPaintingOrder() {
-        List<Block> blocksCut = testFactory.cuttingProcedure(testOrder);
-        List<Block> paintedBlocks = testFactory.paintingProcedure(testOrder, blocksCut);
+    public void useCutBlocksInPaintingProcess() {
+        List<Block> blocksCut = testFactory.startCuttingProcedure(testOrder);
+        List<Block> paintedBlocks = testFactory.startPaintingProcedure(testOrder, blocksCut);
 
         Assert.assertEquals(Color.RED, paintedBlocks.get(0).getColor());
         Assert.assertEquals(Shape.SQUARE, paintedBlocks.get(0).getShape());
     }
 
+//    @Test(expected=IllegalStateException.class)
+//    public void notSuppliedEnoughBlocksForOrderRequirement() {
+//        List<Block> insufficientBlocks = new ArrayList<>();
+//        List<Block> attemptedBlocks = testFactory.paintingProcedure(testOrder, insufficientBlocks);
+//    }
+
     @Test
-    public void analysesAndReturnsCompletedOrder() {
+    public void satisfiesAndReturnsCompletedOrder() {
         List<Block> completedOrder = testFactory.processOrder(testOrder);
 
         Assert.assertEquals(Color.RED, completedOrder.get(0).getColor());

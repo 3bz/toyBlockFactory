@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class AccountantCanCalculate {
+public class CostOfOrders {
     private Accountant acc;
     private CustomerOrder customerOrder;
 
@@ -29,7 +29,7 @@ public class AccountantCanCalculate {
     }
 
     @Test
-    public void squareCost() {
+    public void oneSquareIsOneDollar() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
@@ -40,7 +40,7 @@ public class AccountantCanCalculate {
     }
 
     @Test
-    public void triangleCost() {
+    public void oneTriangleIsTwoDollars() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
@@ -51,7 +51,7 @@ public class AccountantCanCalculate {
     }
 
     @Test
-    public void circleCost() {
+    public void oneCircleIsThreeDollars() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
@@ -73,7 +73,7 @@ public class AccountantCanCalculate {
     }
 
     @Test
-    public void multipleOfTheSameBlock() {
+    public void manyOfSameShape() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
@@ -84,7 +84,7 @@ public class AccountantCanCalculate {
     }
 
     @Test
-    public void eachShapeInSingleOrder() {
+    public void oneOfEveryShape() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
@@ -97,7 +97,7 @@ public class AccountantCanCalculate {
     }
 
     @Test
-    public void assortedBlockOrder() {
+    public void assortedShapes() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 5));
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
@@ -110,7 +110,7 @@ public class AccountantCanCalculate {
     }
 
     @Test
-    public void assortedOrderWithRedBlocks() {
+    public void assortedShapesWithSomeThatAreRed() {
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
         customerOrder.getSpecification().add(new Blueprint(Color.RED, Shape.SQUARE, 5));
         customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));

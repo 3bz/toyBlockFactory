@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class CuttingDepartmentCuts {
+public class SupplyBlocksByShape {
     private CuttingDepartment cuttingDept;
     private CuttingOrder testOrder;
 
@@ -42,7 +42,7 @@ public class CuttingDepartmentCuts {
     }
 
     @Test
-    public void andReturnsManyBlocks() {
+    public void manyBlocksWithSameShape() {
         testOrder = new CuttingOrder(Shape.SQUARE, 2);
         List<Block> testList = cuttingDept.fulfillCuttingOrder(testOrder);
 
