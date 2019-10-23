@@ -4,13 +4,14 @@ import services.reporting.Invoice;
 
 public class ConsoleOutput implements IOutput {
 
+    @Override
     public void giveString(String s) {
         System.out.println(s);
     }
 
     @Override
-    public void giveOutput(Invoice invoice) {
-        System.out.println(invoice.getMessage());
+    public void giveOutput(Invoice i) {
+        System.out.println(i.getMessage());
     }
 
     @Override

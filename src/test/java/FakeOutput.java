@@ -5,9 +5,7 @@ public class FakeOutput implements IOutput {
     private int orderTotal;
 
     @Override
-    public void giveString(String s) {
-        System.out.println(s);
-    }
+    public void giveString(String s) { }
 
     @Override
     public void giveOutput(Invoice i) {

@@ -18,7 +18,7 @@ public class ClerkMayCreate {
     @Before
     public void init() {
         StubInput input = new StubInput(USERNAME, ORDER_QUANTITY);
-        IOutput output = new ConsoleOutput();
+        IOutput output = new FakeOutput();
         clerk = new Clerk(input, output);
     }
 
