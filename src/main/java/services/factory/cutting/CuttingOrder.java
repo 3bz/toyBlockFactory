@@ -9,11 +9,11 @@ public class CuttingOrder {
         quantityToCut = aQuantity;
     }
 
-    public Shape getShapeToCut() {
+    Shape getShapeToCut() {
         return shapeToCut;
     }
 
-    public int getQuantityToCut() {
+    int getQuantityToCut() {
         return quantityToCut;
     }
 }

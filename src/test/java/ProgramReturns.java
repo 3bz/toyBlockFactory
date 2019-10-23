@@ -1,4 +1,4 @@
-import io.IInput;
+import io.Input;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +13,7 @@ public class ProgramReturns {
 
     @Before
     public void init() {
-        IInput input = new StubInput(USERNAME, ORDER_QUANTITY);
+        Input input = new StubInput(USERNAME, ORDER_QUANTITY);
         output = new FakeOutput();
         shop = new Shop(input, output);
     }

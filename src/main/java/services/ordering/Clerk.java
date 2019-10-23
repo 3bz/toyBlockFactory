@@ -1,7 +1,7 @@
 package services.ordering;
 
-import io.IInput;
-import io.IOutput;
+import io.Input;
+import io.Output;
 import services.reporting.Invoice;
 import services.factory.painting.Color;
 import services.factory.cutting.Shape;
@@ -12,11 +12,11 @@ import java.util.Date;
 import java.util.List;
 
 public class Clerk {
-    private final IInput input;
-    private final IOutput output;
+    private final Input input;
+    private final Output output;
     private int currentOrderNo;
 
-    public Clerk(IInput aInput, IOutput aOutput) {
+    public Clerk(Input aInput, Output aOutput) {
         input = aInput;
         output = aOutput;
         currentOrderNo = 0;

@@ -1,7 +1,7 @@
 import services.reporting.Invoice;
-import io.IOutput;
+import io.Output;
 
-public class FakeOutput implements IOutput {
+public class FakeOutput implements Output {
     private int orderTotal;
 
     @Override
@@ -13,8 +13,7 @@ public class FakeOutput implements IOutput {
     }
 
     @Override
-    public void generateItemOption(String color, String shape) {
-    }
+    public void generateItemOption(String color, String shape) { }
 
     public int getOrderTotal() {
         return orderTotal;

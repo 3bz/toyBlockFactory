@@ -1,6 +1,6 @@
 package io;
 
-public interface IInput {
+public interface Input {
     int takeInteger();
     String takeString();
 }

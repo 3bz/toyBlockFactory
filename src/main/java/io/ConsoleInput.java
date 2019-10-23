@@ -3,7 +3,7 @@ package io;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ConsoleInput implements IInput {
+public class ConsoleInput implements Input {
     private Scanner scn;
 
     public ConsoleInput() {

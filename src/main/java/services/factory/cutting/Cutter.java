@@ -2,9 +2,9 @@ package services.factory.cutting;
 
 import services.factory.Block;
 
-public class Cutter {
+class Cutter {
 
-    public Block cutBlock(Shape blockShape) {
+    Block cutBlock(Shape blockShape) {
         return new Block(blockShape);
     }
 }

@@ -1,5 +1,4 @@
-import io.ConsoleOutput;
-import io.IOutput;
+import io.Output;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -18,7 +17,7 @@ public class ClerkMayCreate {
     @Before
     public void init() {
         StubInput input = new StubInput(USERNAME, ORDER_QUANTITY);
-        IOutput output = new FakeOutput();
+        Output output = new FakeOutput();
         clerk = new Clerk(input, output);
     }
 

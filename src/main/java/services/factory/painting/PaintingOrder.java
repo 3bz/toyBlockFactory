@@ -13,7 +13,7 @@ public class PaintingOrder {
         blocksToPaint = blocks;
     }
 
-    public Color getColorToPaintBlocks() {
+    Color getColorToPaintBlocks() {
         return colorToPaintBlocks;
     }
 

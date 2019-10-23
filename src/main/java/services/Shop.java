@@ -1,7 +1,7 @@
 package services;
 
-import io.IInput;
-import io.IOutput;
+import io.Input;
+import io.Output;
 import services.reporting.Accountant;
 import services.reporting.Invoice;
 import services.factory.Block;
@@ -16,7 +16,7 @@ public class Shop {
     private ToyBlockFactory factory;
     private Accountant accountant;
 
-    public Shop(IInput input, IOutput output) {
+    public Shop(Input input, Output output) {
         clerk = new Clerk(input, output);
         factory = new ToyBlockFactory();
         accountant = new Accountant();

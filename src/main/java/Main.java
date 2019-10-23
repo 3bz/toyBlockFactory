@@ -22,8 +22,8 @@ import services.Shop;
 
 public class Main {
     public static void main(String[] args) {
-        IInput input = new ConsoleInput();
-        IOutput output = new ConsoleOutput();
+        Input input = new ConsoleInput();
+        Output output = new ConsoleOutput();
         Shop shop = new Shop(input, output);
 
         shop.startTransaction();

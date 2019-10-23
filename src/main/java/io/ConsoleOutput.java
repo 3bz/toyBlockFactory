@@ -2,7 +2,7 @@ package io;
 
 import services.reporting.Invoice;
 
-public class ConsoleOutput implements IOutput {
+public class ConsoleOutput implements Output {
 
     @Override
     public void giveString(String s) {

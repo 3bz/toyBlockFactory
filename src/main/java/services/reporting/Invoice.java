@@ -10,7 +10,7 @@ public class Invoice {
     private String message;
     private int total;
 
-    public Invoice(CustomerOrder customerOrder) {
+    Invoice(CustomerOrder customerOrder) {
         String name = customerOrder.getCustomerDetails().getName();
         String address = customerOrder.getCustomerDetails().getAddress();
         Date dueDate = customerOrder.getDueDate();
@@ -23,15 +23,15 @@ public class Invoice {
                 "Order #: " + orderNo + "\n\n";
     }
 
-    public void applyExpenses(int quantity, int total, Shape shape) {
+    void applyExpenses(int quantity, int total, Shape shape) {
         message+= shape.name() + ": " + quantity + " @ " + "$" + shape.getPrice() + " ppi = $" + total + "\n";
     }
 
-    public void applyPremiumPaintSurcharge(int quantity, int total, Color color) {
+    void applyPremiumPaintSurcharge(int quantity, int total, Color color) {
         message+= color.name() + " Color Surcharge: " + quantity + " @ " + "$" + color.getPrice() + " ppi = $" + total + "\n";
     }
 
-    public void applyOrderTotal(int total) {
+    void applyOrderTotal(int total) {
         this.total = total;
         message += "Order Total: $" + total + "\n";
     }

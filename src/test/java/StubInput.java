@@ -1,6 +1,6 @@
-import io.IInput;
+import io.Input;
 
-public class StubInput implements IInput {
+public class StubInput implements Input {
     private String name;
     private int orderQuantity;
 
