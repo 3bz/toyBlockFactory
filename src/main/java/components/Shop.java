@@ -23,13 +23,13 @@ public class Shop {
     }
 
     public void startTransaction(){
-        CustomerOrder designPatterns = clerk.getCustomerOrder();
-        getBlocks(designPatterns);
-        clerk.displayInvoice(getInvoice(designPatterns));
+        CustomerOrder blockOrder = clerk.takeCustomerOrder();
+        getBlocks(blockOrder);
+        clerk.displayInvoice(getInvoice(blockOrder));
     }
 
     public List<Block> getBlocks(CustomerOrder customerOrder) {
-        return factory.processOrder(customerOrder);
+        return factory.processBlockOrder(customerOrder);
     }
 
     public Invoice getInvoice(CustomerOrder customerOrder) {

@@ -22,10 +22,10 @@ public class Clerk {
         currentOrderNo = 0;
     }
 
-    public CustomerOrder getCustomerOrder() {
+    public CustomerOrder takeCustomerOrder() {
         Customer newCustomer = getCustomerDetails();
-        List<Blueprint> blockDesigns = drawBlueprints();
-        return createCustomerOrder(newCustomer, blockDesigns);
+        List<Blueprint> designPatterns = drawBlueprints();
+        return createCustomerOrder(newCustomer, designPatterns);
     }
 
     public void displayInvoice(Invoice aInvoice) {

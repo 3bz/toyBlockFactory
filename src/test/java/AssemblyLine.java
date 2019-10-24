@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ManufactureBasedOnBlueprints {
+public class AssemblyLine {
     private ToyBlockFactory testFactory;
     private CustomerOrder testOrder;
 
@@ -49,15 +49,9 @@ public class ManufactureBasedOnBlueprints {
         Assert.assertEquals(Shape.SQUARE, paintedBlocks.get(0).getShape());
     }
 
-//    @Test(expected=IllegalStateException.class)
-//    public void notSuppliedEnoughBlocksForOrderRequirement() {
-//        List<Block> insufficientBlocks = new ArrayList<>();
-//        List<Block> attemptedBlocks = testFactory.paintingProcedure(testOrder, insufficientBlocks);
-//    }
-
     @Test
     public void satisfiesAndReturnsCompletedOrder() {
-        List<Block> completedOrder = testFactory.processOrder(testOrder);
+        List<Block> completedOrder = testFactory.processBlockOrder(testOrder);
 
         Assert.assertEquals(Color.RED, completedOrder.get(0).getColor());
         Assert.assertEquals(Shape.SQUARE, completedOrder.get(0).getShape());

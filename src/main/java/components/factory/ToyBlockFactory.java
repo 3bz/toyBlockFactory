@@ -21,10 +21,10 @@ public class ToyBlockFactory {
         paintingDepartment = new PaintingDepartment();
     }
 
-    public List<Block> processOrder(CustomerOrder customerOrder) {
-        List <Block> blocksCutForOrder = startCuttingProcedure(customerOrder);
+    public List<Block> processBlockOrder(CustomerOrder customerOrder) {
+        List <Block> freshlyCutBlocks = startCuttingProcedure(customerOrder);
 
-        return startPaintingProcedure(customerOrder, blocksCutForOrder);
+        return startPaintingProcedure(customerOrder, freshlyCutBlocks);
     }
 
     public List<Block> startCuttingProcedure(CustomerOrder customerOrder) {
@@ -33,80 +33,60 @@ public class ToyBlockFactory {
     }
 
     private List<CuttingOrder> createCuttingOrders(CustomerOrder orderToProcess) {
-        List<CuttingOrder> shapeRequirements = new ArrayList<>();
-        for (Blueprint individualBlockOrder : orderToProcess.getSpecification()) {
-            Shape shapeToCut = individualBlockOrder.getShapePlanned();
-            int amount = individualBlockOrder.getQuantity();
+        List<CuttingOrder> cuttingInstructions = new ArrayList<>();
+        for (Blueprint singleBlockOrder : orderToProcess.getBlueprints()) {
+            Shape shapeToCut = singleBlockOrder.getShapePlanned();
+            int amount = singleBlockOrder.getQuantityPlanned();
 
-            shapeRequirements.add(new CuttingOrder(shapeToCut, amount));
+            cuttingInstructions.add(new CuttingOrder(shapeToCut, amount));
         }
-        return shapeRequirements;
+        return cuttingInstructions;
     }
 
-    private List<Block> getCutBlocks(List<CuttingOrder> shapeOrders) {
-        List<Block> blocksCut = new ArrayList<>();
-        for (CuttingOrder singleShapeOrder : shapeOrders)
-            blocksCut.addAll(cuttingDepartment.fulfillCuttingOrder(singleShapeOrder));
+    private List<Block> getCutBlocks(List<CuttingOrder> cuttingInstructions) {
+        List<Block> cutBlocks = new ArrayList<>();
+        for (CuttingOrder singleShape : cuttingInstructions)
+            cutBlocks.addAll(cuttingDepartment.fulfillCuttingOrder(singleShape));
 
-        return blocksCut;
+        return cutBlocks;
     }
 
     public List<Block> startPaintingProcedure(CustomerOrder customerOrder, List<Block> blocksProvided) {
-        List<Block> customerBlocks = new ArrayList<>();
-        try {
-            List<PaintingOrder> paintingInstructions = createPaintingOrders(customerOrder, blocksProvided);
-            paintBlocks(paintingInstructions);
-            customerBlocks = bundleOrder(paintingInstructions);
-        } catch (IllegalStateException ex) {
-            System.out.println(ex.getMessage());
-            ex.printStackTrace();
-        }
-        return customerBlocks;
+        List<PaintingOrder> paintingInstructions = createPaintingOrders(customerOrder, blocksProvided);
+        paintBlocks(paintingInstructions);
+        return bundleOrder(paintingInstructions);
     }
 
-    private List<PaintingOrder> createPaintingOrders(CustomerOrder orderToProcess, List<Block> blocksProvided) throws IllegalStateException {
-        List<PaintingOrder> paintingRequests = new ArrayList<>();
-        for (Color singleColor : Color.values()) {
-            for (Blueprint singleOrder : orderToProcess.getSpecification()) {
-                if (singleColor.equals(singleOrder.getColorPlanned())) {
-                    if (isEnoughBlocksToSatisfyRequirement(singleOrder, blocksProvided)) {
-                        List<Block> blockNeeded = extractBlocks(singleOrder, blocksProvided);
-                        paintingRequests.add(new PaintingOrder(singleColor, blockNeeded));
-                    }
-                    else
-                        throw new IllegalStateException("Not enough blocks cut to satisfy order requirement");
+    private List<PaintingOrder> createPaintingOrders(CustomerOrder orderToProcess, List<Block> blocksProvided) {
+        List<PaintingOrder> paintingInstructions = new ArrayList<>();
+        for (Color individualColor : Color.values()) {
+            for (Blueprint singleOrder : orderToProcess.getBlueprints()) {
+                if (individualColor.equals(singleOrder.getColorPlanned())) {
+                    List<Block> blocksNeeded = extractBlocks(singleOrder, blocksProvided);
+                    paintingInstructions.add(new PaintingOrder(individualColor, blocksNeeded));
                 }
             }
         }
-        return paintingRequests;
-    }
-
-    private boolean isEnoughBlocksToSatisfyRequirement(Blueprint requirement, List<Block> blocks) {
-        int quantityMet = 0;
-        for (Block block: blocks) {
-            if (requirement.getShapePlanned().equals(block.getShape()))
-                quantityMet++;
-        }
-        return (quantityMet >= requirement.getQuantity());
+        return paintingInstructions;
     }
 
     private List<Block> extractBlocks(Blueprint specificOrder, List<Block> blocksProvided) {
-        List<Block> blocksForOrder = new ArrayList<>();
+        List<Block> blocksNeeded = new ArrayList<>();
         int quantityMet = 0;
         for (Block singleBlock : blocksProvided) {
-            if (quantityMet < specificOrder.getQuantity()) {
+            if (quantityMet < specificOrder.getQuantityPlanned()) {
                 if ( (singleBlock.getShape().equals(specificOrder.getShapePlanned()))
-                && (!blocksForOrder.contains(singleBlock)) ) {
-                    blocksForOrder.add(singleBlock);
+                && (!blocksNeeded.contains(singleBlock)) ) {
+                    blocksNeeded.add(singleBlock);
                     quantityMet++;
                 }
             }
         }
-        return blocksForOrder;
+        return blocksNeeded;
     }
 
-    private void paintBlocks(List<PaintingOrder> paintOrders) {
-        for (PaintingOrder differentColorRequested : paintOrders)
+    private void paintBlocks(List<PaintingOrder> paintingInstructions) {
+        for (PaintingOrder differentColorRequested : paintingInstructions)
             paintingDepartment.fulfillPaintingOrder(differentColorRequested);
     }
 

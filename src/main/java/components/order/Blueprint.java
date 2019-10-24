@@ -6,12 +6,12 @@ import components.factory.cut.Shape;
 public class Blueprint {
     private final Color colorPlanned;
     private final Shape shapePlanned;
-    private final int quantity;
+    private final int quantityPlanned;
 
     public Blueprint(Color aColor, Shape aShape, int aQuantity) {
         colorPlanned = aColor;
         shapePlanned = aShape;
-        quantity = aQuantity;
+        quantityPlanned = aQuantity;
     }
 
     public Color getColorPlanned() {
@@ -22,7 +22,7 @@ public class Blueprint {
         return shapePlanned;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public int getQuantityPlanned() {
+        return quantityPlanned;
     }
 }

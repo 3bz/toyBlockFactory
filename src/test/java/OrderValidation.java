@@ -23,22 +23,22 @@ public class OrderValidation {
 
     @Test
     public void aNewCustomer() {
-        CustomerOrder testOrder = clerk.getCustomerOrder();
+        CustomerOrder testOrder = clerk.takeCustomerOrder();
 
         Assert.assertEquals(USERNAME, testOrder.getCustomerDetails().getName());
     }
 
     @Test
     public void someBlueprints() {
-        List<Blueprint> testPrints = clerk.getCustomerOrder().getSpecification();
+        List<Blueprint> testPrints = clerk.takeCustomerOrder().getBlueprints();
 
         Assert.assertEquals(ONE_OF_EACH_OPTION, testPrints.size());
     }
 
     @Test
     public void anOrder() {
-        CustomerOrder testOrder = clerk.getCustomerOrder();
+        CustomerOrder testOrder = clerk.takeCustomerOrder();
 
-        Assert.assertEquals(ONE_OF_EACH_OPTION, testOrder.getSpecification().size());
+        Assert.assertEquals(ONE_OF_EACH_OPTION, testOrder.getBlueprints().size());
     }
 }

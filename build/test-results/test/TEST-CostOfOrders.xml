@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CostOfOrders" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-23T05:18:43" hostname="C02Y309QJG5J" time="0.015">
+<testsuite name="CostOfOrders" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-24T03:32:17" hostname="C02Y309QJG5J" time="0.026">
   <properties/>
-  <testcase name="redPaintSurcharge" classname="CostOfOrders" time="0.013"/>
+  <testcase name="redPaintSurcharge" classname="CostOfOrders" time="0.024"/>
   <testcase name="manyOfSameShape" classname="CostOfOrders" time="0.0"/>
   <testcase name="oneCircleIsThreeDollars" classname="CostOfOrders" time="0.0"/>
-  <testcase name="oneSquareIsOneDollar" classname="CostOfOrders" time="0.0"/>
-  <testcase name="assortedShapes" classname="CostOfOrders" time="0.001"/>
+  <testcase name="oneSquareIsOneDollar" classname="CostOfOrders" time="0.001"/>
+  <testcase name="assortedShapes" classname="CostOfOrders" time="0.0"/>
   <testcase name="oneTriangleIsTwoDollars" classname="CostOfOrders" time="0.0"/>
-  <testcase name="assortedShapesWithSomeThatAreRed" classname="CostOfOrders" time="0.0"/>
+  <testcase name="assortedShapesWithSomeThatAreRed" classname="CostOfOrders" time="0.001"/>
   <testcase name="oneOfEveryShape" classname="CostOfOrders" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -13,38 +13,47 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/AccountantCanCalculate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ClerkMayCreate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CuttingDepartmentCuts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/FakeOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/FakeOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/InteractionBetweenDepartments.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/InteractionBetweenDepartments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/PaintingDepartmentPaints.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/PaintingDepartmentPaints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ProgramReturns.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ProgramReturns.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ShopSendsOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ShopSendsOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/AccountantCanCalculate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ClerkMayCreate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CuttingDepartmentCuts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/InteractionBetweenDepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/InteractionBetweenDepartments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/PaintingDepartmentPaints.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/PaintingDepartmentPaints.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ProgramReturns.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ProgramReturns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ShopSendsOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ShopSendsOrder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/factory/ToyBlockFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/factory/ToyBlockFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/factory/paint/PaintingOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/factory/paint/PaintingOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/order/Blueprint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/order/Blueprint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/order/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/order/Clerk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/order/CustomerOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/order/CustomerOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/report/Accountant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/report/Accountant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CostOfOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CostOfOrders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/InteractionBetweenDepartments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/OrderValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/OrderValidation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/PaintingDepartmentPaints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ProgramReturns.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ShopSendsOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/SupplyBlockByShape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CostOfOrders.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CostOfOrders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/InteractionBetweenDepartments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/OrderValidation.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/OrderValidation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/PaintingDepartmentPaints.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ProgramReturns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ShopSendsOrder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/SupplyBlockByShape.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-AccountantCanCalculate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ClerkMayCreate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CuttingDepartmentCuts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-InteractionBetweenDepartments.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-InteractionBetweenDepartments.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-PaintingDepartmentPaints.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-PaintingDepartmentPaints.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ProgramReturns.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ProgramReturns.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ShopSendsOrder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ShopSendsOrder.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CostOfOrders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CostOfOrders.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-InteractionBetweenDepartments.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-OrderValidation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-OrderValidation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-PaintingDepartmentPaints.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ProgramReturns.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ShopSendsOrder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-SupplyBlockByShape.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AccountantCanCalculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CostOfOrders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ClerkMayCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CuttingDepartmentCuts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SupplyBlocksByShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InteractionBetweenDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ManufactureBasedOnBlueprints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PaintingDepartmentPaints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangeBlockColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProgramReturns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GiveUserResults.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ShopSendsOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CoordinateDataReturns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/factory/ToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/ToyBlockFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/factory/paint/PaintingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/paint/PaintingOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/order/Blueprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/Blueprint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/order/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/Clerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/order/CustomerOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/CustomerOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/report/Accountant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/report/Accountant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CostOfOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CostOfOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ManufactureBasedOnBlueprints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AssemblyLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OrderValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderValidation.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,10 +213,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'toyBlockFactory.test'" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.InteractionBetweenDepartments.notSuppliedEnoughBlocksForOrderRequirement" />
         <item itemvalue="Gradle.ClerkMayCreate" />
         <item itemvalue="Gradle.AccountantCanCalculate" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +241,8 @@
       <workItem from="1571257730326" duration="10364000" />
       <workItem from="1571336368836" duration="9933000" />
       <workItem from="1571593643083" duration="19129000" />
-      <workItem from="1571781501702" duration="18319000" />
+      <workItem from="1571781501702" duration="18466000" />
+      <workItem from="1571884828225" duration="3063000" />
     </task>
     <servers />
   </component>
@@ -253,6 +263,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/toyBlockFactory$Main.ic" NAME="Main Coverage Results" MODIFIED="1571791564106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/toyBlockFactory$Main.ic" NAME="Main Coverage Results" MODIFIED="1571885229035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

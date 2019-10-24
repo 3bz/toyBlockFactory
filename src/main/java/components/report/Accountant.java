@@ -21,9 +21,9 @@ public class Accountant {
         }
         for (Color color: Color.values()) {
             if (color.getPrice() > 0)
-                calculatePremiumPaintConsiderations(orders, invoice, color);
+                calculatePremiumPaintCharge(orders, invoice, color);
         }
-        invoice.applyOrderTotal(calculateOrder(orders.getSpecification()));
+        invoice.applyOrderTotal(getTotalCostOfOrders(orders.getBlueprints()));
 
         return invoice;
     }
@@ -31,16 +31,16 @@ public class Accountant {
     private int howManyShapeOrders(Shape shape, CustomerOrder order) {
         int shapeOrders = 0;
 
-        for (Blueprint bp : order.getSpecification()) {
+        for (Blueprint bp : order.getBlueprints()) {
             if (bp.getShapePlanned().equals(shape)) {
-                shapeOrders += bp.getQuantity();
+                shapeOrders += bp.getQuantityPlanned();
             }
         }
         return shapeOrders;
     }
 
-    private void calculatePremiumPaintConsiderations(CustomerOrder orders, Invoice invoice, Color color) {
-        int blockCount = howManySpecifiedColorBlocks(orders.getSpecification(), color);
+    private void calculatePremiumPaintCharge(CustomerOrder orders, Invoice invoice, Color color) {
+        int blockCount = howManySpecifiedColorBlocks(orders.getBlueprints(), color);
         int total = (blockCount * color.getPrice());
         invoice.applyPremiumPaintSurcharge(blockCount, total, color);
 
@@ -50,27 +50,27 @@ public class Accountant {
         int coloredBlockFound = 0;
         for (Blueprint bp : orders) {
             if (bp.getColorPlanned().equals(color)) {
-                coloredBlockFound += bp.getQuantity();
+                coloredBlockFound += bp.getQuantityPlanned();
             }
         }
         return coloredBlockFound;
     }
 
-    private int calculateOrder(List<Blueprint> expenses) {
+    private int getTotalCostOfOrders(List<Blueprint> orders) {
         int result = 0;
-        for (Blueprint cost : expenses)
-            result += calculateCost(cost);
+        for (Blueprint expense : orders)
+            result += calculateSingleOrder(expense);
 
         return result;
     }
 
-    private int calculateCost(Blueprint order) {
+    private int calculateSingleOrder(Blueprint order) {
         int result = 0;
         result += order.getShapePlanned().getPrice();
         if (order.getColorPlanned().getPrice() > 0)
             result += order.getColorPlanned().getPrice();
 
-        result *= order.getQuantity();
+        result *= order.getQuantityPlanned();
         return result;
     }
 }

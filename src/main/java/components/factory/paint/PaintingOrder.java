@@ -8,9 +8,9 @@ public class PaintingOrder {
     private Color colorToPaintBlocks;
     private List<Block> blocksToPaint;
 
-    public PaintingOrder(Color aColor, List<Block> blocks) {
+    public PaintingOrder(Color aColor, List<Block> blocksForPainting) {
         colorToPaintBlocks = aColor;
-        blocksToPaint = blocks;
+        blocksToPaint = blocksForPainting;
     }
 
     Color getColorToPaintBlocks() {

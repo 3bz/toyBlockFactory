@@ -30,7 +30,7 @@ public class CostOfOrders {
 
     @Test
     public void oneSquareIsOneDollar() {
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
@@ -41,7 +41,7 @@ public class CostOfOrders {
 
     @Test
     public void oneTriangleIsTwoDollars() {
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
@@ -52,7 +52,7 @@ public class CostOfOrders {
 
     @Test
     public void oneCircleIsThreeDollars() {
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
@@ -63,7 +63,7 @@ public class CostOfOrders {
 
     @Test
     public void redPaintSurcharge() {
-        customerOrder.getSpecification().add(new Blueprint(Color.RED, Shape.SQUARE, 1));
+        customerOrder.getBlueprints().add(new Blueprint(Color.RED, Shape.SQUARE, 1));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
@@ -74,7 +74,7 @@ public class CostOfOrders {
 
     @Test
     public void manyOfSameShape() {
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
@@ -85,9 +85,9 @@ public class CostOfOrders {
 
     @Test
     public void oneOfEveryShape() {
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.SQUARE, 1));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 1));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 1));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
@@ -98,9 +98,9 @@ public class CostOfOrders {
 
     @Test
     public void assortedShapes() {
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 5));
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.TRIANGLE, 5));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();
@@ -111,9 +111,9 @@ public class CostOfOrders {
 
     @Test
     public void assortedShapesWithSomeThatAreRed() {
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
-        customerOrder.getSpecification().add(new Blueprint(Color.RED, Shape.SQUARE, 5));
-        customerOrder.getSpecification().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.SQUARE, 5));
+        customerOrder.getBlueprints().add(new Blueprint(Color.RED, Shape.SQUARE, 5));
+        customerOrder.getBlueprints().add(new Blueprint(Color.BLUE, Shape.CIRCLE, 5));
 
         Invoice invoice = acc.writeInvoice(customerOrder);
         int actualCost = invoice.getTotal();

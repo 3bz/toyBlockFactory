@@ -7,17 +7,17 @@ public class CustomerOrder {
     private Customer customerDetails;
     private Date dueDate;
     private int orderNo;
-    private List<Blueprint> specification;
+    private List<Blueprint> blueprints;
 
-    public CustomerOrder(Customer aCustomer, Date aDueDate, int aOrderNo, List<Blueprint> aSpecification) {
+    public CustomerOrder(Customer aCustomer, Date aDueDate, int aOrderNo, List<Blueprint> aBlueprints) {
         customerDetails = aCustomer;
         dueDate = aDueDate;
         orderNo = aOrderNo;
-        specification = aSpecification;
+        blueprints = aBlueprints;
     }
 
-    public List<Blueprint> getSpecification() {
-        return specification;
+    public List<Blueprint> getBlueprints() {
+        return blueprints;
     }
 
     public Customer getCustomerDetails() {

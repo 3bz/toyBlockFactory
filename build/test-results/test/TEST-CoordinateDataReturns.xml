@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoordinateDataReturns" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-24T03:32:17" hostname="C02Y309QJG5J" time="0.035">
+  <properties/>
+  <testcase name="factoryReturnsBlocks" classname="CoordinateDataReturns" time="0.031"/>
+  <testcase name="accountantReturnsInvoice" classname="CoordinateDataReturns" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
