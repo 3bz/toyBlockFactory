@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CostOfOrders" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-25T04:32:18" hostname="C02Y309QJG5J" time="0.022">
+<testsuite name="CostOfOrders" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-25T04:49:48" hostname="C02Y309QJG5J" time="0.015">
   <properties/>
-  <testcase name="redPaintSurcharge" classname="CostOfOrders" time="0.019"/>
+  <testcase name="redPaintSurcharge" classname="CostOfOrders" time="0.013"/>
   <testcase name="manyOfSameShape" classname="CostOfOrders" time="0.0"/>
   <testcase name="oneCircleIsThreeDollars" classname="CostOfOrders" time="0.0"/>
   <testcase name="oneSquareIsOneDollar" classname="CostOfOrders" time="0.0"/>
   <testcase name="assortedShapes" classname="CostOfOrders" time="0.0"/>
   <testcase name="oneTriangleIsTwoDollars" classname="CostOfOrders" time="0.0"/>
   <testcase name="assortedShapesWithSomeThatAreRed" classname="CostOfOrders" time="0.0"/>
-  <testcase name="oneOfEveryShape" classname="CostOfOrders" time="0.001"/>
+  <testcase name="oneOfEveryShape" classname="CostOfOrders" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
