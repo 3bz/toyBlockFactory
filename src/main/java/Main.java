@@ -11,9 +11,9 @@ import components.Shop;
  * This class initializes our input, output and top level Shop class.
  * Shop is responsible for initialising our I/O class Clerk, and co-ordinating data between sub-level classes.
  * Clerk constructs the order based on user input and passes this to the Shop.
- * Shop relays the order to the Factory for construction,
- * relays the order to Accountant for cost calculation
- * and co-ordinates the return to the user.
+ * Shop relays the order to the Factory for block object construction,
+ * then relays the order to Accountant for cost calculation,
+ * then co-ordinates the return to the user.
  *
  * Factory oversees the Cutting and Painting of the Blocks
  * by first creating separate Cutting orders for block creation,

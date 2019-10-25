@@ -23,7 +23,7 @@ public class ChangeBlockColor {
     }
 
     @Test
-    public void aRedBlock() {
+    public void becomesRedBlock() {
         testOrder = new PaintingOrder(Color.RED, blockList);
         testPaintDept.fulfillPaintingOrder(testOrder);
 
@@ -31,7 +31,7 @@ public class ChangeBlockColor {
     }
 
     @Test
-    public void aBlueBlock() {
+    public void becomesBlueBlock() {
         testOrder = new PaintingOrder(Color.BLUE, blockList);
         testPaintDept.fulfillPaintingOrder(testOrder);
 
@@ -39,7 +39,7 @@ public class ChangeBlockColor {
     }
 
     @Test
-    public void aYellowBlock() {
+    public void becomesYellowBlock() {
         testOrder = new PaintingOrder(Color.YELLOW, blockList);
         testPaintDept.fulfillPaintingOrder(testOrder);
 

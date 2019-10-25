@@ -28,11 +28,11 @@ public class Shop {
         clerk.displayInvoice(getInvoice(blockOrder));
     }
 
-    public List<Block> getBlocks(CustomerOrder customerOrder) {
+    private List<Block> getBlocks(CustomerOrder customerOrder) {
         return factory.processBlockOrder(customerOrder);
     }
 
-    public Invoice getInvoice(CustomerOrder customerOrder) {
+    private Invoice getInvoice(CustomerOrder customerOrder) {
         return accountant.writeInvoice(customerOrder);
     }
 }

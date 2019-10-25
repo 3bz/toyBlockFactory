@@ -7,7 +7,7 @@ import components.order.*;
 
 import java.util.List;
 
-public class OrderValidation {
+public class CompileUsersOrder {
     private final String USERNAME = "test";
     private final int ORDER_QUANTITY = 1;
     private final int ONE_OF_EACH_OPTION = 9;
