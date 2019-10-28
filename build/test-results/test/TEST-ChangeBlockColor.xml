@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ChangeBlockColor" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-25T04:49:48" hostname="C02Y309QJG5J" time="0.002">
+<testsuite name="ChangeBlockColor" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-28T03:05:34" hostname="C02Y309QJG5J" time="0.002">
   <properties/>
   <testcase name="manyRedBlocks" classname="ChangeBlockColor" time="0.001"/>
   <testcase name="differentShapedBlocksAllSameColor" classname="ChangeBlockColor" time="0.0"/>
-  <testcase name="becomesBlueBlock" classname="ChangeBlockColor" time="0.001"/>
+  <testcase name="becomesBlueBlock" classname="ChangeBlockColor" time="0.0"/>
   <testcase name="becomesYellowBlock" classname="ChangeBlockColor" time="0.0"/>
   <testcase name="becomesRedBlock" classname="ChangeBlockColor" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

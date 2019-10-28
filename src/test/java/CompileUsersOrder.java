@@ -29,7 +29,7 @@ public class CompileUsersOrder {
     }
 
     @Test
-    public void someBlueprints() {
+    public void blockRequests() {
         List<Blueprint> testPrints = clerk.takeCustomerOrder().getBlueprints();
 
         Assert.assertEquals(ONE_OF_EACH_OPTION, testPrints.size());

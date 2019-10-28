@@ -15,6 +15,9 @@ public class Clerk {
     private final Input input;
     private final Output output;
     private int currentOrderNo;
+    static final String WELCOME_MESSAGE = "Welcome to the Toy Block Factory!";
+    static final String NAME_REQUEST = "Please input your name: ";
+    static final String ADDRESS_REQUEST = "Please input your address: ";
 
     public Clerk(Input aInput, Output aOutput) {
         input = aInput;
@@ -33,11 +36,11 @@ public class Clerk {
     }
 
     private Customer getCustomerDetails() {
-        output.giveString(Constants.WELCOME_MESSAGE);
-        output.giveString(Constants.NAME_REQUEST);
-        String customerName = input.takeString();
-        output.giveString(Constants.ADDRESS_REQUEST);
-        String customerAddress = input.takeString();
+        output.giveString(WELCOME_MESSAGE);
+        output.giveString(NAME_REQUEST);
+        String customerName = input.takeUserDetails();
+        output.giveString(ADDRESS_REQUEST);
+        String customerAddress = input.takeUserDetails();
 
         return new Customer(customerName, customerAddress);
     }
@@ -48,7 +51,7 @@ public class Clerk {
         for (Shape aShape : Shape.values()) {
             for (Color aColor : Color.values()) {
                 output.generateItemOption(aColor.name().toLowerCase(), aShape.name().toLowerCase());
-                quantity = input.takeInteger();
+                quantity = input.takeOrderQuantity();
                 if(quantity > 0)
                     totalOrder.add(new Blueprint(aColor, aShape, quantity));
             }

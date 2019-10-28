@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CompileUsersOrder" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T04:49:48" hostname="C02Y309QJG5J" time="0.002">
+<testsuite name="CompileUsersOrder" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-28T03:05:34" hostname="C02Y309QJG5J" time="0.001">
   <properties/>
-  <testcase name="someBlueprints" classname="CompileUsersOrder" time="0.001"/>
+  <testcase name="someBlueprints" classname="CompileUsersOrder" time="0.0"/>
   <testcase name="aNewCustomer" classname="CompileUsersOrder" time="0.0"/>
   <testcase name="anOrder" classname="CompileUsersOrder" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

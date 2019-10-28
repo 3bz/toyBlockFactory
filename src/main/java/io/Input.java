@@ -1,6 +1,6 @@
 package io;
 
 public interface Input {
-    int takeInteger();
-    String takeString();
+    int takeOrderQuantity();
+    String takeUserDetails();
 }

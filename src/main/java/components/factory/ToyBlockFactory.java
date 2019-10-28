@@ -27,7 +27,7 @@ public class ToyBlockFactory {
         return startPaintingProcedure(customerOrder, freshlyCutBlocks);
     }
 
-    public List<Block> startCuttingProcedure(CustomerOrder customerOrder) {
+    public List<Block> startCuttingProcedure(CustomerOrder customerOrder) { //change: data object knows how to present itself. query
         List<CuttingOrder> cuttingInstructions = createCuttingOrders(customerOrder);
         return getCutBlocks(cuttingInstructions);
     }
@@ -54,7 +54,7 @@ public class ToyBlockFactory {
     public List<Block> startPaintingProcedure(CustomerOrder customerOrder, List<Block> blocksProvided) {
         List<PaintingOrder> paintingInstructions = createPaintingOrders(customerOrder, blocksProvided);
         paintBlocks(paintingInstructions);
-        return bundleOrder(paintingInstructions);
+        return bundleBlocks(paintingInstructions);
     }
 
     private List<PaintingOrder> createPaintingOrders(CustomerOrder orderToProcess, List<Block> blocksProvided) {
@@ -90,7 +90,7 @@ public class ToyBlockFactory {
             paintingDepartment.fulfillPaintingOrder(differentColorRequested);
     }
 
-    private List<Block> bundleOrder(List<PaintingOrder> paintedBlocks) {
+    private List<Block> bundleBlocks(List<PaintingOrder> paintedBlocks) {
         List<Block> completedOrder = new ArrayList<>();
         for (PaintingOrder singleOrder : paintedBlocks)
             completedOrder.addAll(singleOrder.getBlocksToPaint());

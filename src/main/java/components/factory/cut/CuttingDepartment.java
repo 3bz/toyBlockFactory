@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CuttingDepartment {
-    private Cutter workers;
+    private Cutter blockCutter;
 
     public CuttingDepartment() {
-        workers = new Cutter();
-    }
+        blockCutter = new Cutter();
+    } //fix
 
     public List<Block> fulfillCuttingOrder(CuttingOrder aOrder) {
         List<Block> blocksMadeToOrder = new ArrayList<>();
@@ -21,6 +21,6 @@ public class CuttingDepartment {
     }
 
     private Block cutShape(Shape blockShape){
-        return workers.cutBlock(blockShape);
+        return blockCutter.cutBlock(blockShape);
     }
 }

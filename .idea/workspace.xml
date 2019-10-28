@@ -6,26 +6,59 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/GiveUserResults.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/OrderValidation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/factory/ToyBlockFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/factory/ToyBlockFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/factory/cut/CuttingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/factory/cut/CuttingDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/factory/paint/PaintingDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/factory/paint/PaintingDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/order/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/components/order/Clerk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/components/order/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/Block.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/ToyBlockFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/cutting/Cutter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/cutting/CuttingDepartment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/cutting/CuttingOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/cutting/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/painting/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/painting/Painter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/painting/PaintingDepartment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/factory/painting/PaintingOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/ordering/Blueprint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/ordering/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/ordering/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/ordering/CustomerOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/reporting/Accountant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/reporting/Invoice.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/AssemblyLine.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/AssemblyLine.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ChangeBlockColor.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ChangeBlockColor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CompileUsersOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CompileUsersOrder.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CostOfOrders.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CostOfOrders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/GiveUserResults.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/OrderValidation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ShowCharges.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ShowCharges.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/SupplyBlocksByShape.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/SupplyBlocksByShape.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-AssemblyLine.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-AssemblyLine.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ChangeBlockColor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ChangeBlockColor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CompileUsersOrder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CompileUsersOrder.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CostOfOrders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CostOfOrders.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-GiveUserResults.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-OrderValidation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ShowCharges.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ShowCharges.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-SupplyBlocksByShape.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-SupplyBlocksByShape.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/factory/ToyBlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/ToyBlockFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/factory/cut/CuttingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/cut/CuttingDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/factory/paint/PaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/paint/PaintingDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/order/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/Clerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/order/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ChangeBlockColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangeBlockColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CompileUsersOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompileUsersOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StubInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StubInput.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +248,8 @@
       <workItem from="1571593643083" duration="19129000" />
       <workItem from="1571781501702" duration="18466000" />
       <workItem from="1571884828225" duration="3153000" />
-      <workItem from="1571969918621" duration="8097000" />
+      <workItem from="1571969918621" duration="8286000" />
+      <workItem from="1572213478670" duration="5813000" />
     </task>
     <servers />
   </component>

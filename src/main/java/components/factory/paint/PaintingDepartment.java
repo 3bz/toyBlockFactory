@@ -3,14 +3,14 @@ package components.factory.paint;
 import components.factory.Block;
 
 public class PaintingDepartment {
-    private Painter workers;
+    private Painter blockPainter;
 
     public PaintingDepartment(){
-        workers = new Painter();
+        blockPainter = new Painter();
     }
 
     public void fulfillPaintingOrder(PaintingOrder aOrder) {
         for (Block block : aOrder.getBlocksToPaint())
-            workers.paintBlock(block, aOrder.getColorToPaintBlocks());
+            blockPainter.paintBlock(block, aOrder.getColorToPaintBlocks());
     }
 }

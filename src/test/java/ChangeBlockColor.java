@@ -58,7 +58,7 @@ public class ChangeBlockColor {
     }
 
     @Test
-    public void differentShapedBlocksAllSameColor() {
+    public void givenAnyShape_BlocksStillAllPaintedSameColor() {
         blockList.add(new Block(Shape.CIRCLE));
         blockList.add(new Block(Shape.TRIANGLE));
         testOrder = new PaintingOrder(Color.RED, blockList);

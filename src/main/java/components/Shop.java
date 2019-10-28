@@ -24,11 +24,11 @@ public class Shop {
 
     public void startTransaction(){
         CustomerOrder blockOrder = clerk.takeCustomerOrder();
-        getBlocks(blockOrder);
+        createBlocks(blockOrder);
         clerk.displayInvoice(getInvoice(blockOrder));
     }
 
-    private List<Block> getBlocks(CustomerOrder customerOrder) {
+    private List<Block> createBlocks(CustomerOrder customerOrder) {
         return factory.processBlockOrder(customerOrder);
     }
 

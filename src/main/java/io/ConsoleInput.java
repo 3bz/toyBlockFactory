@@ -11,7 +11,7 @@ public class ConsoleInput implements Input {
     }
 
     @Override
-    public int takeInteger() {
+    public int takeOrderQuantity() {
         int result;
         try {
             result = scn.nextInt();
@@ -20,11 +20,11 @@ public class ConsoleInput implements Input {
             System.out.println("Invalid input");
             scn.nextLine();
         }
-        return takeInteger();
+        return takeOrderQuantity();
     }
 
     @Override
-    public String takeString() {
+    public String takeUserDetails() {
         return scn.nextLine();
     }
 }

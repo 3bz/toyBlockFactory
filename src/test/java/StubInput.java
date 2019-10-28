@@ -10,12 +10,12 @@ public class StubInput implements Input {
     }
 
     @Override
-    public int takeInteger() {
+    public int takeOrderQuantity() {
         return orderQuantity;
-    }
+    } //Takeorderquantity
 
     @Override
-    public String takeString() {
+    public String takeUserDetails() {
         return name;
-    }
+    } //same
 }
