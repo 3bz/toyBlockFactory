@@ -56,6 +56,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/components/factory/paint/PaintingDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/factory/paint/PaintingDepartment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/components/order/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/order/Clerk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/components/order/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ConsoleInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ChangeBlockColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangeBlockColor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CompileUsersOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompileUsersOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StubInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StubInput.java" afterDir="false" />
@@ -249,7 +251,7 @@
       <workItem from="1571781501702" duration="18466000" />
       <workItem from="1571884828225" duration="3153000" />
       <workItem from="1571969918621" duration="8286000" />
-      <workItem from="1572213478670" duration="5813000" />
+      <workItem from="1572213478670" duration="6104000" />
     </task>
     <servers />
   </component>

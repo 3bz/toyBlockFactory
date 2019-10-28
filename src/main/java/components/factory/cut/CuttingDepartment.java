@@ -10,7 +10,7 @@ public class CuttingDepartment {
 
     public CuttingDepartment() {
         blockCutter = new Cutter();
-    } //fix
+    }
 
     public List<Block> fulfillCuttingOrder(CuttingOrder aOrder) {
         List<Block> blocksMadeToOrder = new ArrayList<>();
